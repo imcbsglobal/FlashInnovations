@@ -1,0 +1,214 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face{
+  font-family: 'Astonpoliz';
+  src: url('../src/fonts/astonpoliz/Astonpoliz.ttf') format('truetype'),
+      url('../src/fonts/astonpoliz/Astonpoliz.otf') format('opentype');
+}
+@font-face{
+  font-family: 'BIgnoodle';
+  src: url('../src/fonts/bignoodletitling/big_noodle_titling.ttf') format('truetype'),
+       url('../src/fonts/bignoodletitling/big_noodle_titling_oblique.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'Coco';
+  src: url('../src/fonts/cocogoose_classic/Cocogoose-Classic-ExtraBold-trial.ttf'),
+       url('../src/fonts/cocogoose_classic/Cocogoose-Classic-Medium-trial.ttf');
+}
+@font-face{
+  font-family: 'Evogria';
+  src: url('../src/fonts/evogria/Evogria.otf'),
+       url('../src/fonts/evogria/Evogria\ Italic.otf');
+}
+@font-face{
+  font-family: 'GreaterTheory';
+  src: url('../src/fonts/greater_theory/GreaterTheory.otf');
+}
+@font-face{
+  font-family: 'KenyanCofee';
+  src: url('../src/fonts/kenyan_coffee/kenyan\ coffee\ bd.otf'),
+       url('../src/fonts/kenyan_coffee/kenyan\ coffee\ bd\ it.otf'),
+       url('../src/fonts/kenyan_coffee/kenyan\ coffee\ rg.otf'),
+       url('../src/fonts/kenyan_coffee/kenyan\ coffee\ rg\ it.otf');
+}
+@font-face{
+  font-family: 'NtMarley';
+  src: url('../src/fonts/nt_marley/NT\ Marley\ Bold\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Bold\ Outline\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Bold\ Soft\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Light\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Light\ Outline\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Light\ Soft\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Medium\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Medium\ Outline\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Medium\ Soft\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Regular\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Regular\ Outline\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Regular\ Soft\ \(only\ personal\ use\).otf'),
+       url('../src/fonts/nt_marley/NT\ Marley\ Thin\ \(only\ personal\ use\).otf');
+}
+@font-face{
+  font-family: 'Steelfish';
+  src: url('../src/fonts/steelfish/steelfish\ bd.otf'),
+       url('../src/fonts/steelfish/steelfish\ bd\ it.otf'),
+       url('../src/fonts/steelfish/steelfish\ eb.otf'),
+       url('../src/fonts/steelfish/steelfish\ eb\ it.otf'),
+       url('../src/fonts/steelfish/steelfish\ outline.otf'),
+       url('../src/fonts/steelfish/steelfish\ rg.otf'),
+       url('../src/fonts/steelfish/steelfish\ rg\ it.otf');
+}
+@font-face{
+  font-family: 'Sublima';
+  src: url('../src/fonts/sublima/Sublima-ExtraBold.otf'),
+       url('../src/fonts/sublima/Sublima-ExtraBoldItalic.otf'),
+       url('../src/fonts/sublima/Sublima-ExtraLight.otf'),
+       url('../src/fonts/sublima/Sublima-ExtraLightItalic.otf');
+}
+@font-face{
+  font-family: 'Sui';
+  src: url('../src/fonts/sui_generis/sui\ generis\ rg.otf');
+}
+@font-face{
+  font-family: 'TsBlock';
+  src: url('../src/fonts/ts_block/TS\ Block\ Bold.ttf');
+}
+@font-face{
+  font-family: 'WorkForce';
+  src: url('../src//fonts/workforce_sans/WorkforceSans_PERSONAL_USE_ONLY.otf');
+}
+@font-face{
+  font-family: 'BankGothic';
+  src: url('../src/fonts/bankgothic-md-bt/Bank\ Gothic\ Light\ Regular.otf'),
+       url('../src/fonts/bankgothic-md-bt/bank\ gothic\ medium\ bt.ttf'),
+       url('../src/fonts/bankgothic-md-bt/BankGothic\ Bold.ttf'),
+       url('../src/fonts/bankgothic-md-bt/BankGothic\ Md\ BT.ttf'),
+       url('../src/fonts/bankgothic-md-bt/BankGothicMediumBT.ttf');
+}
+@font-face{
+  font-family: 'Sansation';
+  src: url('../src/fonts/sansation/Sansation_Bold.ttf'),
+       url('../src/fonts/sansation/Sansation_Bold_Italic.ttf'),
+       url('../src/fonts/sansation/Sansation_Italic.ttf'),
+       url('../src/fonts/sansation/Sansation_Light.ttf'),
+       url('../src/fonts/sansation/Sansation_Light_Italic.ttf'),
+       url('../src/fonts/sansation/Sansation_Regular.ttf'),
+}
+@font-face{
+  font-family: 'Nexa';
+    src:url('../src/fonts/nexa/Nexa-ExtraLight.ttf'),
+        url('../src/fonts/nexa/Nexa-Heavy.ttf');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.section{
+  @apply container mx-auto py-2 px-6
+}
+.GlassNavbar {
+  border: 1px solid rgba(255, 255, 255, .7);
+  backdrop-filter: blur(25px);
+  -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+}
+.GlassBox {
+  border: 1px solid rgba(255, 255, 255, 0.803);
+  backdrop-filter: blur(25px);
+  -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: linear-gradient(108deg, #4B9EFF, #0087F5);
+}
+.GradientButton{
+  background-color: #161a20;
+  border: none;
+  color: #f0f0f0;
+  border-radius: 1000px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  font-family: 'Sui';
+}
+.GradientButton::after{
+  content: '';
+  position: absolute;
+  height: 107%;
+  width: 102%;
+  border-radius: 1000px;
+  background-image: linear-gradient(to bottom right, #008cff, #e100);
+  z-index: -1;
+  -webkit-box-shadow: 1px 6px 23px -8px rgba(0,0,0,0.61);
+  -moz-box-shadow: 1px 6px 23px -8px rgba(0,0,0,0.61);
+  box-shadow: 1px 6px 23px -8px rgba(0,0,0,0.61);
+  border: .1px solid rgb(216, 216, 216) ;
+}
+.TextStyle{
+  font-family: 'BankGothic',sans-serif;
+  text-transform: capitalize;
+  line-height: 50px;
+  /* font-weight: 200; */
+  
+}
+.TextStylePara{
+  font-family: 'Sansation';
+}
+.TitleText{
+  font-family: 'Evogria';
+}
+.ParagraphText{
+  font-family: 'nexa',sans-serif;
+}
+.GlassBox1{
+  border: 1px solid #008cff;
+  backdrop-filter: blur(25px);
+  -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+}
+.SubTitleStyle{
+  font-family: 'Sansation';
+}
+.SmallTitleStyle{
+  font-family: 'Astonpoliz';
+}
+.TeamName{
+  font-family: 'BankGothic';
+  font-weight: 600;
+  background: linear-gradient(to bottom right, #008cff, #e100);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  /* text-fill-color: transparent; */
+}
+.TeamDesignation{
+  font-family: 'BankGothic';
+  font-weight: 700;
+  color: white;
+}
+.GradientFrame{
+  background: linear-gradient(to bottom right, #008cff, #e100);
+  font-family: 'BankGothic';
+  color: white;
+  -webkit-box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
+-moz-box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
+box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
+}
+/* #2075bb */
