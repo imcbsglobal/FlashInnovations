@@ -1,6 +1,10 @@
 import Navbar from "./components/Navbar"
 import Home from "./components/Home"
 import About from "./components/About"
+import Software from "./components/Software"
+import Services from "./components/Services"
+import Contact from "./components/Contact"
+import Clients from "./components/Clients"
 
 
 function App() {
@@ -9,7 +13,11 @@ function App() {
     <>
       <Navbar/>
       {/* <Home/> */}
-      <About/>
+      {/* <About/> */}
+      {/* <Software/> */}
+      {/* <Services/> */}
+      {/* <Clients/> */}
+      <Contact/>
     </>
   )
 }

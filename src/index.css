@@ -211,4 +211,35 @@ body {
 -moz-box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
 box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
 }
+.BorderDesignBox{
+  -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  backdrop-filter: blur(25px);
+  background: linear-gradient(to bottom right, #008cff, #e100);
+  border: 1px solid white;
+}
+.DarkBox{
+  -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  backdrop-filter: blur(25px);
+  background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.1));
+  border: 1px solid white;
+}
+.DevelopmentTextStyle{
+  color: white;
+  font-family: 'Nexa';
+}
+.ParallelogramShape{
+  width: 80px;
+  height: 30px;
+  transform: skew(-20deg);
+  background: #00f84a;
+  transition: all .2s linear;
+  cursor: pointer;
+}
+.ParallelogramShape:hover{
+  transform: skew(0deg);
+}
 /* #2075bb */
