@@ -9,7 +9,7 @@ const MobileNavbar = ({setMenuOpen}) => {
             <IoCloseCircleSharp className=' cursor-pointer text-3xl text-[#070022]' onClick={() => setMenuOpen(false)}/>
         </div>
         <div className=' flex justify-center items-center gap-10'>
-            <ul className='flex flex-col justify-center items-center gap-7 text-xl text-white font-semibold'>
+            <ul className='flex flex-col justify-center items-center gap-7 text-xl text-white  NavbarFont p-8'>
                 <li>Home</li>
                 <li>About</li>
                 <li>Software</li>
