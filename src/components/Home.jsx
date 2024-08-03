@@ -27,6 +27,8 @@ import LogoSlider from './LogoSlider';
 import Colleagues from "../assets/colleagues1.png"
 import { TiTick } from "react-icons/ti";
 import Footer from './Footer';
+import contactImage from "../assets/contact-image.png"
+import serviceImg from "../assets/colleagues2.png"
 
 
 const Home = () => {
@@ -149,7 +151,7 @@ const Home = () => {
                 </div>
 
               </div>
-              <div className=' grid grid-cols-2 place-items-center place-content-center w-full h-[300px] rounded-3xl gap-5 p-5 GlassBox bg-[#0091ff59]'>
+              <div className=' grid grid-cols-2 place-items-center place-content-center w-full h-[300px] lg:h-[200px] rounded-3xl gap-5 p-5 GlassBox bg-[#0091ff59] lg:max-w-[900px] lg:mx-auto lg:grid-cols-4'>
                 <div>
                   <img src={task} className='w-auto h-[50px] object-contain' alt="" />
                 </div>
@@ -160,16 +162,16 @@ const Home = () => {
                   <img src={vtsak} className='w-auto h-[40px] object-contain' alt="" />
                 </div>
                 <div>
-                  <img src={dine} alt="" />
+                  <img src={dine} className='w-auto h-[40px]' alt="" />
                 </div>
                 <div>
-                  <img src={clublogic} alt="" />
+                  <img src={clublogic} className='w-auto h-[40px]' alt="" />
                 </div>
                 <div>
-                  <img src={magnet} className='w-auto h-[70px]' alt="" />
+                  <img src={magnet} className='w-auto h-[55px]' alt="" />
                 </div>
                 <div>
-                  <img src={auric} alt="" />
+                  <img src={auric} className='w-auto h-[50px]' alt="" />
                 </div>
                 <div>
                   <img src={starstay} className='w-auto h-[38px]' alt="" />
@@ -183,13 +185,19 @@ const Home = () => {
 
         <section className=' section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-            <div>
-              <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Services</div>
-              <div className='text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae dignissimos blanditiis illo molestiae consequuntur totam, nobis odio, tempore corporis cumque quae, a in? Optio eligendi officia fugiat quod explicabo.</div>
-            </div>
+           <div className=' md:flex justify-center items-center gap-10'>
+            <div className='mb-10'>
+                <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Services</div>
+                <div className='text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae dignissimos blanditiis illo molestiae consequuntur totam, nobis odio, tempore corporis cumque quae, a in? Optio eligendi officia fugiat quod explicabo.</div>
+              </div>
+
+              <div className='h-[300px] w-full  bg-white BlobDesign'>
+                      <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full' alt="" />
+              </div>
+           </div>
 
             {/* Services Lists */}
-            <div className=' grid grid-cols-1 place-items-center place-content-center gap-10 mt-10'>
+            <div className=' grid grid-cols-1 place-items-center place-content-center gap-10 mt-10 lg:grid-cols-2'>
 
               {/* First List */}
               <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
@@ -233,10 +241,11 @@ const Home = () => {
 
               </div>
 
-              <div>
+              
+            </div>
+            <div className=' flex justify-center items-center mt-10 lg:mt-16'>
                 <button className='px-8 py-2 rounded-3xl GradientButton'>Know More</button>
               </div>
-            </div>
           </div>
         </section>
 
@@ -351,6 +360,31 @@ const Home = () => {
               </div>
           </div>
         </section>
+
+        <section className='section'>
+          <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
+            <div className='md:flex justify-center items-center gap-10'>
+              <div>
+                  <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Drop Us A Line</div>
+                  <div className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus perspiciatis modi iure soluta a, porro officiis tenetur quae tempore deserunt debitis, explicabo reiciendis vero dignissimos, asperiores dicta quisquam aliquam.
+                  Fugit officiis sint numquam enim quia, distinctio commodi iure iusto voluptatem optio incidunt obcaecati itaque corporis mollitia rem odit vitae. Cupiditate, dolor. Iure voluptatum ratione distinctio nam cupiditate. Eligendi, at.</div>
+                  <div className=' hidden md:flex justify-center items-center mt-10'>
+                    <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
+                  </div>
+              </div>
+
+              
+
+              <div className='h-[300px] w-full  bg-white BlobDesign'>
+                    <img src={contactImage} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl' alt="" />
+              </div>
+              <div className=' flex md:hidden justify-center items-center mt-10'>
+                <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
+              </div>
+            </div>
+          </div>  
+        </section>
+
         <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>
       </section>

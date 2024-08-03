@@ -15,7 +15,7 @@ const Footer = () => {
             <div className='wave wave4'></div>
         </div>
         <div className='WaveFooter w-full h-[100%] mt-[-360px] md:mt-[-162px] lg:mt-[-75px] bg-[#ffffff] z-30'>
-            <div className='grid grid-cols-1 place-items-center place-content-center gap-10 px-6 md:grid-cols-2 lg:grid-cols-4 md:place-content-center lg:max-w-[1200px] md:mx-auto md:place-items-start'>
+            <div className='grid grid-cols-1 place-items-center place-content-center gap-10 px-6 md:grid-cols-2 lg:grid-cols-4 md:place-content-start lg:max-w-[1200px] md:mx-auto md:place-items-center'>
                 <div className='flex flex-col justify-center items-center text-center gap-2'>
                     <div className=' w-auto h-[80px] mt-10'>
                         <img src={logo} className=' w-full h-full object-cover drop-shadow-2xl' alt="" />
