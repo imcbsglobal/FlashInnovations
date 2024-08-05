@@ -202,7 +202,7 @@ const Home = () => {
                 initial={{scale:0,opacity:0}}
                 animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
                 className=' flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold'>10+</div>
+                  <div className='text-[52px] font-bold outLineFont'>10+</div>
                   <div className='text-2xl text-[#fff]'>Years of <span className='block'>Experience</span></div>
                 </motion.div>
 
@@ -210,7 +210,7 @@ const Home = () => {
                 initial={{scale:0,opacity:0}}
                 animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold'>30+</div>
+                  <div className='text-[52px] font-bold outLineFont'>30+</div>
                   <div className='text-2xl text-[#fff]'>Skilled <span className='block'>Professionals</span></div>
                 </motion.div>
 
@@ -218,7 +218,7 @@ const Home = () => {
                 initial={{scale:0,opacity:0}}
                 animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold'>300+</div>
+                  <div className='text-[52px] font-bold outLineFont'>300+</div>
                   <div className='text-2xl text-[#fff]'>Projects<span className='block'>Worldwide</span></div>
                 </motion.div>
 
@@ -226,7 +226,7 @@ const Home = () => {
                 initial={{scale:0,opacity:0}}
                 animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold'>100%</div>
+                  <div className='text-[52px] font-bold outLineFont'>100%</div>
                   <div className='text-2xl text-[#fff]'>Customer<span className='block'>Satisfaction</span></div>
                 </motion.div>
 
@@ -356,7 +356,7 @@ const Home = () => {
         <section className=' section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Hardware Solutions</div>
-            <div className=' text-center ParagraphText text-[#fff]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore nemo neque laboriosam? Quo nesciunt necessitatibus maxime. Facilis repellat, animi quasi harum expedita iure facere quis officiis. Deserunt, repellendus vel.
+            <div className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore nemo neque laboriosam? Quo nesciunt necessitatibus maxime. Facilis repellat, animi quasi harum expedita iure facere quis officiis. Deserunt, repellendus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod sed at assumenda, perferendis dicta voluptatum omnis, unde quam porro ea. Quis veritatis culpa distinctio perspiciatis, eum numquam temporibus esse!
             </div>
 
             {/* Hardware Lists */}

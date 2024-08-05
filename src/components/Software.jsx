@@ -38,7 +38,7 @@ const Software = () => {
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
           <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</div>
-          <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam ipsam soluta, officia voluptate, unde officiis ipsa eos est eligendi debitis corrupti commodi, ratione odio inventore eum obcaecati? Neque, iusto!</div>
+          <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam ipsam soluta, officia voluptate, unde officiis ipsa eos est eligendi debitis corrupti commodi, ratione odio inventore eum obcaecati? Neque, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas eum alias suscipit illo recusandae nihil obcaecati quasi. Excepturi nemo beatae nisi earum recusandae blanditiis sunt ab ea doloribus fugit!</div>
 
           {/* Software List */}
           <div className=' grid grid-cols-1 place-items-center gap-5 md:grid-cols-2'>
@@ -128,7 +128,7 @@ const Software = () => {
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
           <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types Of Development ?</div>
-            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod!</div>
+            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum culpa ipsum, obcaecati porro eum eligendi ut aut aliquam voluptatibus a vel animi vitae dolorum id eos nam voluptatum voluptate! Recusandae!</div>
 
             {/* List Of Development */}
             <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
@@ -190,25 +190,25 @@ const Software = () => {
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>How Flash Innovations <span className='block'>Software Services</span> <span className='block'>Set the Standard ?</span>
             </div>
-            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Flash Innovations’ software development team is highly skilled and proficient, on par with many leading software development companies.</div>
+            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Flash Innovations’ software development team is highly skilled and proficient, on par with many leading software development companies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati minima sed praesentium porro aliquam labore delectus, tenetur saepe nam aperiam nemo veniam rerum voluptatem quaerat repudiandae enim. Expedita, odio.</div>
 
             {/* Standered List */}
 
             <div className=' grid place-items-center grid-cols-2 md:grid-cols-4'>
 
-                <div className=' w-[150px] h-[200px] p-5'>
-                  <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10'>01</div>
-                      <div className='flex justify-center items-center'>
-                        <div className='ParallelogramShape absolute bottom-1'></div>
-                      </div>
+              <div className='w-[150px] h-[200px] p-5 hover-container'>
+                <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
+                  <div className='text-white text-[42px] font-bold text-center z-10 outLineFont1'>01</div>
+                  <div className='flex justify-center items-center'>
+                    <div className='ParallelogramShape absolute bottom-1'></div>
                   </div>
-                  <div className=' text-white text-center'>Tailored Solutions for Every Client</div>
                 </div>
+                <div className='text-white text-center'>Tailored Solutions for Every Client</div>
+              </div>
 
-                <div className=' w-[150px] h-[200px] p-5'>
+                <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10'>02</div>
+                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>02</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>
@@ -216,9 +216,9 @@ const Software = () => {
                   <div className=' text-white text-center'>Dedicated Commitment to Excellence</div>
                 </div>
 
-                <div className=' w-[150px] h-[200px] p-5'>
+                <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10'>03</div>
+                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>03</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>
@@ -226,9 +226,9 @@ const Software = () => {
                   <div className=' text-white text-center'>Authentic and Transparent Approach</div>
                 </div>
 
-                <div className=' w-[150px] h-[200px] p-5'>
+                <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10'>04</div>
+                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>04</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>

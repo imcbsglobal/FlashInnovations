@@ -101,6 +101,11 @@
     src:url('../src/fonts/nexa/Nexa-ExtraLight.ttf'),
         url('../src/fonts/nexa/Nexa-Heavy.ttf');
 }
+@font-face{
+  font-family: 'Agreloy';
+  src: url('../src/fonts/agreloy/AgreloyOut1.otf'),
+        url('../src/fonts/agreloy/AgreloyOut1.ttf');
+}
 
 *{
   margin: 0;
@@ -237,17 +242,24 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   color: white;
   font-family: 'Nexa';
 }
-.ParallelogramShape{
+
+.hover-container {
+  cursor: pointer;
+  transition: all .2s linear;
+}
+
+.hover-container:hover .ParallelogramShape {
+  transform: skew(0deg);
+}
+
+.ParallelogramShape {
   width: 80px;
   height: 30px;
   transform: skew(-20deg);
   background: #00f84a;
-  transition: all .2s linear;
-  cursor: pointer;
+  transition: all 0.2s linear;
 }
-.ParallelogramShape:hover{
-  transform: skew(0deg);
-}
+
 .ContactHead{
   font-family: 'Nexa', sans-serif;
   font-weight: 800;
@@ -497,6 +509,12 @@ top: 25px;
 }
 .Pre-Loader h2{
   color: white;
+}
+.outLineFont{
+  font-family: 'KenyanCofee';
+}
+.outLineFont1{
+  font-family: 'BIgnoodle';
 }
 /* #150097 WaveBlue */
 /* #2075bb */

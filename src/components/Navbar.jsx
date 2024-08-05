@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
 
-    <header className={`GlassNavbar fixed top-0 left-0 w-full py-2 z-[999] rounded-b-3xl transition-all duration-300 ${active ? ' shadow-lg' : 'bg-[#ffffff42]'}`}>
+    <header className={`GlassNavbar fixed top-0 left-0 w-full py-2 z-[999] rounded-b-3xl transition-all duration-300 ${active ? ' shadow-lg bg-[white]' : 'bg-[#ffffff42]'}`}>
     <div className="z-50">
         {menuOpen && <MobileNavbar setMenuOpen={setMenuOpen} />}
     </div>
@@ -33,7 +33,7 @@ const Navbar = () => {
             <img src={logo} className='w-[150px] drop-shadow-sm' alt="" />
         </div>
         <div className='hidden md:flex'>
-            <ul className="flex justify-center gap-5 items-center font-semibold text-[#2d3eff]">
+            <ul className="flex justify-center gap-5 items-center font-semibold text-[#000000]">
                 <li className="cursor-pointer NavbarFont"><Link to='/'>Home</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/about'>About</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/softwares'>Software</Link></li>

@@ -34,12 +34,12 @@ const Services = () => {
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <div className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</div>
-            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestias consequatur impedit perspiciatis obcaecati dicta, repudiandae pariatur natus, esse sed, veniam a possimus tenetur? Cum aliquam ducimus architecto minus distinctio!</div>
+            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestias consequatur impedit perspiciatis obcaecati dicta, repudiandae pariatur natus, esse sed, veniam a possimus tenetur? Cum aliquam ducimus architecto minus distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsa rem. Aliquid officia voluptatem facilis, expedita culpa voluptatum accusantium sapiente? Sapiente dolores molestias repudiandae soluta optio veritatis eos iusto modi!</div>
         </div>
 
         {/* Hardware List */}
 
-        <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:max-w-[1200px] lg:mx-auto'>
+        <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:max-w-[1200px] lg:mx-auto '>
 
         <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=' flex justify-center gap-10 items-center'>
@@ -193,10 +193,10 @@ const Services = () => {
         </div>
       </section>
 
-      <section className='section'>
+      <section className='section md:mt-10'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
           <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types Of Development ?</div>
-          <div className='text-sm text-center text-[#ffffffe6]            ParagraphText mb-7'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod!
+          <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa, sequi magnam explicabo ipsum aperiam corrupti fugiat reiciendis rerum. Magnam quod natus molestiae inventore quaerat accusamus repellendus iure alias sed.
           </div>
 
           <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
