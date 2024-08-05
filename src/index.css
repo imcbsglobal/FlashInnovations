@@ -487,6 +487,17 @@ top: 25px;
     background-position-x: 1000px;
   }
 }
+.Pre-Loader{
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  color: blue;
+}
+.Pre-Loader h2{
+  color: white;
+}
 /* #150097 WaveBlue */
 /* #2075bb */
 /* <div className='absolute inset-0 overflow-hidden'>

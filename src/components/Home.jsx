@@ -29,11 +29,42 @@ import { TiTick } from "react-icons/ti";
 import Footer from './Footer';
 import contactImage from "../assets/contact-image.png"
 import serviceImg from "../assets/colleagues2.png"
+import {motion} from "framer-motion"
 
 
 const Home = () => {
+  const revealVariant = {
+    hidden: { y: '100%', opacity: 0 },
+    visible: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        ease: 'easeInOut',
+      },
+    },
+  };
+
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.3, // delay between each child animation
+      },
+    },
+  };
+  
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration:0.5, ease: 'backInOut' },
+    },
+  };
   return (
-    <div className=''>
+    <div data-scroll-container className=''>
       {/* Parallax Section */}
       <section className='relative min-h-screen w-full -z-10'>
         <div className='fixed inset-0 overflow-hidden'>
@@ -48,9 +79,13 @@ const Home = () => {
         </div>
         <div className='flex justify-center items-center h-full w-full fixed z-30'>
           <div>
-            <div className='TextStyle text-[62px] font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight'>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={revealVariant}
+            className='TextStyle text-[62px] font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight'>
               FLASH INNOVATIONS
-            </div>
+            </motion.div>
             {/* Rotate Animation */}
             <div className=' flex justify-start items-center'>
               <div className='ParentCircle'>
@@ -83,38 +118,63 @@ const Home = () => {
           <div className='flex justify-center items-center h-full'>
             <div className=' md:flex justify-center items-center gap-10 lg:max-w-[1200px] lg:mx-auto'>
               <div className='mb-10 md:w-[50%]'>
-                <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>About Us</div>
-                <div className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nobis, consequatur esse quasi beatae saepe earum consectetur qui ab natus dolore odit nihil eius possimus laborum aliquid dolores voluptatibus quis.</div>
-                <div className='text-center ParagraphText text-[#fff] mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, dolores veritatis maiores quia consequuntur eum dolore nemo molestias alias commodi tenetur voluptatum nesciunt rerum nam. Voluptates aliquid quo amet asperiores?</div>
+                <motion.div
+                variants={containerVariants}
+                initial="hidden"
+                animate="visible"
+                >
+                  <motion.div
+                  variants={itemVariants}
+                  className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>About Us</motion.div>
+                  <motion.div
+                  variants={itemVariants}
+                  className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nobis, consequatur esse quasi beatae saepe earum consectetur qui ab natus dolore odit nihil eius possimus laborum aliquid dolores voluptatibus quis.</motion.div>
+                  <motion.div
+                  variants={itemVariants}
+                  className='text-center ParagraphText text-[#fff] mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, dolores veritatis maiores quia consequuntur eum dolore nemo molestias alias commodi tenetur voluptatum nesciunt rerum nam. Voluptates aliquid quo amet asperiores?
+                  </motion.div>
+                </motion.div>
 
                 <div className=''>
                 <ul className=' flex flex-col justify-center items-center gap-3'>
-                  <li>
+                  <motion.li
+                  initial={{x:-100,opacity:0,scale:0}}
+                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                     </div>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                  initial={{x:-100,opacity:0,scale:0}}
+                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                     </div>
-                  </li>
-                  <li>
+                  </motion.li>
+                  <motion.li
+                  initial={{x:-100,opacity:0,scale:0}}
+                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                     </div>
-                  </li>
+                  </motion.li>
                 </ul>
                 </div>
               </div>
               <div>
-              <div className='h-[300px] w-full  bg-white BlobDesign'>
+              <motion.div
+              initial={{opacity:0,scale:0}}
+              animate={{opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+              className='h-[300px] w-full  bg-white BlobDesign'>
                     <img src={Colleagues} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl' alt="" />
                     {/* <div className=' text-center font-bold mt-3 text-lg text-[#fff]'></div> */}
-                </div>
+                </motion.div>
               </div>
             </div>
           </div>
@@ -127,55 +187,99 @@ const Home = () => {
             {/* <div className=' flex justify-center'>
               <div className='BlobAnimation1 w-[150px] h-[170px] absolute -z-10 opacity-20'></div>
             </div> */}
-              <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Software & Hardware Company</div>
-              <div className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse asperiores neque libero odio, quisquam voluptatem perferendis quia corrupti. Rerum voluptates, placeat deserunt tenetur repudiandae libero odio qui cupiditate harum enim?</div>
+              <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={revealVariant}
+              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Software & Hardware Company</motion.div>
+              <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={revealVariant}
+              className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse asperiores neque libero odio, quisquam voluptatem perferendis quia corrupti. Rerum voluptates, placeat deserunt tenetur repudiandae libero odio qui cupiditate harum enim?</motion.div>
               <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
-                <div className=' flex justify-center items-center gap-2'>
+                <motion.div
+                initial={{scale:0,opacity:0}}
+                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                className=' flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold'>10+</div>
-                  <div className='text-2xl'>Years of <span className='block'>Experience</span></div>
-                </div>
+                  <div className='text-2xl text-[#fff]'>Years of <span className='block'>Experience</span></div>
+                </motion.div>
 
-                <div className='flex justify-center items-center gap-2'>
+                <motion.div
+                initial={{scale:0,opacity:0}}
+                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold'>30+</div>
-                  <div className='text-2xl'>Skilled <span className='block'>Professionals</span></div>
-                </div>
+                  <div className='text-2xl text-[#fff]'>Skilled <span className='block'>Professionals</span></div>
+                </motion.div>
 
-                <div className='flex justify-center items-center gap-2'>
+                <motion.div
+                initial={{scale:0,opacity:0}}
+                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold'>300+</div>
-                  <div className='text-2xl'>Projects<span className='block'>Worldwide</span></div>
-                </div>
+                  <div className='text-2xl text-[#fff]'>Projects<span className='block'>Worldwide</span></div>
+                </motion.div>
 
-                <div className='flex justify-center items-center gap-2'>
+                <motion.div
+                initial={{scale:0,opacity:0}}
+                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold'>100%</div>
-                  <div className='text-2xl'>Customer<span className='block'>Satisfaction</span></div>
-                </div>
+                  <div className='text-2xl text-[#fff]'>Customer<span className='block'>Satisfaction</span></div>
+                </motion.div>
 
               </div>
               <div className=' grid grid-cols-2 place-items-center place-content-center w-full h-[300px] lg:h-[200px] rounded-3xl gap-5 p-5 GlassBox bg-[#0091ff59] lg:max-w-[900px] lg:mx-auto lg:grid-cols-4'>
-                <div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={task} className='w-auto h-[50px] object-contain' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={shade} className=' w-auto h-[45px]' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={vtsak} className='w-auto h-[40px] object-contain' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={dine} className='w-auto h-[40px]' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={clublogic} className='w-auto h-[40px]' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={magnet} className='w-auto h-[55px]' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={auric} className='w-auto h-[50px]' alt="" />
-                </div>
-                <div>
+                </motion.div>
+                <motion.div
+                initial={{y:-100,opacity:0}}
+                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                >
                   <img src={starstay} className='w-auto h-[38px]' alt="" />
-                </div>
+                </motion.div>
               </div>
           </div>
         </section>

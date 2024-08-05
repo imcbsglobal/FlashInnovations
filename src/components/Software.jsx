@@ -13,10 +13,12 @@ import webDevelopment from "../assets/web-develop.jpg"
 import softwareDevelopment from "../assets/software-develop.jpg"
 import IOsDevelopment from "../assets/IOs-develop.jpg"
 import another from "../assets/another.jpg"
+import Footer from './Footer';
+
 
 const Software = () => {
   return (
-    <div className='backgroundVideo relative'>
+    <div className='backgroundVideo relative' data-scroll-container>
       <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
@@ -237,6 +239,9 @@ const Software = () => {
             </div>
 
           </div>
+      </section>
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+        <Footer/>
       </section>
     </div>
   )

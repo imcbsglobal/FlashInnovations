@@ -5,10 +5,12 @@ import location from "../assets/location.png"
 import phone from "../assets/phone.png"
 import socialMedia from "../assets/social-media.png"
 import { IoLocationOutline } from "react-icons/io5";
+import Footer from './Footer';
+
 
 const Contact = () => {
   return (
-    <div className='backgroundVideo relative'>
+    <div className='backgroundVideo relative' data-scroll-container>
       <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
@@ -124,6 +126,10 @@ const Contact = () => {
         <div>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0990033737753!2d77.62994107489406!3d13.029366987291342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17816064cf5f%3A0x7005a3bd5de774b9!2sFLASH%20INNOVATIONS!5e0!3m2!1sen!2sin!4v1722486040203!5m2!1sen!2sin" width="100%" height="450" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
+      </section>
+
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+        <Footer/>
       </section>
     </div>
   )

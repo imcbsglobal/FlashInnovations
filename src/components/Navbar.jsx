@@ -2,6 +2,7 @@ import logo from "../assets/logo.png"
 import { CgMenuRight } from "react-icons/cg";
 import MobileNavbar from './MobileNavbar';
 import React, { useState, useEffect } from 'react';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -33,12 +34,12 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex'>
             <ul className="flex justify-center gap-5 items-center font-semibold text-[#2d3eff]">
-                <li className="cursor-pointer NavbarFont">Home</li>
-                <li className="cursor-pointer NavbarFont">About</li>
-                <li className="cursor-pointer NavbarFont">Software</li>
-                <li className="cursor-pointer NavbarFont">Services</li>
-                <li className="cursor-pointer NavbarFont">Clients</li>
-                <li className="cursor-pointer NavbarFont">Contact</li>
+                <li className="cursor-pointer NavbarFont"><Link to='/'>Home</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/about'>About</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/softwares'>Software</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/services'>Services</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/clients'>Clients</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/contact'>Contact</Link></li>
             </ul>
         </div>
         <div className="md:hidden">
