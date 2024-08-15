@@ -168,12 +168,29 @@ body {
   box-shadow: 1px 6px 23px -8px rgba(0,0,0,0.61);
   border: .1px solid rgb(216, 216, 216) ;
 }
+.GlassNavbar1{
+  border: 1px solid rgba(255, 255, 255, .7);
+  backdrop-filter: blur(35px);
+  -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+  box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+}
 .TextStyle{
   font-family: 'BankGothic',sans-serif;
   text-transform: capitalize;
   line-height: 50px;
   /* font-weight: 200; */
   
+}
+@media screen and (min-width:358px){
+  .bottomImage{
+    bottom: 0;
+  }
+}
+@media screen and (min-width:590px){
+  .TextStyle{
+    padding-top: 60px;
+  }
 }
 .TextStylePara{
   font-family: 'Sansation';
@@ -210,6 +227,13 @@ body {
   font-family: 'BankGothic';
   font-weight: 700;
   color: white;
+}
+@media screen and (min-width:768px){
+  .homeTitlePosition{
+    left: 50%;
+    top:50%;
+    transform: translate(-50%);
+  }
 }
 .FooterNames{
   font-family: 'Nexa';
@@ -512,10 +536,27 @@ top: 25px;
 }
 .outLineFont{
   font-family: 'KenyanCofee';
+  -webkit-text-stroke: 1px white;
+  color: transparent;
 }
 .outLineFont1{
   font-family: 'BIgnoodle';
 }
+.blurImg{
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(10px);
+  mix-blend-mode:overlay;
+  opacity: 0.3;
+}
+.outLineFont2{
+  font-family: 'KenyanCofee';
+  -webkit-text-stroke: 1px white;
+  color: transparent;
+}
+.smooth-section {
+  will-change: transform, opacity;
+}
+
 /* #150097 WaveBlue */
 /* #2075bb */
 /* <div className='absolute inset-0 overflow-hidden'>

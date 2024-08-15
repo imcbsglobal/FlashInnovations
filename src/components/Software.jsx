@@ -14,24 +14,37 @@ import softwareDevelopment from "../assets/software-develop.jpg"
 import IOsDevelopment from "../assets/IOs-develop.jpg"
 import another from "../assets/another.jpg"
 import Footer from './Footer';
+import aboutBanner from "../assets/software-banner.jpeg"
+import blackShade from "../assets/black-shade.png"
+import bottomImage from "../assets/bottom-image.png"
 
 
 const Software = () => {
   return (
-    <div className='backgroundVideo relative' data-scroll-container>
+    <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
-      <section className='section mb-16'>
+
+        <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+        {/* About Banner */}
         <div>
-          <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Pioneering Software Solutions for Enhanced Performance</div>
-          <div className='text-center TextStylePara'>At Flash Innovations, we specialize in developing superior software solutions that drive business growth. 
-          Our custom-designed, cutting-edge software enhances operational efficiency and supports sustainable development. 
-          By seamlessly integrating with your existing systems, our solutions ensure optimal performance and streamlined operations. 
-          Experience the advantages of increased productivity, optimized processes, and a competitive edge with our innovative technology. 
-          Empower your business with our advanced software solutions for unparalleled success.
+          <div className=' absolute top-0 w-full left-0 h-[600px]'>
+            <img src={aboutBanner} className='w-full h-full object-cover absolute -z-10' alt="" />
+            <img src={blackShade} className=' w-full h-full object-cover z-10 absolute ' alt="" />
           </div>
+        </div>
+
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+          <div className=' mb-20 md:absolute homeTitlePosition'>
+            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Pioneering Software Solutions for Enhanced Performance</div>
+            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+          </div>
+        </div>
+        {/* Bottom Image */}
+        <div className=' absolute bottom-0 z-20 w-full left-0 bottomImage'>
+          <img src={bottomImage} className='w-full h-full object-cover' alt="" />
         </div>
       </section>
 

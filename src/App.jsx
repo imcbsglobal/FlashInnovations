@@ -1,15 +1,13 @@
-import Navbar from "./components/Navbar"
-import Home from "./components/Home"
-import About from "./components/About"
-import Software from "./components/Software"
-import Services from "./components/Services"
-import Contact from "./components/Contact"
-import Clients from "./components/Clients"
-import React,{ useEffect, useRef, useState } from "react"
-import useLocoScroll from "./components/useLocoScroll"
-import IntroLoader from "./components/IntroLoader"
+import Navbar from "./components/Navbar";
+import Home from "./components/Home";
+import About from "./components/About";
+import Software from "./components/Software";
+import Services from "./components/Services";
+import Contact from "./components/Contact";
+import Clients from "./components/Clients";
+import React, { useEffect, useRef, useState } from "react";
+import useLocoScroll from "./components/useLocoScroll";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 function App() {
   const ref = useRef(null);
@@ -25,23 +23,22 @@ function App() {
     }
   }, [preloader]);
 
-  const [timer, setTimer] = React.useState(3);
-
-  const id = React.useRef(null);
+  const [timer, setTimer] = useState(3);
+  const id = useRef(null);
 
   const clear = () => {
     window.clearInterval(id.current);
     setPreload(false);
   };
 
-  React.useEffect(() => {
+  useEffect(() => {
     id.current = window.setInterval(() => {
       setTimer((time) => time - 1);
     }, 1000);
     return () => clear();
   }, []);
 
-  React.useEffect(() => {
+  useEffect(() => {
     if (timer === 0) {
       clear();
     }
@@ -50,6 +47,7 @@ function App() {
   if (typeof window === "undefined" || !window.document) {
     return null;
   }
+
   return (
     <Router>
       {preloader ? (
@@ -75,7 +73,7 @@ function App() {
         </div>
       )}
     </Router>
-  )
+  );
 }
 
-export default App
+export default App;

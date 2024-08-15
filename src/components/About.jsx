@@ -18,22 +18,41 @@ import serviceImg from "../assets/colleagues2.png"
 import company1 from "../assets/company1.jpg"
 import company2 from "../assets/company2.jpg"
 import company3 from "../assets/company3.jpg"
+import aboutBanner from "../assets/about-banner.jpg"
+import blackShade from "../assets/black-shade.png"
+import redShade from "../assets/red-shade.png"
+import bottomImage from "../assets/bottom-image.png"
+
+
 
 
 
 const About = () => {
   return (
-    <div className='backgroundVideo relative' data-scroll-container>
+    <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
-      <section className=' section'>
-        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto'>
-          <div className=' mb-10 mt-10'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Harnessing Technology to Propel Your Business</div>
-            <div className=' text-center TextStylePara'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+      
+      <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+        {/* About Banner */}
+        <div>
+          <div className=' absolute top-0 w-full left-0 h-[600px]'>
+            <img src={aboutBanner} className='w-full h-full object-cover absolute -z-10' alt="" />
+            <img src={blackShade} className=' w-full h-full object-cover z-10 absolute ' alt="" />
           </div>
+        </div>
+
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+          <div className=' mb-20 md:absolute homeTitlePosition'>
+            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle pt-[50px]'>Harnessing Technology to Propel Your Business</div>
+            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+          </div>
+        </div>
+        {/* Bottom Image */}
+        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage'>
+          <img src={bottomImage} className='w-full h-full object-cover' alt="" />
         </div>
       </section>
 
@@ -78,7 +97,7 @@ const About = () => {
               </div>
             </div>
           </div>
-          <div className='h-[300px] w-full rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
+          <div className='h-[300px] w-full lg:h-[500px]  rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
                       <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
               </div>
           </div>
@@ -93,11 +112,11 @@ const About = () => {
               <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:mx-auto'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, quisquam dolore aperiam accusamus vel adipisci molestiae assumenda facere illum voluptas beatae, ullam, reprehenderit minima iste repellat dolor aliquid deserunt quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi accusantium hic esse veniam eius quos incidunt illum adipisci consequuntur aperiam perferendis sed sunt reprehenderit dolores, minima blanditiis maiores quisquam minus.
                 <br /> <br />
-                Natus eaque architecto perspiciatis error. Porro temporibus, aperiam pariatur impedit debitis illo blanditiis, repellat magni recusandae necessitatibus eveniet inventore voluptas iure unde numquam laudantium vitae! Beatae explicabo natus quaerat quae!
+                Natus eaque architecto perspiciatis error. Porro temporibus, aperiam pariatur impedit debitis illo blanditiis, repellat magni recusandae necessitatibus eveniet inventore voluptas iure unde numquam laudantium vitae! Beatae explicabo natus quaerat quae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui harum totam, molestiae dolores perferendis quidem incidunt omnis maiores eligendi consequuntur molestias porro ut nisi ipsum distinctio quisquam, mollitia modi doloribus.
               </div>
             </div>
-            <div className='h-[300px] w-full  bg-white BlobDesign'>
-                <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full' alt="" />
+            <div className='h-[300px] w-full lg:h-[500px] lg:w-[500px]  bg-white BlobDesign'>
+                <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
             </div>
           </div>
 

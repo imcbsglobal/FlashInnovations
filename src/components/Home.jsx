@@ -30,6 +30,14 @@ import Footer from './Footer';
 import contactImage from "../assets/contact-image.png"
 import serviceImg from "../assets/colleagues2.png"
 import {motion} from "framer-motion"
+import inventory from "../assets/inventory-software.jpg"
+import customWeb from "../assets/custom-web-application.jpg"
+import mobile from "../assets/mobile-development.jpg"
+import graphicDesigning from "../assets/graphic-designing.jpg"
+import branding from "../assets/graphic-designing.jpg"
+import digitalMarketing from "../assets/digital-marketing.jpg"
+import ECommerce from "../assets/e-commerce.jpg"
+import sms from "../assets/sms.jpeg"
 
 
 const Home = () => {
@@ -64,9 +72,9 @@ const Home = () => {
     },
   };
   return (
-    <div data-scroll-container className=''>
+    <div  className=''>
       {/* Parallax Section */}
-      <section className='relative min-h-screen w-full -z-10'>
+      <section className='relative min-h-screen w-full -z-10 '>
         <div className='fixed inset-0 overflow-hidden'>
           <video
             className='w-full h-full object-cover opacity-50'
@@ -109,7 +117,7 @@ const Home = () => {
       </section>
 
       {/* Next Section */}
-      <section className='relative min-h-screen w-full z-50 GlassNavbar rounded-t-3xl '>
+      <section className='relative min-h-screen w-full z-50 GlassNavbar1 rounded-t-3xl '>
         {/* <div className=''>
           <img src={blueShade} className='absolute -z-10 w-full h-full object-cover opacity-50' alt="blueShade" />
           <video className='absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
@@ -171,8 +179,8 @@ const Home = () => {
               <motion.div
               initial={{opacity:0,scale:0}}
               animate={{opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
-              className='h-[300px] w-full  bg-white BlobDesign'>
-                    <img src={Colleagues} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl' alt="" />
+              className='h-[300px] w-full  lg:h-[500px] lg:w-[500px] BlobDesign bg-white'>
+                    <img src={Colleagues} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
                     {/* <div className=' text-center font-bold mt-3 text-lg text-[#fff]'></div> */}
                 </motion.div>
               </div>
@@ -296,7 +304,7 @@ const Home = () => {
               </div>
 
               <div className='h-[300px] w-full  bg-white BlobDesign'>
-                      <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full' alt="" />
+                      <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
               </div>
            </div>
 
@@ -306,20 +314,32 @@ const Home = () => {
               {/* First List */}
               <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
 
-                <div className=' h-[100px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Inventory Softwares</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center relative'>
+                  <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={inventory} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Inventory Softwares</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Custom Web Applications</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={customWeb} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Custom Web Applications</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Mobile App Development</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={mobile} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Mobile App Development</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Graphic Designing</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={graphicDesigning} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Graphic Designing</div>
                 </div>
 
               </div>
@@ -327,20 +347,32 @@ const Home = () => {
               {/* Second List */}
               <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
 
-              <div className=' h-[100px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Branding</div>
+              <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+              <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg'>
+                    <img src={branding} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg lg:h-[200px]' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Branding</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Digital Marketing</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={digitalMarketing} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Digital Marketing</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>E-Commerce</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={ECommerce} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>E-Commerce</div>
                 </div>
 
-                <div className=' h-[100px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                  <div className=' p-5 text-[#fff]'>Whatsapp/SMS Marketing</div>
+                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={sms} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                  </div>
+                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Whatsapp/SMS Marketing</div>
                 </div>
 
               </div>
@@ -480,7 +512,7 @@ const Home = () => {
               
 
               <div className='h-[300px] w-full  bg-white BlobDesign'>
-                    <img src={contactImage} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl' alt="" />
+                    <img src={contactImage} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
               </div>
               <div className=' flex md:hidden justify-center items-center mt-10'>
                 <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
