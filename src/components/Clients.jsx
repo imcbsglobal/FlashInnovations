@@ -6,9 +6,18 @@ import bottomImage from "../assets/bottom-image.png"
 import techVideo from "../assets/tech-video3.mp4"
 import blueShade from "../assets/blue-shade.png"
 import ClientsLogos from './ClientsLogos';
-
+import { inView, motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 const Clients = () => {
+
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
@@ -26,8 +35,16 @@ const Clients = () => {
 
         <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
           <div className=' mb-20 md:absolute homeTitlePosition'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Lorem, ipsum dolor sit amet consectetur adipisicing elit</div>
-            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+            <motion.div
+            ref={ref1}
+            initial={{x:-100,opacity:0}}
+            animate={inView1 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
+            className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Lorem, ipsum dolor sit amet consectetur adipisicing elit</motion.div>
+            <motion.div
+            ref={ref2}
+            initial={{x:-100,opacity:0}}
+            animate={inView2 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
+            className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</motion.div>
           </div>
         </div>
         {/* Bottom Image */}
@@ -39,9 +56,17 @@ const Clients = () => {
       <section>
         <div className='flex justify-center items-center'>
           <div className=' lg:mx-auto px-6'>
-            <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Clients</div>
-            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat    blanditiis, labore porro voluptate voluptates a explicabo officiis eaque nostrum architecto nisi in ad dolores dignissimos voluptatem iste quia provident aut.Quas at possimus adipisci ducimus id tempore illum dignissimos, consequatur quidem nostrum doloribus, eum earum autem corporis. Molestias, laborum dignissimos iste eos, ipsum necessitatibus obcaecati maiores nobis aliquid, iure aut.
-            </div>
+            <motion.div
+            ref={ref3}
+            initial={{x:-100,opacity:0}}
+            animate={inView3 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
+            className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Clients</motion.div>
+            <motion.div
+            ref={ref4}
+            initial={{x:-100,opacity:0}}
+            animate={inView4 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.5}} : {}}
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat    blanditiis, labore porro voluptate voluptates a explicabo officiis eaque nostrum architecto nisi in ad dolores dignissimos voluptatem iste quia provident aut.Quas at possimus adipisci ducimus id tempore illum dignissimos, consequatur quidem nostrum doloribus, eum earum autem corporis. Molestias, laborum dignissimos iste eos, ipsum necessitatibus obcaecati maiores nobis aliquid, iure aut.
+            </motion.div>
             {/* Clients Lists */}
             <ClientsLogos/>
           </div>

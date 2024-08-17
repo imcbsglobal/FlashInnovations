@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import techVideo from "../assets/tech-video3.mp4";
 import blueShade from "../assets/blue-shade.png";
 import homeBannerVideo from "../assets/home-banner.mp4";
@@ -29,7 +29,7 @@ import { TiTick } from "react-icons/ti";
 import Footer from './Footer';
 import contactImage from "../assets/contact-image.png"
 import serviceImg from "../assets/colleagues2.png"
-import {motion} from "framer-motion"
+import { motion } from "framer-motion"
 import inventory from "../assets/inventory-software.jpg"
 import customWeb from "../assets/custom-web-application.jpg"
 import mobile from "../assets/mobile-development.jpg"
@@ -38,39 +38,83 @@ import branding from "../assets/graphic-designing.jpg"
 import digitalMarketing from "../assets/digital-marketing.jpg"
 import ECommerce from "../assets/e-commerce.jpg"
 import sms from "../assets/sms.jpeg"
+import { useInView } from "react-intersection-observer";
+
+
 
 
 const Home = () => {
-  const revealVariant = {
-    hidden: { y: '100%', opacity: 0 },
-    visible: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 0.5,
-        ease: 'easeInOut',
-      },
-    },
-  };
-
-  const containerVariants = {
-    hidden: { opacity: 0 },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.3, // delay between each child animation
-      },
-    },
-  };
   
-  const itemVariants = {
-    hidden: { opacity: 0, y: 20 },
-    visible: {
-      opacity: 1,
-      y: 0,
-      transition: { duration:0.5, ease: 'backInOut' },
-    },
-  };
+
+  const { ref: ref1, inView: inView1 } = useInView();
+  const { ref: ref2, inView: inView2 } = useInView();
+  const { ref: ref3, inView: inView3 } = useInView();
+  const { ref: ref4, inView: inView4 } = useInView();
+  const { ref: ref5, inView: inView5 } = useInView();
+  const { ref: ref6, inView: inView6 } = useInView();
+  const { ref: ref7, inView: inView7 } = useInView();
+  const { ref: ref8, inView: inView8 } = useInView();
+  const { ref: ref9, inView: inView9 } = useInView();
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+  const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+  const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+  const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
+  const { ref: ref32, inView: inView32 } = useInView({ triggerOnce: true });
+  const { ref: ref33, inView: inView33 } = useInView({ triggerOnce: true });
+  const { ref: ref34, inView: inView34 } = useInView({ triggerOnce: true });
+  const { ref: ref35, inView: inView35 } = useInView({ triggerOnce: true });
+  const { ref: ref36, inView: inView36 } = useInView({ triggerOnce: true });
+  const { ref: ref37, inView: inView37 } = useInView({ triggerOnce: true });
+  const { ref: ref38, inView: inView38 } = useInView({ triggerOnce: true });
+  const { ref: ref39, inView: inView39 } = useInView({ triggerOnce: true });
+  const { ref: ref40, inView: inView40 } = useInView({ triggerOnce: true });
+  const { ref: ref41, inView: inView41 } = useInView({ triggerOnce: true });
+  const { ref: ref42, inView: inView42 } = useInView({ triggerOnce: true });
+  const { ref: ref43, inView: inView43 } = useInView({ triggerOnce: true });
+  const { ref: ref44, inView: inView44 } = useInView({ triggerOnce: true });
+  const { ref: ref45, inView: inView45 } = useInView({ triggerOnce: true });
+  const { ref: ref46, inView: inView46 } = useInView({ triggerOnce: true });
+  const { ref: ref47, inView: inView47 } = useInView({ triggerOnce: true });
+  const { ref: ref48, inView: inView48 } = useInView({ triggerOnce: true });
+  const { ref: ref49, inView: inView49 } = useInView({ triggerOnce: true });
+  const { ref: ref50, inView: inView50 } = useInView({ triggerOnce: true });
+  const { ref: ref51, inView: inView51 } = useInView({ triggerOnce: true });
+  const { ref: ref52, inView: inView52 } = useInView({ triggerOnce: true });
+  const { ref: ref53, inView: inView53 } = useInView({ triggerOnce: true });
+  const { ref: ref54, inView: inView54 } = useInView({ triggerOnce: true });
+  const { ref: ref55, inView: inView55 } = useInView({ triggerOnce: true });
+  const { ref: ref56, inView: inView56 } = useInView({ triggerOnce: true });
+  const { ref: ref57, inView: inView57 } = useInView({ triggerOnce: true });
+  const { ref: ref58, inView: inView58 } = useInView({ triggerOnce: true });
+  const { ref: ref59, inView: inView59 } = useInView({ triggerOnce: true });
+  const { ref: ref60, inView: inView60 } = useInView({ triggerOnce: true });
+  const { ref: ref61, inView: inView61 } = useInView({ triggerOnce: true });
+  const { ref: ref62, inView: inView62 } = useInView({ triggerOnce: true });
+  const { ref: ref63, inView: inView63 } = useInView({ triggerOnce: true });
+  const { ref: ref64, inView: inView64 } = useInView({ triggerOnce: true });
+
+
+
+
+
   return (
     <div  className=''>
       {/* Parallax Section */}
@@ -88,9 +132,9 @@ const Home = () => {
         <div className='flex justify-center items-center h-full w-full fixed z-30'>
           <div>
             <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={revealVariant}
+              // initial="hidden"
+              // animate="visible"
+              // variants={revealVariant}
             className='TextStyle text-[62px] font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight'>
               FLASH INNOVATIONS
             </motion.div>
@@ -127,18 +171,27 @@ const Home = () => {
             <div className=' md:flex justify-center items-center gap-10 lg:max-w-[1200px] lg:mx-auto'>
               <div className='mb-10 md:w-[50%]'>
                 <motion.div
-                variants={containerVariants}
-                initial="hidden"
-                animate="visible"
+                
                 >
                   <motion.div
-                  variants={itemVariants}
+                  ref={ref1}
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={inView1 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
+                  transition={{ duration: 1, delay: 1, ease: "backInOut" }}
                   className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>About Us</motion.div>
                   <motion.div
-                  variants={itemVariants}
+                  ref={ref2}
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={inView2 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
+                  transition={{ duration: 1, delay: 1.2, ease: "backInOut" }}
+                  // variants={itemVariants}
                   className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nobis, consequatur esse quasi beatae saepe earum consectetur qui ab natus dolore odit nihil eius possimus laborum aliquid dolores voluptatibus quis.</motion.div>
                   <motion.div
-                  variants={itemVariants}
+                  // variants={itemVariants}
+                  ref={ref3}
+                  initial={{ opacity: 0, x: -100 }}
+                  animate={inView3 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
+                  transition={{ duration: 1, delay: 1.5, ease: "backInOut" }}
                   className='text-center ParagraphText text-[#fff] mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, dolores veritatis maiores quia consequuntur eum dolore nemo molestias alias commodi tenetur voluptatum nesciunt rerum nam. Voluptates aliquid quo amet asperiores?
                   </motion.div>
                 </motion.div>
@@ -146,8 +199,9 @@ const Home = () => {
                 <div className=''>
                 <ul className=' flex flex-col justify-center items-center gap-3'>
                   <motion.li
+                  ref={ref4}
                   initial={{x:-100,opacity:0,scale:0}}
-                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  animate={inView4 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:.2}} : {}}
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
@@ -155,8 +209,9 @@ const Home = () => {
                     </div>
                   </motion.li>
                   <motion.li
+                  ref={ref5}
                   initial={{x:-100,opacity:0,scale:0}}
-                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  animate={inView5 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:.5}} : {}}
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
@@ -164,8 +219,9 @@ const Home = () => {
                     </div>
                   </motion.li>
                   <motion.li
+                  ref={ref6}
                   initial={{x:-100,opacity:0,scale:0}}
-                  animate={{x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+                  animate={inView6 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:1}} : {}}
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
@@ -177,8 +233,9 @@ const Home = () => {
               </div>
               <div>
               <motion.div
-              initial={{opacity:0,scale:0}}
-              animate={{opacity:1,scale:1,transition:{duration:1,ease:'backInOut'}}}
+              ref={ref7}
+              initial={{x:-100,opacity:0,scale:0}}
+              animate={inView7 ? {x:0,opacity:1,scale:1,transition:{ease:'backInOut'}} : {}}
               className='h-[300px] w-full  lg:h-[500px] lg:w-[500px] BlobDesign bg-white'>
                     <img src={Colleagues} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
                     {/* <div className=' text-center font-bold mt-3 text-lg text-[#fff]'></div> */}
@@ -196,43 +253,47 @@ const Home = () => {
               <div className='BlobAnimation1 w-[150px] h-[170px] absolute -z-10 opacity-20'></div>
             </div> */}
               <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={revealVariant}
+              ref={ref8}
+              initial={{ x:-100,opacity:0}}
+              animate={inView8 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
               className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Software & Hardware Company</motion.div>
               <motion.div
-              initial="hidden"
-              animate="visible"
-              variants={revealVariant}
+              ref={ref9}
+              initial={{ x:-100,opacity:0}}
+              animate={inView9 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
               className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse asperiores neque libero odio, quisquam voluptatem perferendis quia corrupti. Rerum voluptates, placeat deserunt tenetur repudiandae libero odio qui cupiditate harum enim?</motion.div>
               <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
                 <motion.div
+                ref={ref10}
                 initial={{scale:0,opacity:0}}
-                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView10 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className=' flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold outLineFont'>10+</div>
                   <div className='text-2xl text-[#fff]'>Years of <span className='block'>Experience</span></div>
                 </motion.div>
 
                 <motion.div
+                ref={ref11}
                 initial={{scale:0,opacity:0}}
-                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView11 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold outLineFont'>30+</div>
                   <div className='text-2xl text-[#fff]'>Skilled <span className='block'>Professionals</span></div>
                 </motion.div>
 
                 <motion.div
+                ref={ref12}
                 initial={{scale:0,opacity:0}}
-                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView12 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold outLineFont'>300+</div>
                   <div className='text-2xl text-[#fff]'>Projects<span className='block'>Worldwide</span></div>
                 </motion.div>
 
                 <motion.div
+                ref={ref13}
                 initial={{scale:0,opacity:0}}
-                animate={{scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView13 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold outLineFont'>100%</div>
                   <div className='text-2xl text-[#fff]'>Customer<span className='block'>Satisfaction</span></div>
@@ -241,50 +302,58 @@ const Home = () => {
               </div>
               <div className=' grid grid-cols-2 place-items-center place-content-center w-full h-[300px] lg:h-[200px] rounded-3xl gap-5 p-5 GlassBox bg-[#0091ff59] lg:max-w-[900px] lg:mx-auto lg:grid-cols-4'>
                 <motion.div
+                ref={ref14}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView14 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={task} className='w-auto h-[50px] object-contain' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref15}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView15 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={shade} className=' w-auto h-[45px]' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref16}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView16 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={vtsak} className='w-auto h-[40px] object-contain' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref17}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView17 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={dine} className='w-auto h-[40px]' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref18}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView18 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={clublogic} className='w-auto h-[40px]' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref19}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView19 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={magnet} className='w-auto h-[55px]' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref20}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView20 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={auric} className='w-auto h-[50px]' alt="" />
                 </motion.div>
                 <motion.div
+                ref={ref21}
                 initial={{y:-100,opacity:0}}
-                animate={{y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}}}
+                animate={inView21 ? {y:0,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 >
                   <img src={starstay} className='w-auto h-[38px]' alt="" />
                 </motion.div>
@@ -299,197 +368,317 @@ const Home = () => {
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
            <div className=' md:flex justify-center items-center gap-10'>
             <div className='mb-10'>
-                <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Services</div>
-                <div className='text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae dignissimos blanditiis illo molestiae consequuntur totam, nobis odio, tempore corporis cumque quae, a in? Optio eligendi officia fugiat quod explicabo.</div>
+                <motion.div
+                ref={ref22}
+                initial={{x:-100,opacity:0}}
+                animate={inView22 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
+                className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Services
+                </motion.div>
+                <motion.div
+                 ref={ref23}
+                 initial={{x:-100,opacity:0}}
+                 animate={inView23 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
+                className='text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae dignissimos blanditiis illo molestiae consequuntur totam, nobis odio, tempore corporis cumque quae, a in? Optio eligendi officia fugiat quod explicabo.</motion.div>
               </div>
 
-              <div className='h-[300px] w-full  bg-white BlobDesign'>
+              <motion.div
+               ref={ref24}
+               initial={{scale:0,opacity:0}}
+               animate={inView24 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className='h-[300px] w-full  bg-white BlobDesign'>
                       <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
-              </div>
+              </motion.div>
            </div>
 
             {/* Services Lists */}
             <div className=' grid grid-cols-1 place-items-center place-content-center gap-10 mt-10 lg:grid-cols-2'>
 
               {/* First List */}
-              <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
+              <motion.div 
+              className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center relative'>
+                <motion.div
+                ref={ref25}
+                initial={{scale:0,opacity:0}}
+                animate={inView25 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.5}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center relative'>
                   <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
                     <img src={inventory} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Inventory Softwares</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div 
+                ref={ref26}
+                initial={{scale:0,opacity:0}}
+                animate={inView26 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={customWeb} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={customWeb} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Custom Web Applications</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div 
+                ref={ref27}
+                initial={{scale:0,opacity:0}}
+                animate={inView27 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={mobile} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={mobile} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Mobile App Development</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div 
+                ref={ref28}
+                initial={{scale:0,opacity:0}}
+                animate={inView28 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={graphicDesigning} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={graphicDesigning} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Graphic Designing</div>
-                </div>
+                </motion.div>
 
-              </div>
-
+              </motion.div>
+ 
               {/* Second List */}
               <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
 
-              <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+              <motion.div
+              ref={ref29}
+              initial={{scale:0,opacity:0}}
+              animate={inView29 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:.5}} : {}}
+              className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
               <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg'>
-                    <img src={branding} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg lg:h-[200px]' alt="" />
+                    <img src={branding} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg lg:h-[200px]' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Branding</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div
+                ref={ref30}
+                initial={{scale:0,opacity:0}}
+                animate={inView30 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={digitalMarketing} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={digitalMarketing} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Digital Marketing</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div
+                ref={ref31}
+                initial={{scale:0,opacity:0}}
+                animate={inView31 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={ECommerce} className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={ECommerce} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>E-Commerce</div>
-                </div>
+                </motion.div>
 
-                <div className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
+                <motion.div
+                ref={ref32}
+                initial={{scale:0,opacity:0}}
+                animate={inView32 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
+                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={sms} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={sms} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Whatsapp/SMS Marketing</div>
-                </div>
+                </motion.div>
 
               </div>
 
               
             </div>
-            <div className=' flex justify-center items-center mt-10 lg:mt-16'>
+            <motion.div 
+            ref={ref33}
+            initial={{scale:0,opacity:0}}
+            animate={inView33 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+            className=' flex justify-center items-center mt-10 lg:mt-16'>
                 <button className='px-8 py-2 rounded-3xl GradientButton'>Know More</button>
-              </div>
+              </motion.div>
           </div>
         </section>
 
         <section className=' section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-            <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Hardware Solutions</div>
-            <div className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore nemo neque laboriosam? Quo nesciunt necessitatibus maxime. Facilis repellat, animi quasi harum expedita iure facere quis officiis. Deserunt, repellendus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod sed at assumenda, perferendis dicta voluptatum omnis, unde quam porro ea. Quis veritatis culpa distinctio perspiciatis, eum numquam temporibus esse!
-            </div>
+            <motion.div
+            ref={ref34}
+            initial={{x:-100,opacity:0}}
+            animate={inView34 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+             className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Hardware Solutions
+             </motion.div>
+            <motion.div
+            ref={ref35}
+            initial={{x:-100,opacity:0}}
+            animate={inView35 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+            className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore nemo neque laboriosam? Quo nesciunt necessitatibus maxime. Facilis repellat, animi quasi harum expedita iure facere quis officiis. Deserunt, repellendus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod sed at assumenda, perferendis dicta voluptatum omnis, unde quam porro ea. Quis veritatis culpa distinctio perspiciatis, eum numquam temporibus esse!
+            </motion.div>
 
             {/* Hardware Lists */}
 
             <div className=' grid grid-cols-2 place-items-center gap-5 mt-10 md:grid-cols-3 lg:grid-cols-4'>
-
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              
+              <motion.div
+              ref={ref36}
+              initial={{scale:0,opacity:0}}
+              animate={inView36 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={pos} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center font-bold text-lg text-[#fff] mt-3 '>POS</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref37}
+              initial={{scale:0,opacity:0}}
+              animate={inView37 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={computer} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center font-bold mt-3 text-lg text-[#fff]'>Computers</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref38}
+              initial={{scale:0,opacity:0}}
+              animate={inView38 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={barcodePrinter} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center font-bold mt-3 text-lg text-[#fff]'>Barcode Printer</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref39}
+              initial={{scale:0,opacity:0}}
+              animate={inView39 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={printers} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Printers</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref40}
+              initial={{scale:0,opacity:0}}
+              animate={inView40 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={handBarcode} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Hand Barcode Scanner</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref41}
+              initial={{scale:0,opacity:0}}
+              animate={inView41 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={tableBarcode} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Table Barcode Scanner</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref42}
+              initial={{scale:0,opacity:0}}
+              animate={inView42 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={lables} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Labels</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref43}
+              initial={{scale:0,opacity:0}}
+              animate={inView43 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={cashDrawer} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Cash Drawer</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref44}
+              initial={{scale:0,opacity:0}}
+              animate={inView44 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={weighting} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Weighting Scale</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref45}
+              initial={{scale:0,opacity:0}}
+              animate={inView45 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={cctv} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>CCTV</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref46}
+              initial={{scale:0,opacity:0}}
+              animate={inView46 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px] bg-white BlobDesign'>
                     <img src={biometric} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Biometric</div>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
+              <motion.div
+              ref={ref42}
+              initial={{scale:0,opacity:0}}
+              animate={inView42 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={networking} className=' h-full w-full object-cover rounded-full' alt="" />
                     <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Networking</div>
                 </div>
-              </div>
+              </motion.div>
 
             </div>
-            <div className=' mt-10 flex justify-center items-center'>
+            <motion.div
+            ref={ref43}
+            initial={{scale:0,opacity:0}}
+            animate={inView43 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+            className=' mt-10 flex justify-center items-center'>
                 <button className='px-8 py-2 rounded-3xl GradientButton'>Know More</button>
-              </div>
+              </motion.div>
           </div>
         </section>
 
         <section className='section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-              <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Partners</div>
-              <div className=' text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, atque, totam corrupti eum dicta, reiciendis sint porro fugit sed enim expedita aliquam maxime nesciunt? Non eos hic corporis consequatur illo.</div>
+              <motion.div
+              ref={ref44}
+              initial={{x:-100,opacity:0}}
+              animate={inView44 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Our Partners
+              </motion.div>
+              <motion.div 
+              ref={ref45}
+              initial={{x:-100,opacity:0}}
+              animate={inView45 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, atque, totam corrupti eum dicta, reiciendis sint porro fugit sed enim expedita aliquam maxime nesciunt? Non eos hic corporis consequatur illo.</motion.div>
 
               <div className='mt-10 lg:mt-16 overflow-hidden'>
                 <LogoSlider/>
@@ -501,29 +690,51 @@ const Home = () => {
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <div className='md:flex justify-center items-center gap-10'>
               <div>
-                  <div className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Drop Us A Line</div>
-                  <div className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus perspiciatis modi iure soluta a, porro officiis tenetur quae tempore deserunt debitis, explicabo reiciendis vero dignissimos, asperiores dicta quisquam aliquam.
-                  Fugit officiis sint numquam enim quia, distinctio commodi iure iusto voluptatem optio incidunt obcaecati itaque corporis mollitia rem odit vitae. Cupiditate, dolor. Iure voluptatum ratione distinctio nam cupiditate. Eligendi, at.</div>
-                  <div className=' hidden md:flex justify-center items-center mt-10'>
+                  <motion.div
+                  ref={ref46}
+                  initial={{x:-100,opacity:0}}
+                  animate={inView46 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+                  className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Drop Us A Line</motion.div>
+                  <motion.div
+                  ref={ref47}
+                  initial={{x:-100,opacity:0}}
+                  animate={inView47 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+                  className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus perspiciatis modi iure soluta a, porro officiis tenetur quae tempore deserunt debitis, explicabo reiciendis vero dignissimos, asperiores dicta quisquam aliquam.
+                  Fugit officiis sint numquam enim quia, distinctio commodi iure iusto voluptatem optio incidunt obcaecati itaque corporis mollitia rem odit vitae. Cupiditate, dolor. Iure voluptatum ratione distinctio nam cupiditate. Eligendi, at.</motion.div>
+                  <motion.div
+                  ref={ref48}
+                  initial={{x:-100,opacity:0}}
+                  animate={inView48 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+                  className=' hidden md:flex justify-center items-center mt-10'>
                     <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
-                  </div>
+                  </motion.div>
               </div>
 
-              
-
-              <div className='h-[300px] w-full  bg-white BlobDesign'>
+              <motion.div 
+              ref={ref49}
+              initial={{scale:0,opacity:0}}
+              animate={inView49 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className='h-[300px] w-full  bg-white BlobDesign'>
                     <img src={contactImage} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
-              </div>
-              <div className=' flex md:hidden justify-center items-center mt-10'>
+              </motion.div>
+              <motion.div
+              ref={ref48}
+              initial={{x:-100,opacity:0}}
+              animate={inView48 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              className=' flex md:hidden justify-center items-center mt-10'>
                 <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
-              </div>
+              </motion.div>
             </div>
           </div>  
         </section>
 
-        <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+        <motion.section
+        ref={ref50}
+        initial={{height:0,opacity:0}}
+        animate={inView50 ? {height:'100%',opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+        className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>
-      </section>
+      </motion.section>
 
       </section>
       

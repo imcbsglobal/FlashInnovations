@@ -12,9 +12,35 @@ import { FaLocationArrow } from "react-icons/fa";
 import aboutBanner from "../assets/contact-banner.jpeg"
 import blackShade from "../assets/black-shade.png"
 import bottomImage from "../assets/bottom-image.png"
+import { inView, motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 
 const Contact = () => {
+
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true });
+  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
@@ -44,35 +70,59 @@ const Contact = () => {
 
       <section className='section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20 grid grid-cols-1 place-items-center text-center gap-10 lg:grid-cols-3'>
-          <div className=' flex flex-col justify-center items-center gap-2 GlassBox rounded-xl w-full p-5 h-[110px]  bg-[#00d0ff06]'>
+          <motion.div
+          ref={ref3}
+          initial={ {y:-100,opacity:0}}
+          animate={inView3 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
+          className=' flex flex-col justify-center items-center gap-2 GlassBox rounded-xl w-full p-5 h-[110px]  bg-[#00d0ff06]'>
             <div className=' text-lg font-bold text-white flex justify-center items-center gap-3'><span><MdEmail/></span> Email</div>
             <a href="mailto:innovationsflash@gmail.com"><div className=' text-[#fff]'>innovationsflash@gmail.com</div></a>
-          </div>
+          </motion.div>
 
-          <div className=' flex flex-col justify-center items-center gap-2 h-[110px]  GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
+          <motion.div
+          ref={ref4}
+          initial={ {y:-100,opacity:0}}
+          animate={inView4 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.3}} : {}}
+          className=' flex flex-col justify-center items-center gap-2 h-[110px]  GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
             <div className='text-lg font-bold text-white flex justify-center items-center gap-3 '><span><FaPhoneAlt/></span> Phone</div>
             <div className='flex justify-center gap-2'>
               <a href="tel:+91 8050695416"><div className=' text-[#fff] font-bold'>+91 8050695416</div></a>
               <a href="tel:+91 9995175602"><div className='text-[#fff] font-bold'>+91 9995175602</div></a>
             </div>
-          </div>
+          </motion.div>
 
-          <div className=' flex flex-col justify-center items-center h-[110px]  gap-2 GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
+          <motion.div
+          ref={ref5}
+          initial={ {y:-100,opacity:0}}
+          animate={inView5 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.7}} : {}}
+          className=' flex flex-col justify-center items-center h-[110px]  gap-2 GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
             <div className='text-lg font-bold text-white flex justify-center items-center gap-3'><span><FaLocationArrow /></span> Address</div>
             <div className=' text-[#fff]'>#677/21-22, 9th Cross, 4th Main, 4th Block, HBR Layout, 1st Stage, Bangalore - 560 043</div>
-          </div>
+          </motion.div>
 
         </div>
       </section>
 
       <section className='section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-          <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Offices</div>
-          <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis eaque provident tempore ipsum delectus perspiciatis consequuntur praesentium totam quibusdam numquam nesciunt voluptate voluptates, vero, non atque saepe porro veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe, numquam ut voluptate unde sint? Dolores totam, adipisci itaque facilis cum non suscipit quam ullam consectetur asperiores quo accusamus perspiciatis!</div>
+          <motion.div
+          ref={ref6}
+          initial={{x:-100,opacity:0}}
+          animate={inView6 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Offices</motion.div>
+          <motion.div 
+          ref={ref7}
+          initial={{x:-100,opacity:0}}
+          animate={inView7 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.7}} : {}}
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis eaque provident tempore ipsum delectus perspiciatis consequuntur praesentium totam quibusdam numquam nesciunt voluptate voluptates, vero, non atque saepe porro veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe, numquam ut voluptate unde sint? Dolores totam, adipisci itaque facilis cum non suscipit quam ullam consectetur asperiores quo accusamus perspiciatis!</motion.div>
 
           <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-3'>
 
-              <div className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              <motion.div
+              ref={ref8}
+              initial={ {y:-100,opacity:0}}
+              animate={inView8 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
+              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
@@ -86,9 +136,13 @@ const Contact = () => {
                     <div className=' text-[#fff] font-semibold ContactHead'>+91 9847718664, +91 9656104131,
                     0495 2990804</div>
                   </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              <motion.div
+              ref={ref9}
+              initial={ {y:-100,opacity:0}}
+              animate={inView9 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.3}} : {}}
+              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
@@ -101,9 +155,13 @@ const Contact = () => {
                     </div>
                     <div className=' text-[#fff] ContactHead'>+91 8050379287</div>
                   </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              <motion.div
+              ref={ref10}
+              initial={ {y:-100,opacity:0}}
+              animate={inView10 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.7}} : {}}
+              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
@@ -116,7 +174,7 @@ const Contact = () => {
                     </div>
                     <div className=' text-[#fff] ContactHead'>+91 +91 8050695804</div>
                   </div>
-              </div>
+              </motion.div>
 
           </div>
         </div>
@@ -125,12 +183,24 @@ const Contact = () => {
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20 md:flex justify-center items-center gap-10'>
           <div className='md:w-[50%]'>
-              <div className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Get In Touch</div>
-              <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minus dicta perspiciatis eveniet ducimus consectetur obcaecati, doloremque laborum animi accusantium necessitatibus in nam quisquam rerum dolore? Labore quos ab possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam velit, vel ab odit dolor sed voluptas harum praesentium illo, error expedita tempore molestias sit possimus nobis cum nam earum.</div>
+              <motion.div
+              ref={ref11}
+              initial={{x:-100,opacity:0}}
+              animate={inView11 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
+              className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Get In Touch</motion.div>
+              <motion.div
+              ref={ref12}
+              initial={{x:-100,opacity:0}}
+              animate={inView12 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.3}} : {}}
+              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minus dicta perspiciatis eveniet ducimus consectetur obcaecati, doloremque laborum animi accusantium necessitatibus in nam quisquam rerum dolore? Labore quos ab possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam velit, vel ab odit dolor sed voluptas harum praesentium illo, error expedita tempore molestias sit possimus nobis cum nam earum.</motion.div>
           </div>
 
           <div className='md:w-[50%]'>
-            <div className=' flex justify-center items-center'>
+            <motion.div
+            ref={ref13}
+            initial={{x:-100,opacity:0}}
+            animate={inView13 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
+            className=' flex justify-center items-center'>
               <form action="" className=' flex flex-col gap-5 w-full'>
                 <input type="text" placeholder='Enter Your Name' className=' p-5 InputDesign' required />
                 <input type="email" placeholder='Enter Your E-Mail' className='InputDesign p-5' required/>
@@ -141,18 +211,22 @@ const Contact = () => {
                 </div>
 
               </form>
-            </div>
+            </motion.div>
           </div>
         </div>
       </section>
 
-      <section className=' mb-10 lg:mb-20 section'>
+      <motion.section
+      ref={ref14}
+      initial={{height:0,opacity:0}}
+      animate={inView14 ? {height:"auto",opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
+      className=' mb-10 lg:mb-20 section'>
         <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto'>
           <div className=' h-[500px] md:h-[600px] w-full rounded-tr-[30%] rounded-bl-[30%] BorderDesignBox'>
             <iframe className=' w-full h-full object-cover rounded-tr-[30%] rounded-bl-[30%] p-2' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.0990033737753!2d77.62994107489406!3d13.029366987291342!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae17816064cf5f%3A0x7005a3bd5de774b9!2sFLASH%20INNOVATIONS!5e0!3m2!1sen!2sin!4v1722486040203!5m2!1sen!2sin" width="100%" height="600px" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
         </div>
-      </section>
+      </motion.section>
 
       <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>

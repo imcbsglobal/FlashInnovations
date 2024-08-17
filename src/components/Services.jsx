@@ -17,9 +17,45 @@ import Footer from './Footer';
 import aboutBanner from "../assets/hardware-banner.jpeg"
 import blackShade from "../assets/black-shade.png"
 import bottomImage from "../assets/bottom-image.png"
+import { inView, motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 
 const Services = () => {
+
+  
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true });
+  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+  const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+  const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+  const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
+  const { ref: ref32, inView: inView32 } = useInView({ triggerOnce: true });
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
@@ -50,15 +86,27 @@ const Services = () => {
 
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-            <div className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</div>
-            <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestias consequatur impedit perspiciatis obcaecati dicta, repudiandae pariatur natus, esse sed, veniam a possimus tenetur? Cum aliquam ducimus architecto minus distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsa rem. Aliquid officia voluptatem facilis, expedita culpa voluptatum accusantium sapiente? Sapiente dolores molestias repudiandae soluta optio veritatis eos iusto modi!</div>
+            <motion.div
+            ref={ref1}
+            initial={{x:-100,opacity:0}}
+            animate={inView1 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</motion.div>
+            <motion.div
+            ref={ref2}
+            initial={{x:-100,opacity:0}}
+            animate={inView2 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.5}} : {}}
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestias consequatur impedit perspiciatis obcaecati dicta, repudiandae pariatur natus, esse sed, veniam a possimus tenetur? Cum aliquam ducimus architecto minus distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsa rem. Aliquid officia voluptatem facilis, expedita culpa voluptatum accusantium sapiente? Sapiente dolores molestias repudiandae soluta optio veritatis eos iusto modi!</motion.div>
         </div>
 
         {/* Hardware List */}
 
         <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:max-w-[1200px] lg:mx-auto '>
 
-        <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+        <motion.div
+        ref={ref3}
+        initial={{scale:0,opacity:0}}
+        animate={inView3 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+        className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={pos} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -68,9 +116,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref4}
+            initial={{scale:0,opacity:0}}
+            animate={inView4 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={computer} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -80,9 +132,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref5}
+            initial={{scale:0,opacity:0}}
+            animate={inView5 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={barcodePrinter} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -92,9 +148,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref6}
+            initial={{scale:0,opacity:0}}
+            animate={inView6 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={printers} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -104,9 +164,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref7}
+            initial={{scale:0,opacity:0}}
+            animate={inView7 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={handBarcode} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -116,9 +180,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref8}
+            initial={{scale:0,opacity:0}}
+            animate={inView8 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={tableBarcode} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -128,9 +196,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref9}
+            initial={{scale:0,opacity:0}}
+            animate={inView9 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={lables} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -140,11 +212,15 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
 
 
-            <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref10}
+            initial={{scale:0,opacity:0}}
+            animate={inView10 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={cashDrawer} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -154,9 +230,13 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
-            <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref11}
+            initial={{scale:0,opacity:0}}
+            animate={inView11 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={weighting} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -166,10 +246,14 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div 
+            ref={ref12}
+            initial={{scale:0,opacity:0}}
+            animate={inView12 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={cctv} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -179,10 +263,14 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
 
-            <div className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref13}
+            initial={{scale:0,opacity:0}}
+            animate={inView13 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={biometric} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -192,10 +280,14 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
 
-            <div className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            <motion.div
+            ref={ref14}
+            initial={{scale:0,opacity:0}}
+            animate={inView14 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={networking} className='w-auto h-[100px] drop-shadow-md' alt="" />
@@ -205,20 +297,32 @@ const Services = () => {
               <div className='ParagraphText text-[#fff] text-sm md:text-base'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
-            </div>
+            </motion.div>
 
         </div>
       </section>
 
       <section className='section md:mt-10'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-          <div className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types Of Development ?</div>
-          <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa, sequi magnam explicabo ipsum aperiam corrupti fugiat reiciendis rerum. Magnam quod natus molestiae inventore quaerat accusamus repellendus iure alias sed.
-          </div>
+          <motion.div
+          ref={ref14}
+          initial={{x:-100,opacity:0}}
+          animate={inView14 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types Of Development ?</motion.div>
+          <motion.div
+          ref={ref15}
+          initial={{x:-100,opacity:0}}
+          animate={inView15 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.7}} : {}}
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa, sequi magnam explicabo ipsum aperiam corrupti fugiat reiciendis rerum. Magnam quod natus molestiae inventore quaerat accusamus repellendus iure alias sed.
+          </motion.div>
 
           <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
 
-              <div className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+              <motion.div
+              ref={ref16}
+              initial={{scale:0,opacity:0}}
+              animate={inView16 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
                     <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
@@ -228,9 +332,13 @@ const Services = () => {
                     </div>
                     <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
                   </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+              <motion.div
+              ref={ref17}
+              initial={{scale:0,opacity:0}}
+              animate={inView17 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
                     <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
@@ -240,10 +348,14 @@ const Services = () => {
                     </div>
                     <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
                   </div>
-              </div>
+              </motion.div>
 
 
-              <div className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+              <motion.div
+              ref={ref18}
+              initial={{scale:0,opacity:0}}
+              animate={inView18 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
                     <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
@@ -253,9 +365,13 @@ const Services = () => {
                     </div>
                     <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
                   </div>
-              </div>
+              </motion.div>
 
-              <div className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+              <motion.div
+              ref={ref19}
+              initial={{scale:0,opacity:0}}
+              animate={inView19 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
                     <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
@@ -265,14 +381,18 @@ const Services = () => {
                     </div>
                     <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
                   </div>
-              </div>
+              </motion.div>
 
             </div>
         </div>
       </section>
-      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+      <motion.section
+      ref={ref20}
+      initial={{height:0,opacity:0}}
+      animate={inView20 ? {height:'auto',opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+      className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>
-      </section>
+      </motion.section>
     </div>
   )
 }

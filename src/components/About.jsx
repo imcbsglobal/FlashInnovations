@@ -22,12 +22,49 @@ import aboutBanner from "../assets/about-banner.jpg"
 import blackShade from "../assets/black-shade.png"
 import redShade from "../assets/red-shade.png"
 import bottomImage from "../assets/bottom-image.png"
+import { motion } from "framer-motion"
+import { useInView } from "react-intersection-observer";
 
 
 
 
 
 const About = () => {
+
+  const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
+  const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
+  const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
+  const { ref: ref4, inView: inView4 } = useInView({ triggerOnce: true });
+  const { ref: ref5, inView: inView5 } = useInView({ triggerOnce: true });
+  const { ref: ref6, inView: inView6 } = useInView({ triggerOnce: true });
+  const { ref: ref7, inView: inView7 } = useInView({ triggerOnce: true });
+  const { ref: ref8, inView: inView8 } = useInView({ triggerOnce: true });
+  const { ref: ref9, inView: inView9 } = useInView({ triggerOnce: true });
+  const { ref: ref10, inView: inView10 } = useInView({ triggerOnce: true });
+  const { ref: ref11, inView: inView11 } = useInView({ triggerOnce: true });
+  const { ref: ref12, inView: inView12 } = useInView({ triggerOnce: true });
+  const { ref: ref13, inView: inView13 } = useInView({ triggerOnce: true });
+  const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
+  const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
+  const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
+  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+  const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+  const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+  const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
+  const { ref: ref32, inView: inView32 } = useInView({ triggerOnce: true });
+  
+
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
@@ -62,44 +99,64 @@ const About = () => {
             <div className=' grid place-items-center grid-cols-2 md:w-[50%] mb-10 md:mb-0 gap-5 lg:gap-0 lg:w-[40%]'>
 
             <div className=' flex flex-col justify-center items-center gap-5 pt-32'>
-              <div className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
+              <motion.div
+              ref={ref1}
+              initial={{y:-100,opacity:0}}
+              animate={inView1 ? {y:0,opacity:1,transition:{duration:.5,ease:'backInOut',delay:.5}} : {}}
+              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={exp} alt="" />
                 </div>
                 <div className='text-[#3c3a3a] text-3xl font-semibold'>10+</div>
                 <div className=' text-[#625d5d]'>Year of <span className=' block'>Experience</span></div>
-            </div>
+            </motion.div>
 
-              <div className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
+              <motion.div
+              ref={ref2}
+              initial={{y:-100,opacity:0}}
+              animate={inView2 ? {y:0,opacity:1,transition:{duration:.5,ease:'backInOut',delay:1}} : {}}
+              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={skill} alt="" />
                 </div>
                 <div className='text-[#3c3a3a] text-3xl font-semibold'>10+</div>
                 <div className=' text-[#625d5d]'>Skilled<span className=' block'>Professionals</span></div>
-            </div>
+            </motion.div>
             </div>
 
             <div className=' flex flex-col justify-center items-center gap-5 mt-[-20px]'>
-              <div className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
+              <motion.div
+              ref={ref3}
+              initial={{y:-100,opacity:0}}
+              animate={inView3 ? {y:0,opacity:1,transition:{duration:.5,ease:'backInOut',delay:1}} : {}}
+              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
                   <div className='w-[80%] h-[50%]'>
                     <img className=' w-full h-full object-contain' src={satisfaction} alt="" />
                   </div>
                   <div className='text-[#3c3a3a] text-3xl font-semibold'>100%</div>
                   <div className=' text-[#625d5d]'>Customer <span className=' block'>Satisfaction</span></div>
-              </div>
+              </motion.div>
 
-              <div className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
+              <motion.div
+              ref={ref4}
+              initial={{y:-100,opacity:0}}
+              animate={inView4 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:1}} : {}}
+              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
                   <div className='w-[80%] h-[50%]'>
                     <img className='w-full h-full object-contain' src={project} alt="" />
                   </div>
                   <div className='text-[#3c3a3a] text-3xl font-semibold'>300+</div>
                   <div className=' text-[#625d5d]'>Projects<span className=' block'>Worldwide</span></div>
-              </div>
+              </motion.div>
             </div>
           </div>
-          <div className='h-[300px] w-full lg:h-[500px]  rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
+          <motion.div
+          ref={ref5}
+          initial={{rotate:'60deg',opacity:.5,scale:2}}
+          animate={inView5 ? {rotate:'0deg',opacity:1,scale:1, transition:{duration:1,ease:'backInOut'}} : {}}
+          className='h-[300px] w-full lg:h-[500px]  rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
                       <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
-              </div>
+              </motion.div>
           </div>
         </div>
       </section>
@@ -108,44 +165,72 @@ const About = () => {
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
           <div className=' grid grid-cols-1 place-items-center md:grid-cols-2 gap-10 md:mb-5 mb-10'>
             <div>
-              <div className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>About Us</div>
-              <div className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:mx-auto'>
+              <motion.div 
+              ref={ref6}
+              initial={{x:-100, opacity:0}}
+              animate={inView6 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+              className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>About Us</motion.div>
+              <motion.div
+              ref={ref7}
+              initial={{x:-100,opacity:0}}
+              animate={inView7 ? {x:0,opacity:1,transition:{duration:1.3,ease:'backInOut'}} : {}}
+              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:mx-auto'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cum, quisquam dolore aperiam accusamus vel adipisci molestiae assumenda facere illum voluptas beatae, ullam, reprehenderit minima iste repellat dolor aliquid deserunt quam? Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi accusantium hic esse veniam eius quos incidunt illum adipisci consequuntur aperiam perferendis sed sunt reprehenderit dolores, minima blanditiis maiores quisquam minus.
                 <br /> <br />
                 Natus eaque architecto perspiciatis error. Porro temporibus, aperiam pariatur impedit debitis illo blanditiis, repellat magni recusandae necessitatibus eveniet inventore voluptas iure unde numquam laudantium vitae! Beatae explicabo natus quaerat quae Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui harum totam, molestiae dolores perferendis quidem incidunt omnis maiores eligendi consequuntur molestias porro ut nisi ipsum distinctio quisquam, mollitia modi doloribus.
-              </div>
+              </motion.div>
             </div>
-            <div className='h-[300px] w-full lg:h-[500px] lg:w-[500px]  bg-white BlobDesign'>
+            <motion.div
+            ref={ref8}
+            initial={{scale:0,opacity:0}}
+            animate={inView8 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
+             className='h-[300px] w-full lg:h-[500px] lg:w-[500px]  bg-white BlobDesign'>
                 <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
-            </div>
+            </motion.div>
           </div>
 
           <div>
             <ul className=' grid grid-cols-1 place-items-center md:grid-cols-2 justify-center items-center gap-3'>
-              <li>
+              <motion.li
+              ref={ref9}
+              initial={{scale:0,opacity:0}}
+              animate={inView9 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1, delay:.2}} : {}}
+              >
                 <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                 </div>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+              ref={ref10}
+              initial={{scale:0,opacity:0}}
+              animate={inView10 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.7}} : {}}
+              >
                 <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                 </div>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+              ref={ref11}
+              initial={{scale:0,opacity:0}}
+              animate={inView11 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:1}} : {}}
+              >
                 <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                 </div>
-              </li>
-              <li>
+              </motion.li>
+              <motion.li
+              ref={ref12}
+              initial={{scale:0,opacity:0}}
+              animate={inView12 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:1.3}} : {}}
+              >
                 <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
                 </div>
-              </li>
+              </motion.li>
             </ul>
           </div>
         </div>
@@ -153,34 +238,62 @@ const About = () => {
 
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-          <div className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>
-          A Successful & Innovative IT Company</div>
+          <motion.div
+          ref={ref13}
+          initial={{x:-100,opacity:0}}
+          animate={inView13 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+          className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>
+          A Successful & Innovative IT Company</motion.div>
             <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10'>
               {/* Left */}
               <div className=' flex justify-center items-center gap-2 w-full h-[350px] mb-10'>
                 {/* Inside-Left */}
                 <div className=' w-[50%] h-full flex flex-col gap-2'>
-                  <div className=' w-full h-[50%] rounded-xl DarkBox bg-black'>
+                  <motion.div
+                  ref={ref14}
+                  initial={{y:-100,opacity:0}}
+                  animate={inView14 ? {y:0,opacity:1,transition:{ease:'backInOut'}} : {}}
+                   className=' w-full h-[50%] rounded-xl DarkBox bg-black'>
                     <img src={company1} className=' w-full h-full object-cover rounded-xl mix-blend-multiply' alt="" />
-                  </div>
-                  <div className=' w-full h-[50%] rounded-xl DarkBox bg-black'>
+                  </motion.div>
+                  <motion.div
+                  ref={ref15}
+                  initial={{y:-100,opacity:0}}
+                  animate={inView15 ? {y:0,opacity:1,transition:{ease:'backInOut'}} : {}}
+                  className=' w-full h-[50%] rounded-xl DarkBox bg-black'>
                     <img src={company2} className='w-full h-full object-cover rounded-xl mix-blend-multiply' alt="" />
-                  </div>
+                  </motion.div>
                 </div>
                 {/* Inside-Right */}
-                <div className=' w-[50%] h-full rounded-xl DarkBox bg-black'>
+                <motion.div
+                ref={ref16}
+                initial={{y:-100,opacity:0}}
+                animate={inView16 ? {y:0,opacity:1,transition:{ease:'backInOut'}} : {}}
+                className=' w-[50%] h-full rounded-xl DarkBox bg-black'>
                   <img src={company3} className='w-full h-full object-cover rounded-xl mix-blend-multiply' alt="" />
-                </div>
+                </motion.div>
               </div>
               {/* Right */}
               <div>
-                <div className=' mb-5 text-[20px] font-bold text-white SubTitleStyle'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quae.</div>
-                <div className='text-start ParagraphText text-sm text-white mb-5'>At Flash Innovations, we pride ourselves on being at the forefront of technological advancements. 
+                <motion.div
+                ref={ref17}
+                initial={{x:-100,opacity:0}}
+                animate={inView17 ? {x:0,opacity:1,transition:{ease:'backInOut',delay:.3,duration:.7}} : {}}
+                className=' mb-5 text-[20px] font-bold text-white SubTitleStyle'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aspernatur, quae.</motion.div>
+                <motion.div
+                ref={ref18}
+                initial={{x:-100,opacity:0}}
+                animate={inView18 ? {x:0,opacity:1,transition:{ease:'backInOut',delay:.1,duration:.7}} : {}}
+                className='text-start ParagraphText text-sm text-white mb-5'>At Flash Innovations, we pride ourselves on being at the forefront of technological advancements. 
                 Our commitment to excellence drives us to deliver cutting-edge software and hardware solutions that transform businesses. 
                 With a focus on innovation and a track record of success, we provide tailored technology solutions that empower 
                 our clients to achieve their goals and stay ahead in a rapidly evolving digital landscape.
-                </div>
-                <div className=' flex flex-col justify-start items-baseline gap-5'>
+                </motion.div>
+                <motion.div
+                ref={ref14}
+                initial={{y:-100,opacity:0}}
+                animate={inView14 ? {y:0,opacity:1,transition:{ease:'backInOut',delay:.1,duration:.7}} : {}}
+                className=' flex flex-col justify-start items-baseline gap-5'>
 
                   <div className=' flex items-start gap-4'>
                     <div className=' p-2 bg-white rounded-lg text-[#08f]'><TiTick/></div>
@@ -209,7 +322,7 @@ const About = () => {
                     </div>
                   </div>
                   
-                </div>
+                </motion.div>
               </div>
             </div>
         </div>
@@ -217,10 +330,18 @@ const About = () => {
 
       <section className=' section'>
         <div className=' lg:max-w-[1200px] lg:mx-auto mb-20'>
-          <div className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>Touch With Us</div>
-          <div className='text-center ParagraphText text-sm text-white mb-10 md:max-w-[600px] md:mx-auto'>At Flash Innovations, we guarantee top-tier customer service. We understand the value of your time, and we pledge 
+          <motion.div
+          ref={ref15}
+          initial={{x:-100,opacity:0}}
+          animate={inView15 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.7}} : {}}
+          className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>Touch With Us</motion.div>
+          <motion.div
+          ref={ref16}
+          initial={{x:-100,opacity:0}}
+          animate={inView16 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.7,delay:.7}} : {}}
+          className='text-center ParagraphText text-sm text-white mb-10 md:max-w-[600px] md:mx-auto'>At Flash Innovations, we guarantee top-tier customer service. We understand the value of your time, and we pledge 
           to respond to all your inquiries promptly and efficiently. Your satisfaction is our priority, and we strive to provide 
-          exceptional support for all your needs. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis, repudiandae, eaque quia, corporis aliquam recusandae dolorem porro numquam ipsam voluptates! Consequuntur quam beatae perspiciatis alias possimus dolor, iste deleniti?</div>
+          exceptional support for all your needs. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis, repudiandae, eaque quia, corporis aliquam recusandae dolorem porro numquam ipsam voluptates! Consequuntur quam beatae perspiciatis alias possimus dolor, iste deleniti?</motion.div>
           <div className=' flex justify-center items-center gap-5'>
           <div>
             <button className=' px-8 py-2 GradientButton'>Contact Us</button>
@@ -233,12 +354,24 @@ const About = () => {
 
       <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
-          <div className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>Our Team</div>
-          <div className='text-center ParagraphText text-sm text-white mb-10 md:max-w-[600px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident natus itaque quas dolor, sed eaque necessitatibus deserunt nulla dolore totam, aliquam cupiditate placeat porro, aliquid quo minima ab consequatur ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam molestias distinctio consequuntur voluptatem ea pariatur commodi porro quibusdam, consequatur quaerat rerum nisi aliquid a deserunt maxime perferendis corrupti. Laborum.</div>
+          <motion.div 
+          ref={ref17}
+          initial={{x:-100,opacity:0}}
+          animate={inView17 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+          className='text-[42px] mb-5 text-center TitleText text-[#ffffff]'>Our Team</motion.div>
+          <motion.div
+          ref={ref18}
+          initial={{x:-100,opacity:0}}
+          animate={inView18 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:1}} : {}}
+          className='text-center ParagraphText text-sm text-white mb-10 md:max-w-[600px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident natus itaque quas dolor, sed eaque necessitatibus deserunt nulla dolore totam, aliquam cupiditate placeat porro, aliquid quo minima ab consequatur ad. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta numquam molestias distinctio consequuntur voluptatem ea pariatur commodi porro quibusdam, consequatur quaerat rerum nisi aliquid a deserunt maxime perferendis corrupti. Laborum.</motion.div>
           {/* Team Members List */}
           <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 relative'>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div
+            ref={ref19}
+            initial={{y:-100,opacity:0}}
+            animate={inView19 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team1} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -246,9 +379,13 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div
+            ref={ref20}
+            initial={{y:-100,opacity:0}}
+            animate={inView20 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team2} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -256,9 +393,13 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div
+            ref={ref21}
+            initial={{y:-100,opacity:0}}
+            animate={inView21 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team3} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -266,9 +407,13 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div
+            ref={ref22}
+            initial={{y:-100,opacity:0}}
+            animate={inView22 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team4} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -276,9 +421,13 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div 
+            ref={ref23}
+            initial={{y:-100,opacity:0}}
+            animate={inView23 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team5} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -286,9 +435,13 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
-            <div className='w-[300px] h-[350px] rounded-xl GlassBox'>
+            <motion.div 
+            ref={ref24}
+            initial={{y:-100,opacity:0}}
+            animate={inView24 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
+            className='w-[300px] h-[350px] rounded-xl GlassBox'>
               <div className=' w-[300px] h-[350px] GlassBox rounded-xl'>
                 <img src={team6} className=' w-full h-full object-cover rounded-xl' alt="" />
               </div>
@@ -296,7 +449,7 @@ const About = () => {
                 <div className='  px-8 text-lg font-black '>Team Member Name</div>
                 <div className='TeamDesignation'>Designation</div>
               </div>
-            </div>
+            </motion.div>
 
 
           </div>
