@@ -328,15 +328,15 @@ const Services = () => {
               ref={ref16}
               initial={{scale:0,opacity:0}}
               animate={inView16 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={ComputingHardaware} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>High-Performance 
                       <span className=' block'>Computing Hardware</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Our high-performance computing hardware is designed to deliver exceptional speed and efficiency for demanding tasks. Whether you need powerful servers, robust workstations, or advanced processing units, our solutions ensure seamless operation and reliability for your most intensive applications.</div>
+                    <div className=' text-white ParagraphText'>Our high-performance computing hardware delivers speed and efficiency for demanding tasks, providing reliable servers, workstations, and processing units for seamless operation.</div>
                   </div>
               </motion.div>
 
@@ -344,15 +344,15 @@ const Services = () => {
               ref={ref17}
               initial={{scale:0,opacity:0}}
               animate={inView17 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={AdvancedSecurity} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Advanced 
                       <span className=' block'>Security Systems</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Protect your business with our advanced security systems, which provide comprehensive monitoring and protection. From state-of-the-art surveillance cameras to sophisticated alarm systems, our solutions are designed to safeguard your assets and maintain the safety of your operations.</div>
+                    <div className=' text-white ParagraphText'>Secure your business with our advanced security systems, including cutting-edge surveillance cameras and sophisticated alarms, designed to protect your assets and ensure operational safety.</div>
                   </div>
               </motion.div>
 
@@ -361,15 +361,15 @@ const Services = () => {
               ref={ref18}
               initial={{scale:0,opacity:0}}
               animate={inView18 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={efficientStorage} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Efficient 
                       <span className=' block'>Storage Solutions</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Optimize your data management with our efficient storage solutions. We offer a range of options from high-capacity drives to scalable network storage systems, ensuring that your critical data is securely stored and easily accessible, with high performance and reliability.</div>
+                    <div className=' text-white ParagraphText'>Enhance your data management with our efficient storage solutions, featuring high-capacity drives and scalable network systems for secure, high-performance, and reliable data access.</div>
                   </div>
               </motion.div>
 
@@ -377,15 +377,15 @@ const Services = () => {
               ref={ref19}
               initial={{scale:0,opacity:0}}
               animate={inView19 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={reliableNetwork} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Reliable 
                       <span className=' block'>Network Equipment</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Ensure robust connectivity with our reliable network equipment. Our offerings include routers, switches, and access points designed to provide stable, high-speed connections, supporting your business’s communication and operational needs with minimal downtime.</div>
+                    <div className=' text-white ParagraphText'>Achieve reliable connectivity with our network equipment, including routers, switches, and access points, designed for stable, high-speed connections and minimal downtime.</div>
                   </div>
               </motion.div>
 
@@ -393,15 +393,15 @@ const Services = () => {
               ref={ref21}
               initial={{scale:0,opacity:0}}
               animate={inView21 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-fullh-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={customizable} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Customizable Peripherals 
                       <span className=' block'>and Accessories</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Enhance your workspace with our customizable peripherals and accessories. From ergonomic keyboards and mice to specialized hardware like printers and docking stations, we provide solutions that fit your specific requirements and improve productivity.</div>
+                    <div className=' text-white ParagraphText'>Upgrade your workspace with our customizable peripherals and accessories, including ergonomic keyboards, mice, printers, and docking stations, tailored to enhance productivity and meet your specific needs.</div>
                   </div>
               </motion.div>
 
@@ -409,15 +409,15 @@ const Services = () => {
               ref={ref22}
               initial={{scale:0,opacity:0}}
               animate={inView22 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[280px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[280px] mix-blend-multiply'>
                     <img src={integratedHardware} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Integrated 
                       <span className=' block'>Hardware Systems </span>
                     </div>
-                    <div className=' text-white ParagraphText'>Streamline your operations with our integrated hardware systems, which combine various components into cohesive solutions. Whether for complex IT environments or simple setups, our integrated systems ensure compatibility, efficiency, and ease of use, tailored to your business needs.</div>
+                    <div className=' text-white ParagraphText'>Streamline your operations with our integrated hardware systems, offering cohesive solutions that ensure compatibility and efficiency for both complex and simple setups, tailored to your business needs.</div>
                   </div>
               </motion.div>
 

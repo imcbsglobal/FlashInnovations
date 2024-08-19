@@ -235,8 +235,8 @@ const Software = () => {
               ref={ref13}
               initial={{y:-100,opacity:0}}
               animate={inView13 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[300px] mix-blend-multiply'>
                     <img src={webDevelopment} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
@@ -251,8 +251,8 @@ const Software = () => {
               ref={ref14}
               initial={{y:-100,opacity:0}}
               animate={inView14 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[300px] mix-blend-multiply'>
                     <img src={softwareDevelopment} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
@@ -268,8 +268,8 @@ const Software = () => {
               ref={ref15}
               initial={{y:-100,opacity:0}}
               animate={inView15 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[300px] mix-blend-multiply'>
                     <img src={IOsDevelopment} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
@@ -284,8 +284,8 @@ const Software = () => {
               ref={ref16}
               initial={{y:-100,opacity:0}}
               animate={inView16 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
-                  <div className='w-full h-[300px] mix-blend-multiply'>
+              className=' w-full h-[350px] llg:h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[350px] llg:h-[300px] mix-blend-multiply'>
                     <img src={cloudSolutions} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
