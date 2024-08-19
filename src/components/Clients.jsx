@@ -24,37 +24,34 @@ const Clients = () => {
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
-       <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+       <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
         {/* About Banner */}
         <div>
-          <div className=' absolute top-0 w-full left-0 h-[600px]'>
+          <div className=' absolute top-0 w-full left-0 h-[600px] '>
             <img src={aboutBanner} className='w-full h-full object-cover absolute -z-10' alt="" />
             <img src={blackShade} className=' w-full h-full object-cover z-10 absolute ' alt="" />
           </div>
         </div>
 
-        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8'>
           <div className=' mb-20 md:absolute homeTitlePosition'>
             <motion.div
-            ref={ref1}
-            initial={{x:-100,opacity:0}}
-            animate={inView1 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
-            className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Lorem, ipsum dolor sit amet consectetur adipisicing elit</motion.div>
+            
+            className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Empowering Success Through Strategic Client Partnerships</motion.div>
             <motion.div
-            ref={ref2}
-            initial={{x:-100,opacity:0}}
-            animate={inView2 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
-            className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</motion.div>
+            
+            className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we drive success through strong client partnerships. Our tailored solutions and dedicated service help clients achieve their goals and enhance performance, reflecting our commitment to their growth and success.
+            </motion.div>
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-0 z-20 w-full left-0'>
-          <img src={bottomImage} className='w-full h-full object-cover bottomImage' alt="" />
+        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
+          <img src={bottomImage} className='w-full h-full object-cover bottomImage llg:bottom-[-10px]' alt="" />
         </div>
       </section>
 
       <section>
-        <div className='flex justify-center items-center'>
+        <div className='flex justify-center items-center mb-20'>
           <div className=' lg:mx-auto px-6'>
             <motion.div
             ref={ref3}
@@ -65,7 +62,7 @@ const Clients = () => {
             ref={ref4}
             initial={{x:-100,opacity:0}}
             animate={inView4 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat    blanditiis, labore porro voluptate voluptates a explicabo officiis eaque nostrum architecto nisi in ad dolores dignissimos voluptatem iste quia provident aut.Quas at possimus adipisci ducimus id tempore illum dignissimos, consequatur quidem nostrum doloribus, eum earum autem corporis. Molestias, laborum dignissimos iste eos, ipsum necessitatibus obcaecati maiores nobis aliquid, iure aut.
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>At Flash Innovations, we take pride in partnering with a diverse range of clients who trust us to deliver exceptional solutions. Our client base spans various industries, reflecting our ability to adapt and meet unique needs with precision. From large enterprises to dynamic startups, we are dedicated to understanding each client’s specific goals and providing tailored services that drive success. Our collaborative approach and commitment to excellence ensure that every project contributes to our clients’ growth and achievement.
             </motion.div>
             {/* Clients Lists */}
             <ClientsLogos/>

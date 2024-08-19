@@ -435,6 +435,17 @@ input[type=number]::-webkit-inner-spin-button {
   position: absolute;
   border-radius: 50%;
 }
+@media screen and (min-width:1400px){
+  .ParentCircle{
+    width: 150px;
+    height: 150px;
+  }
+  .ParentCircle2{
+    width: 150px;
+    height: 150px;
+    top: 0;
+  }
+}
 .Waves{
   position: relative;
   width: 100%;
@@ -556,6 +567,20 @@ top: 25px;
 .smooth-section {
   will-change: transform, opacity;
 }
+.parallax-text {
+  transition: transform 0.3s ease-out;
+  will-change: transform;
+}
+/* @media screen and (min-width:1700px){
+  .aboutBanner{
+    height: 800px;
+    width: 100%;
+  }
+  .TextStyle{
+    font-size: 80px;
+    line-height: normal;
+  }
+} */
 
 /* #150097 WaveBlue */
 /* #2075bb */

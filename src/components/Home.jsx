@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 import techVideo from "../assets/tech-video3.mp4";
 import blueShade from "../assets/blue-shade.png";
 import homeBannerVideo from "../assets/home-banner.mp4";
@@ -111,7 +111,29 @@ const Home = () => {
   const { ref: ref63, inView: inView63 } = useInView({ triggerOnce: true });
   const { ref: ref64, inView: inView64 } = useInView({ triggerOnce: true });
 
+// Parallax Effect
 
+useEffect(() => {
+  const handleScroll = () => {
+    const title = document.getElementById('parallaxTitle');
+    const circle1 = document.querySelector('.ParentCircle');
+    const circle2 = document.querySelector('.ParentCircle2');
+    const scrollPosition = window.scrollY;
+
+    // Move the title to the left
+    title.style.transform = `translateX(-${scrollPosition * 0.3}px)`;
+
+    // Move the circles upwards
+    circle1.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+    circle2.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+  };
+
+  window.addEventListener('scroll', handleScroll);
+
+  return () => {
+    window.removeEventListener('scroll', handleScroll);
+  };
+}, []);
 
 
 
@@ -131,13 +153,10 @@ const Home = () => {
         </div>
         <div className='flex justify-center items-center h-full w-full fixed z-30'>
           <div>
-            <motion.div
-              // initial="hidden"
-              // animate="visible"
-              // variants={revealVariant}
-            className='TextStyle text-[62px] font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight'>
+            <div
+            className='TextStyle text-[62px] font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight parallax-text' id='parallaxTitle'>
               FLASH INNOVATIONS
-            </motion.div>
+            </div>
             {/* Rotate Animation */}
             <div className=' flex justify-start items-center'>
               <div className='ParentCircle'>
@@ -185,14 +204,14 @@ const Home = () => {
                   animate={inView2 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
                   transition={{ duration: 1, delay: 1.2, ease: "backInOut" }}
                   // variants={itemVariants}
-                  className=' text-center ParagraphText text-[#fff] mb-10'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, nobis, consequatur esse quasi beatae saepe earum consectetur qui ab natus dolore odit nihil eius possimus laborum aliquid dolores voluptatibus quis.</motion.div>
+                  className=' text-center ParagraphText text-[#fff] mb-10'>In the face of challenges, our resilience shines. We consistently deliver excellence, driven by a commitment to innovation and quality. Every task we undertake is a step toward achieving greatness, with an unwavering focus on surpassing expectations</motion.div>
                   <motion.div
                   // variants={itemVariants}
                   ref={ref3}
                   initial={{ opacity: 0, x: -100 }}
                   animate={inView3 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
                   transition={{ duration: 1, delay: 1.5, ease: "backInOut" }}
-                  className='text-center ParagraphText text-[#fff] mb-5'>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut, dolores veritatis maiores quia consequuntur eum dolore nemo molestias alias commodi tenetur voluptatum nesciunt rerum nam. Voluptates aliquid quo amet asperiores?
+                  className='text-center ParagraphText text-[#fff] mb-5'>We transform obstacles into opportunities, ensuring that our impact is both lasting and significant. Our dedication to pushing boundaries and redefining standards is at the core of everything we do, making us a reliable partner in any endeavor.
                   </motion.div>
                 </motion.div>
 
@@ -205,7 +224,7 @@ const Home = () => {
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
-                      <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
+                      <div className=''>We drive progress with relentless creativity and forward-thinking solutions.</div>
                     </div>
                   </motion.li>
                   <motion.li
@@ -215,7 +234,7 @@ const Home = () => {
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
-                      <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
+                      <div className=''>We deliver superior results through unwavering commitment and precision.</div>
                     </div>
                   </motion.li>
                   <motion.li
@@ -225,7 +244,7 @@ const Home = () => {
                   >
                     <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
-                      <div className=''>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit, iusto.</div>
+                      <div className=''>We uphold the highest standards, ensuring trust and reliability in all we do.</div>
                     </div>
                   </motion.li>
                 </ul>
@@ -261,7 +280,7 @@ const Home = () => {
               ref={ref9}
               initial={{ x:-100,opacity:0}}
               animate={inView9 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Esse asperiores neque libero odio, quisquam voluptatem perferendis quia corrupti. Rerum voluptates, placeat deserunt tenetur repudiandae libero odio qui cupiditate harum enim?</motion.div>
+              className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto'>At Flash Innovations, we champion the forefront of technology with unwavering commitment and excellence. Our cutting-edge solutions and unmatched expertise redefine industry standards, driving transformative results across diverse sectors. With a strategic approach and relentless dedication, we empower businesses to excel and navigate challenges with confidence, ensuring exceptional performance and lasting impact.</motion.div>
               <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
                 <motion.div
                 ref={ref10}
@@ -378,7 +397,7 @@ const Home = () => {
                  ref={ref23}
                  initial={{x:-100,opacity:0}}
                  animate={inView23 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
-                className='text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed repudiandae dignissimos blanditiis illo molestiae consequuntur totam, nobis odio, tempore corporis cumque quae, a in? Optio eligendi officia fugiat quod explicabo.</motion.div>
+                className='text-center ParagraphText text-[#fff]'>At Flash Innovations, we offer a full range of tailored solutions, including cutting-edge software, dynamic web and mobile applications, impactful branding, strategic digital marketing, and engaging design services, all crafted to elevate your business.</motion.div>
               </div>
 
               <motion.div
@@ -400,7 +419,7 @@ const Home = () => {
                 <motion.div
                 ref={ref25}
                 initial={{scale:0,opacity:0}}
-                animate={inView25 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.5}} : {}}
+                animate={inView25 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.1}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center relative'>
                   <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
                     <img src={inventory} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
@@ -414,7 +433,7 @@ const Home = () => {
                 animate={inView26 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={customWeb} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={customWeb}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Custom Web Applications</div>
                 </motion.div>
@@ -425,7 +444,7 @@ const Home = () => {
                 animate={inView27 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={mobile} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={mobile}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Mobile App Development</div>
                 </motion.div>
@@ -436,7 +455,7 @@ const Home = () => {
                 animate={inView28 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={graphicDesigning} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={graphicDesigning}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Graphic Designing</div>
                 </motion.div>
@@ -450,9 +469,9 @@ const Home = () => {
               ref={ref29}
               initial={{scale:0,opacity:0}}
               animate={inView29 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:.5}} : {}}
-              className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-              <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg'>
-                    <img src={branding} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg lg:h-[200px]' alt="" />
+              className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center overflow-hidden'>
+              <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
+                    <img src={branding}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg ' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Branding</div>
                 </motion.div>
@@ -463,7 +482,7 @@ const Home = () => {
                 animate={inView30 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={digitalMarketing} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={digitalMarketing}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Digital Marketing</div>
                 </motion.div>
@@ -474,7 +493,7 @@ const Home = () => {
                 animate={inView31 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={ECommerce} loading='lazy' className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={ECommerce}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>E-Commerce</div>
                 </motion.div>
@@ -485,7 +504,7 @@ const Home = () => {
                 animate={inView32 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
                 className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
                 <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={sms} loading='lazy' className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                    <img src={sms}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
                   </div>
                   <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Whatsapp/SMS Marketing</div>
                 </motion.div>
@@ -516,7 +535,7 @@ const Home = () => {
             ref={ref35}
             initial={{x:-100,opacity:0}}
             animate={inView35 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-            className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt inventore nemo neque laboriosam? Quo nesciunt necessitatibus maxime. Facilis repellat, animi quasi harum expedita iure facere quis officiis. Deserunt, repellendus vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, quod sed at assumenda, perferendis dicta voluptatum omnis, unde quam porro ea. Quis veritatis culpa distinctio perspiciatis, eum numquam temporibus esse!
+            className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>At Flash Innovations, our hardware solutions offer top-notch reliability and performance. We provide a diverse range of advanced components, including security systems and high-performance computing devices, all tailored to your needs. Our focus on quality and innovation ensures that our hardware enhances efficiency and supports your business’s growth, keeping you ahead in a rapidly evolving technological landscape.
             </motion.div>
 
             {/* Hardware Lists */}
@@ -614,7 +633,7 @@ const Home = () => {
               <motion.div
               ref={ref44}
               initial={{scale:0,opacity:0}}
-              animate={inView44 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              animate={inView44 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
               className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={weighting} className=' h-full w-full object-cover rounded-full' alt="" />
@@ -625,7 +644,7 @@ const Home = () => {
               <motion.div
               ref={ref45}
               initial={{scale:0,opacity:0}}
-              animate={inView45 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              animate={inView45 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
               className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px]  bg-white BlobDesign'>
                     <img src={cctv} className=' h-full w-full object-cover rounded-full' alt="" />
@@ -636,7 +655,7 @@ const Home = () => {
               <motion.div
               ref={ref46}
               initial={{scale:0,opacity:0}}
-              animate={inView46 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              animate={inView46 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
               className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
                 <div className='h-[120px] w-[120px] bg-white BlobDesign'>
                     <img src={biometric} className=' h-full w-full object-cover rounded-full' alt="" />
@@ -678,7 +697,8 @@ const Home = () => {
               ref={ref45}
               initial={{x:-100,opacity:0}}
               animate={inView45 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' text-center ParagraphText text-[#fff]'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, atque, totam corrupti eum dicta, reiciendis sint porro fugit sed enim expedita aliquam maxime nesciunt? Non eos hic corporis consequatur illo.</motion.div>
+              className=' text-center ParagraphText text-[#fff] lg:px-56'>At Flash Innovations, we value our strategic partnerships with industry-leading companies and technology providers. These collaborations enable us to deliver cutting-edge solutions and exceptional service to our clients. By working closely with our partners, we ensure access to the latest innovations and resources, driving success and enhancing the value we bring to your business.
+              </motion.div>
 
               <div className='mt-10 lg:mt-16 overflow-hidden'>
                 <LogoSlider/>

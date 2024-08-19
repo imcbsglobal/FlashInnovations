@@ -36,7 +36,7 @@ const Navbar = () => {
             <ul className="flex justify-center gap-5 items-center font-semibold text-[#000000]">
                 <li className="cursor-pointer NavbarFont"><Link to='/'>Home</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/about'>About</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/softwares'>Software</Link></li>
+                <li className="cursor-pointer NavbarFont"><Link to='/Software'>Softwares</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/services'>Services</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/clients'>Clients</Link></li>
                 <li className="cursor-pointer NavbarFont"><Link to='/contact'>Contact</Link></li>

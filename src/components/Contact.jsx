@@ -47,7 +47,7 @@ const Contact = () => {
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
-      <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+      <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
         {/* About Banner */}
         <div>
           <div className=' absolute top-0 w-full left-0 h-[600px]'>
@@ -56,14 +56,14 @@ const Contact = () => {
           </div>
         </div>
 
-        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8'>
           <div className=' mb-20 md:absolute homeTitlePosition'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Harnessing Technology to Propel Your Business</div>
-            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Connecting You to Innovative Solutions</div>
+            <div className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we make it easy for you to connect with us and access the innovative solutions you need. Our dedicated team is ready to assist with any inquiries, providing prompt and effective support to ensure your needs are met. Reach out to us to discuss how we can help drive your business forward with cutting-edge technology and personalized service.</div>
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-0 z-20 w-full left-0 bottomImage'>
+        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover' alt="" />
         </div>
       </section>
@@ -114,7 +114,7 @@ const Contact = () => {
           ref={ref7}
           initial={{x:-100,opacity:0}}
           animate={inView7 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.7}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis perferendis eaque provident tempore ipsum delectus perspiciatis consequuntur praesentium totam quibusdam numquam nesciunt voluptate voluptates, vero, non atque saepe porro veritatis. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam saepe, numquam ut voluptate unde sint? Dolores totam, adipisci itaque facilis cum non suscipit quam ullam consectetur asperiores quo accusamus perspiciatis!</motion.div>
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>At Flash Innovations, we are proud to have a robust network of offices to serve you better. Our main branch is located in Bengaluru, where we coordinate our core operations and strategic initiatives. Additionally, we have three other branches strategically placed to ensure comprehensive support and accessibility across various regions. Each office is equipped to provide local expertise and personalized service, ensuring that our clients receive consistent and high-quality support regardless of their location.</motion.div>
 
           <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-3'>
 
@@ -192,7 +192,7 @@ const Contact = () => {
               ref={ref12}
               initial={{x:-100,opacity:0}}
               animate={inView12 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.3}} : {}}
-              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet minus dicta perspiciatis eveniet ducimus consectetur obcaecati, doloremque laborum animi accusantium necessitatibus in nam quisquam rerum dolore? Labore quos ab possimus Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat aperiam velit, vel ab odit dolor sed voluptas harum praesentium illo, error expedita tempore molestias sit possimus nobis cum nam earum.</motion.div>
+              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>We’d love to hear from you! Whether you have questions, need support, or want to explore how we can assist with your business needs, reaching out is simple. Contact us via phone, email, or our online form, and our responsive team will get back to you promptly. Your inquiries and feedback are important to us, and we’re here to ensure you receive the assistance and information you need to move forward.</motion.div>
           </div>
 
           <div className='md:w-[50%]'>

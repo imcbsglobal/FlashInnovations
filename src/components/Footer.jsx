@@ -92,7 +92,7 @@ const Footer = () => {
         {/* Bottom Tight */}
         {/* <div className=' absolute w-full h-[300px] bg-[#ffffff] bottom-0 left-0 -z-10'></div> */}
         <div className=' absolute bottom-0 w-full h-[100px] bg-[#0b1c8de9] m-0 p-0 flex justify-center items-center'>
-            <div className=' text-center flex justify-center items-center text-[#fff] font-semibold'>copyright©2024 <span className=' ml-1'>Flash Innovations</span></div>
+            <div className=' text-center flex justify-center items-center text-[#fff] font-normal'>copyright©2024 <span className=' ml-1 font-semibold'>Flash Innovations</span></div>
         </div>
     </section>
   )

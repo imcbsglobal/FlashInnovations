@@ -12,13 +12,15 @@ import startstay from "../assets/starstay.png"
 import webDevelopment from "../assets/web-develop.jpg"
 import softwareDevelopment from "../assets/software-develop.jpg"
 import IOsDevelopment from "../assets/IOs-develop.jpg"
-import another from "../assets/another.jpg"
 import Footer from './Footer';
 import aboutBanner from "../assets/software-banner.jpeg"
 import blackShade from "../assets/black-shade.png"
 import bottomImage from "../assets/bottom-image.png"
+import cloudSolutions from "../assets/cloud-solutions.jpeg"
 import { inView, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
+
+
 
 const Software = () => {
 
@@ -62,23 +64,23 @@ const Software = () => {
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
 
-        <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+        <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
         {/* About Banner */}
         <div>
-          <div className=' absolute top-0 w-full left-0 h-[600px]'>
+          <div className=' absolute top-0 w-full left-0 h-[600px] '>
             <img src={aboutBanner} className='w-full h-full object-cover absolute -z-10' alt="" />
             <img src={blackShade} className=' w-full h-full object-cover z-10 absolute ' alt="" />
           </div>
         </div>
 
-        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8 llg:py-0'>
           <div className=' mb-20 md:absolute homeTitlePosition'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Pioneering Software Solutions for Enhanced Performance</div>
-            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Pioneering Software Solutions for Enhanced Performance</div>
+            <div className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we pioneer software solutions designed to enhance your performance. Our innovative applications and systems are crafted to boost efficiency, streamline operations, and drive your business forward. With a focus on cutting-edge technology and tailored strategies, we ensure your software meets the highest standards and delivers exceptional results.</div>
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-0 z-20 w-full left-0 bottomImage'>
+        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover' alt="" />
         </div>
       </section>
@@ -89,12 +91,12 @@ const Software = () => {
           ref={ref1}
           initial={{x:-100,opacity:0}}
           animate={inView1 ? {x:0,opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Innovative Software Solutions for Superior Performance</motion.div>
           <motion.div
           ref={ref2}
           initial={{x:-100,opacity:0}}
           animate={inView2 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',dedlay:.3}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum aliquam ipsam soluta, officia voluptate, unde officiis ipsa eos est eligendi debitis corrupti commodi, ratione odio inventore eum obcaecati? Neque, iusto! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas eum alias suscipit illo recusandae nihil obcaecati quasi. Excepturi nemo beatae nisi earum recusandae blanditiis sunt ab ea doloribus fugit!</motion.div>
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>At Flash Innovations, we specialize in crafting innovative software solutions designed to elevate your business’s performance. Our approach blends cutting-edge technology with deep industry insights to deliver tailored software that meets your specific needs. From streamlined operations to enhanced functionality, our solutions drive efficiency and growth, ensuring that your business remains competitive in today’s dynamic market. With a focus on quality and user experience, we transform complex challenges into seamless, effective solutions that power your success.</motion.div>
 
           {/* Software List */}
           <div className=' grid grid-cols-1 place-items-center gap-5 md:grid-cols-2'>
@@ -224,7 +226,7 @@ const Software = () => {
             ref={ref12}
             initial={{x:-100,opacity:0}}
             animate={inView12 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum culpa ipsum, obcaecati porro eum eligendi ut aut aliquam voluptatibus a vel animi vitae dolorum id eos nam voluptatum voluptate! Recusandae!</motion.div>
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Development spans several key areas, each addressing unique needs and contributing to overall success. This includes creating applications to enhance functionality, building and managing websites for optimal user experiences, designing tools for mobile devices to ensure accessibility on the go, and developing complex systems to support organizational processes. Each area plays a crucial role in driving efficiency and performance across different platforms and technologies.</motion.div>
 
             {/* List Of Development */}
             <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
@@ -241,7 +243,7 @@ const Software = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Web Design &
                       <span className=' block'>Development</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Our web design and development services create visually stunning and highly functional websites tailored to your business needs. We focus on user experience, responsive design, and seamless functionality to ensure your online presence stands out and performs optimally across all devices.</div>
                   </div>
               </motion.div>
 
@@ -257,7 +259,7 @@ const Software = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Software
                       <span className=' block'>Development</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>We provide custom software development to address your specific business challenges. Our solutions are built to enhance efficiency, streamline processes, and drive growth, utilizing the latest technologies and best practices to deliver robust and scalable software.</div>
                   </div>
               </motion.div>
 
@@ -274,7 +276,7 @@ const Software = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Android & IOs
                       <span className=' block'>Development</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Our mobile app development services cater to both Android and iOS platforms, creating intuitive and feature-rich applications. We ensure that your apps offer a seamless user experience, leveraging the latest technologies to engage users and meet your business goals.</div>
                   </div>
               </motion.div>
 
@@ -284,13 +286,14 @@ const Software = () => {
               animate={inView16 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
               className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
-                    <img src={webDevelopment} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                    <img src={cloudSolutions} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
-                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Web Design &
-                      <span className=' block'>Development</span>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Cloud 
+                      <span className=' block'>Solutions</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Our cloud solutions offer scalable and flexible infrastructure to meet your evolving needs. From cloud storage and computing to managed services, we provide secure and efficient solutions that enhance collaboration, improve accessibility, and drive innovation for your business.
+                    </div>
                   </div>
               </motion.div>
 

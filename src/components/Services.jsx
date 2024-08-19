@@ -19,6 +19,12 @@ import blackShade from "../assets/black-shade.png"
 import bottomImage from "../assets/bottom-image.png"
 import { inView, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
+import ComputingHardaware from "../assets/computing-hardware.jpg"
+import AdvancedSecurity from "../assets/advanced-security.jpeg"
+import efficientStorage from "../assets/efficient-storage.jpg"
+import reliableNetwork from "../assets/reliable-equipment.jpg"
+import customizable from "../assets/customizable.jpg"
+import integratedHardware from "../assets/Integrated-hardware.jpg"
 
 
 const Services = () => {
@@ -63,23 +69,23 @@ const Services = () => {
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
 
-       <section className=' section relative overflow-hidden md:h-[600px] w-full'>
+       <section className=' relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
         {/* About Banner */}
         <div>
-          <div className=' absolute top-0 w-full left-0 h-[600px]'>
+          <div className=' absolute top-0 w-full left-0 h-[600px] '>
             <img src={aboutBanner} className='w-full h-full object-cover absolute -z-10' alt="" />
             <img src={blackShade} className=' w-full h-full object-cover z-10 absolute ' alt="" />
           </div>
         </div>
 
-        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30'>
+        <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8 llg:py-0'>
           <div className=' mb-20 md:absolute homeTitlePosition'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle'>Pioneering Hardware Solutions for Enhanced Performance</div>
-            <div className=' text-center TextStylePara text-[#fff]'>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus non accusantium perferendis minus exercitationem rerum sit magnam nemo voluptatem natus. Perferendis placeat quia aliquam cupiditate ducimus laborum illo quos asperiores!</div>
+            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>High-Performance Hardware Solutions for Your Needs</div>
+            <div className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we deliver high-performance hardware solutions tailored to meet your specific needs. Our advanced components and systems are designed to enhance efficiency and reliability, ensuring optimal results for your business. With a focus on quality and innovation, we provide hardware that supports seamless operations and drives your success. Trust us to equip you with the technology necessary for peak performance and sustainable growth.</div>
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-0 z-20 w-full left-0 bottomImage'>
+        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover' alt="" />
         </div>
       </section>
@@ -90,12 +96,12 @@ const Services = () => {
             ref={ref1}
             initial={{x:-100,opacity:0}}
             animate={inView1 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Lorem ipsum dolor sit amet.</motion.div>
+            className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Advanced Hardware Solutions for <span className='lg:block'>Optimal Performance</span> </motion.div>
             <motion.div
             ref={ref2}
             initial={{x:-100,opacity:0}}
             animate={inView2 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad molestias consequatur impedit perspiciatis obcaecati dicta, repudiandae pariatur natus, esse sed, veniam a possimus tenetur? Cum aliquam ducimus architecto minus distinctio! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum, ipsa rem. Aliquid officia voluptatem facilis, expedita culpa voluptatum accusantium sapiente? Sapiente dolores molestias repudiandae soluta optio veritatis eos iusto modi!</motion.div>
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>At Flash Innovations, we offer advanced hardware solutions designed to deliver optimal performance and reliability. Our range includes cutting-edge components and systems tailored to meet diverse needs, from high-performance computing to robust security setups. We focus on providing durable and efficient hardware that enhances your operations and supports your business growth. With a commitment to quality and innovation, we ensure that our solutions keep you ahead in a fast-evolving technological landscape.</motion.div>
         </div>
 
         {/* Hardware List */}
@@ -308,12 +314,12 @@ const Services = () => {
           ref={ref14}
           initial={{x:-100,opacity:0}}
           animate={inView14 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types Of Development ?</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types of Hardware Solutions?</motion.div>
           <motion.div
           ref={ref15}
           initial={{x:-100,opacity:0}}
           animate={inView15 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.7}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt dignissimos ipsum repudiandae dolores culpa magnam sapiente quia nihil quos. Est architecto in iusto sit eos deleniti voluptates voluptatum unde quod! Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit ipsa, sequi magnam explicabo ipsum aperiam corrupti fugiat reiciendis rerum. Magnam quod natus molestiae inventore quaerat accusamus repellendus iure alias sed.
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Hardware solutions come in various types, each designed to address specific needs and enhance functionality. These include components for computing power, such as processors and memory, security systems to protect and monitor your infrastructure, and peripherals like printers and storage devices that support daily operations. Each type plays a crucial role in ensuring your technology setup is efficient, reliable, and tailored to your business requirements. Understanding these options helps you choose the right hardware to optimize performance and support your organizational goals.
           </motion.div>
 
           <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
@@ -324,13 +330,13 @@ const Services = () => {
               animate={inView16 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
               className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
-                    <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                    <img src={ComputingHardaware} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
-                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Web Design &
-                      <span className=' block'>Development</span>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>High-Performance 
+                      <span className=' block'>Computing Hardware</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Our high-performance computing hardware is designed to deliver exceptional speed and efficiency for demanding tasks. Whether you need powerful servers, robust workstations, or advanced processing units, our solutions ensure seamless operation and reliability for your most intensive applications.</div>
                   </div>
               </motion.div>
 
@@ -340,13 +346,13 @@ const Services = () => {
               animate={inView17 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
               className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
-                    <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                    <img src={AdvancedSecurity} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
-                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Software
-                      <span className=' block'>Development</span>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Advanced 
+                      <span className=' block'>Security Systems</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Protect your business with our advanced security systems, which provide comprehensive monitoring and protection. From state-of-the-art surveillance cameras to sophisticated alarm systems, our solutions are designed to safeguard your assets and maintain the safety of your operations.</div>
                   </div>
               </motion.div>
 
@@ -357,13 +363,13 @@ const Services = () => {
               animate={inView18 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
               className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
-                    <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                    <img src={efficientStorage} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
-                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Android & IOs
-                      <span className=' block'>Development</span>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Efficient 
+                      <span className=' block'>Storage Solutions</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Optimize your data management with our efficient storage solutions. We offer a range of options from high-capacity drives to scalable network storage systems, ensuring that your critical data is securely stored and easily accessible, with high performance and reliability.</div>
                   </div>
               </motion.div>
 
@@ -373,26 +379,55 @@ const Services = () => {
               animate={inView19 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
               className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
                   <div className='w-full h-[300px] mix-blend-multiply'>
-                    <img src='' className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                    <img src={reliableNetwork} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
                   </div>
                   <div className=' absolute px-5 top-5'>
-                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Web Design &
-                      <span className=' block'>Development</span>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Reliable 
+                      <span className=' block'>Network Equipment</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet error, voluptates labore, adipisci tenetur in temporibus, blanditiis ducimus eaque placeat quam mollitia. Quaerat odio ducimus dolores mollitia expedita quidem magni.</div>
+                    <div className=' text-white ParagraphText'>Ensure robust connectivity with our reliable network equipment. Our offerings include routers, switches, and access points designed to provide stable, high-speed connections, supporting your business’s communication and operational needs with minimal downtime.</div>
+                  </div>
+              </motion.div>
+
+              <motion.div
+              ref={ref21}
+              initial={{scale:0,opacity:0}}
+              animate={inView21 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[300px] mix-blend-multiply'>
+                    <img src={customizable} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                  </div>
+                  <div className=' absolute px-5 top-5'>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Customizable Peripherals 
+                      <span className=' block'>and Accessories</span>
+                    </div>
+                    <div className=' text-white ParagraphText'>Enhance your workspace with our customizable peripherals and accessories. From ergonomic keyboards and mice to specialized hardware like printers and docking stations, we provide solutions that fit your specific requirements and improve productivity.</div>
+                  </div>
+              </motion.div>
+
+              <motion.div
+              ref={ref22}
+              initial={{scale:0,opacity:0}}
+              animate={inView22 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
+              className=' w-full h-[300px] bg-black rounded-3xl DarkBox relative'>
+                  <div className='w-full h-[300px] mix-blend-multiply'>
+                    <img src={integratedHardware} className=' w-full h-full object-cover rounded-3xl -z-10' alt="" />
+                  </div>
+                  <div className=' absolute px-5 top-5'>
+                    <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Integrated 
+                      <span className=' block'>Hardware Systems </span>
+                    </div>
+                    <div className=' text-white ParagraphText'>Streamline your operations with our integrated hardware systems, which combine various components into cohesive solutions. Whether for complex IT environments or simple setups, our integrated systems ensure compatibility, efficiency, and ease of use, tailored to your business needs.</div>
                   </div>
               </motion.div>
 
             </div>
         </div>
       </section>
-      <motion.section
-      ref={ref20}
-      initial={{height:0,opacity:0}}
-      animate={inView20 ? {height:'auto',opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-      className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>
-      </motion.section>
+      </section>
     </div>
   )
 }

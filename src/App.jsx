@@ -56,9 +56,9 @@ function App() {
         </div>
       ) : (
         <div
-          className="main-container"
-          id="main-container"
-          data-scroll-container
+          // className="main-container"
+          // id="main-container"
+          // data-scroll-container
           ref={ref}
         >
           <Navbar />
