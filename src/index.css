@@ -179,8 +179,10 @@ body {
   font-family: 'BankGothic',sans-serif;
   text-transform: capitalize;
   line-height: 50px;
+  /* left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%); */
   /* font-weight: 200; */
-  
 }
 @media screen and (min-width:358px){
   .bottomImage{
@@ -251,7 +253,7 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
   box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
   backdrop-filter: blur(25px);
-  background: linear-gradient(to bottom right, #008cff, #e100);
+  background: linear-gradient(to bottom right, #ffffff, rgba(179, 172, 250, 0.997));
   border: 1px solid white;
 }
 .DarkBox{
@@ -261,6 +263,7 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   backdrop-filter: blur(25px);
   background: linear-gradient(to top, #000000, rgba(0, 0, 0, 0.1));
   border: 1px solid white;
+  /* color: #000000; */
 }
 .DevelopmentTextStyle{
   color: white;
@@ -305,6 +308,9 @@ input[type=number]::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
+.InputDesign::placeholder{
+  color: white;
+}
 .NavbarFont{
   font-family: 'BankGothic';
 }
@@ -320,6 +326,12 @@ input[type=number]::-webkit-inner-spin-button {
   transition: all 1s ease-in-out;
   animation: animate 5s ease-in-out infinite;
 }
+.BlobDesign2{
+  box-shadow: 0 20px 5px 5px rgba(0,0,0,0.2);
+  transition: all 1s ease-in-out;
+  animation: animate2 5s ease-in-out infinite;
+  background-color: #ffffff;
+}
 @keyframes animate{
   0%{
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
@@ -331,6 +343,19 @@ input[type=number]::-webkit-inner-spin-button {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   }
 }
+
+@keyframes animate2{
+  0%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  50%{
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  100%{
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+}
+
 
 .logo-slider-container {
   width: 100%; /* Full width of the container */
@@ -364,8 +389,8 @@ input[type=number]::-webkit-inner-spin-button {
   width: 80px;
   height: 80px;
   position: relative;
-  top: 150px;
-  left: 20px;
+  /* top: 150px;
+  left: 20px; */
 
 }
 .ChildCirlce{

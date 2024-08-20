@@ -63,9 +63,9 @@ const Contact = () => {
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
+        {/* <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover' alt="" />
-        </div>
+        </div> */}
       </section>
 
       <section className='section'>
@@ -109,12 +109,12 @@ const Contact = () => {
           ref={ref6}
           initial={{x:-100,opacity:0}}
           animate={inView6 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Offices</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Our Offices</motion.div>
           <motion.div 
           ref={ref7}
           initial={{x:-100,opacity:0}}
           animate={inView7 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.7}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>At Flash Innovations, we are proud to have a robust network of offices to serve you better. Our main branch is located in Bengaluru, where we coordinate our core operations and strategic initiatives. Additionally, we have three other branches strategically placed to ensure comprehensive support and accessibility across various regions. Each office is equipped to provide local expertise and personalized service, ensuring that our clients receive consistent and high-quality support regardless of their location.</motion.div>
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] lg:w-[700px] dlg:w-[900px] md:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we are proud to have a robust network of offices to serve you better. Our main branch is located in Bengaluru, where we coordinate our core operations and strategic initiatives. Additionally, we have three other branches strategically placed to ensure comprehensive support and accessibility across various regions. Each office is equipped to provide local expertise and personalized service, ensuring that our clients receive consistent and high-quality support regardless of their location.</motion.div>
 
           <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-3'>
 
@@ -187,12 +187,12 @@ const Contact = () => {
               ref={ref11}
               initial={{x:-100,opacity:0}}
               animate={inView11 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
-              className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Get In Touch</motion.div>
+              className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Get In Touch</motion.div>
               <motion.div
               ref={ref12}
               initial={{x:-100,opacity:0}}
               animate={inView12 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.3}} : {}}
-              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7'>We’d love to hear from you! Whether you have questions, need support, or want to explore how we can assist with your business needs, reaching out is simple. Contact us via phone, email, or our online form, and our responsive team will get back to you promptly. Your inquiries and feedback are important to us, and we’re here to ensure you receive the assistance and information you need to move forward.</motion.div>
+              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 font-bold dlg:text-lg'>We’d love to hear from you! Whether you have questions, need support, or want to explore how we can assist with your business needs, reaching out is simple. Contact us via phone, email, or our online form, and our responsive team will get back to you promptly. Your inquiries and feedback are important to us, and we’re here to ensure you receive the assistance and information you need to move forward.</motion.div>
           </div>
 
           <div className='md:w-[50%]'>

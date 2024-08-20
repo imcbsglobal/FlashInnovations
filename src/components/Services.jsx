@@ -69,7 +69,7 @@ const Services = () => {
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
 
-       <section className=' relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
+       <section className=' relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>z
         {/* About Banner */}
         <div>
           <div className=' absolute top-0 w-full left-0 h-[600px] '>
@@ -79,15 +79,15 @@ const Services = () => {
         </div>
 
         <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8 llg:py-0'>
-          <div className=' mb-20 md:absolute homeTitlePosition'>
+          <div className=' mb-0 md:absolute homeTitlePosition'>
             <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>High-Performance Hardware Solutions for Your Needs</div>
             <div className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we deliver high-performance hardware solutions tailored to meet your specific needs. Our advanced components and systems are designed to enhance efficiency and reliability, ensuring optimal results for your business. With a focus on quality and innovation, we provide hardware that supports seamless operations and drives your success. Trust us to equip you with the technology necessary for peak performance and sustainable growth.</div>
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
+        {/* <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover' alt="" />
-        </div>
+        </div> */}
       </section>
 
       <section className=' section'>
@@ -96,30 +96,30 @@ const Services = () => {
             ref={ref1}
             initial={{x:-100,opacity:0}}
             animate={inView1 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Advanced Hardware Solutions for <span className='lg:block'>Optimal Performance</span> </motion.div>
+            className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Advanced Hardware Solutions for <span className='lg:block'>Optimal Performance</span> </motion.div>
             <motion.div
             ref={ref2}
             initial={{x:-100,opacity:0}}
             animate={inView2 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>At Flash Innovations, we offer advanced hardware solutions designed to deliver optimal performance and reliability. Our range includes cutting-edge components and systems tailored to meet diverse needs, from high-performance computing to robust security setups. We focus on providing durable and efficient hardware that enhances your operations and supports your business growth. With a commitment to quality and innovation, we ensure that our solutions keep you ahead in a fast-evolving technological landscape.</motion.div>
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] md:mx-auto lg:w-[700px] font-bold dlg:text-lg dlg:w-[900px]'>At Flash Innovations, we offer advanced hardware solutions designed to deliver optimal performance and reliability. Our range includes cutting-edge components and systems tailored to meet diverse needs, from high-performance computing to robust security setups. We focus on providing durable and efficient hardware that enhances your operations and supports your business growth. With a commitment to quality and innovation, we ensure that our solutions keep you ahead in a fast-evolving technological landscape.</motion.div>
         </div>
 
         {/* Hardware List */}
 
-        <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:max-w-[1200px] lg:mx-auto '>
+        <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-5 lg:w-[1200px] dlg:w-[1400px] lg:mx-auto '>
 
         <motion.div
         ref={ref3}
         initial={{scale:0,opacity:0}}
         animate={inView3 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-        className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+        className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={pos} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={pos} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>POS System</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>POS System</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -128,14 +128,14 @@ const Services = () => {
             ref={ref4}
             initial={{scale:0,opacity:0}}
             animate={inView4 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={computer} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={computer} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Computers</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Computers</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -144,14 +144,14 @@ const Services = () => {
             ref={ref5}
             initial={{scale:0,opacity:0}}
             animate={inView5 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={barcodePrinter} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={barcodePrinter} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Barcode Printer</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Barcode Printer</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -160,14 +160,14 @@ const Services = () => {
             ref={ref6}
             initial={{scale:0,opacity:0}}
             animate={inView6 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={printers} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={printers} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Printers</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Printers</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -176,14 +176,14 @@ const Services = () => {
             ref={ref7}
             initial={{scale:0,opacity:0}}
             animate={inView7 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={handBarcode} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={handBarcode} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Hand Barcode Scanner</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Hand Barcode Scanner</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -192,14 +192,14 @@ const Services = () => {
             ref={ref8}
             initial={{scale:0,opacity:0}}
             animate={inView8 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={tableBarcode} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={tableBarcode} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Table Barcode Scanner</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Table Barcode Scanner</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -208,14 +208,14 @@ const Services = () => {
             ref={ref9}
             initial={{scale:0,opacity:0}}
             animate={inView9 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={lables} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={lables} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Labels</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Labels</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -226,14 +226,14 @@ const Services = () => {
             ref={ref10}
             initial={{scale:0,opacity:0}}
             animate={inView10 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={cashDrawer} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={cashDrawer} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Cash Drawer</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Cash Drawer</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -242,14 +242,14 @@ const Services = () => {
             ref={ref11}
             initial={{scale:0,opacity:0}}
             animate={inView11 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={weighting} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={weighting} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Weighting Scale</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Weighting Scale</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -259,14 +259,14 @@ const Services = () => {
             ref={ref12}
             initial={{scale:0,opacity:0}}
             animate={inView12 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={cctv} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={cctv} className='w-auto h-[100px] drop-shadow-2xl dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>CCTV</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>CCTV</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -276,14 +276,14 @@ const Services = () => {
             ref={ref13}
             initial={{scale:0,opacity:0}}
             animate={inView13 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={biometric} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={biometric} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Biometric</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Biometric</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -293,14 +293,14 @@ const Services = () => {
             ref={ref14}
             initial={{scale:0,opacity:0}}
             animate={inView14 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={networking} className='w-auto h-[100px] drop-shadow-md' alt="" />
+                  <img src={networking} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]  dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-white'>Networking</div>
+                <div className=' text-xl font-bold text-black dlg:text-[28px]'>Networking</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base'>
+              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -314,12 +314,12 @@ const Services = () => {
           ref={ref14}
           initial={{x:-100,opacity:0}}
           animate={inView14 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>What Are The Types of Hardware Solutions?</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>What Are The Types of Hardware Solutions?</motion.div>
           <motion.div
           ref={ref15}
           initial={{x:-100,opacity:0}}
           animate={inView15 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.7}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] md:mx-auto lg:max-w-[700px]'>Hardware solutions come in various types, each designed to address specific needs and enhance functionality. These include components for computing power, such as processors and memory, security systems to protect and monitor your infrastructure, and peripherals like printers and storage devices that support daily operations. Each type plays a crucial role in ensuring your technology setup is efficient, reliable, and tailored to your business requirements. Understanding these options helps you choose the right hardware to optimize performance and support your organizational goals.
+          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] md:mx-auto lg:w-[700px] font-bold dlg:text-lg dlg:w-[900px]'>Hardware solutions come in various types, each designed to address specific needs and enhance functionality. These include components for computing power, such as processors and memory, security systems to protect and monitor your infrastructure, and peripherals like printers and storage devices that support daily operations. Each type plays a crucial role in ensuring your technology setup is efficient, reliable, and tailored to your business requirements. Understanding these options helps you choose the right hardware to optimize performance and support your organizational goals.
           </motion.div>
 
           <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
@@ -336,7 +336,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>High-Performance 
                       <span className=' block'>Computing Hardware</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Our high-performance computing hardware delivers speed and efficiency for demanding tasks, providing reliable servers, workstations, and processing units for seamless operation.</div>
+                    <div className=' text-white ParagraphText font-bold'>Our high-performance computing hardware delivers speed and efficiency for demanding tasks, providing reliable servers, workstations, and processing units for seamless operation.</div>
                   </div>
               </motion.div>
 
@@ -352,7 +352,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Advanced 
                       <span className=' block'>Security Systems</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Secure your business with our advanced security systems, including cutting-edge surveillance cameras and sophisticated alarms, designed to protect your assets and ensure operational safety.</div>
+                    <div className=' text-white ParagraphText font-bold'>Secure your business with our advanced security systems, including cutting-edge surveillance cameras and sophisticated alarms, designed to protect your assets and ensure operational safety.</div>
                   </div>
               </motion.div>
 
@@ -369,7 +369,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Efficient 
                       <span className=' block'>Storage Solutions</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Enhance your data management with our efficient storage solutions, featuring high-capacity drives and scalable network systems for secure, high-performance, and reliable data access.</div>
+                    <div className=' text-white ParagraphText font-bold'>Enhance your data management with our efficient storage solutions, featuring high-capacity drives and scalable network systems for secure, high-performance, and reliable data access.</div>
                   </div>
               </motion.div>
 
@@ -385,7 +385,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Reliable 
                       <span className=' block'>Network Equipment</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Achieve reliable connectivity with our network equipment, including routers, switches, and access points, designed for stable, high-speed connections and minimal downtime.</div>
+                    <div className=' text-white ParagraphText font-bold'>Achieve reliable connectivity with our network equipment, including routers, switches, and access points, designed for stable, high-speed connections and minimal downtime.</div>
                   </div>
               </motion.div>
 
@@ -401,7 +401,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Customizable Peripherals 
                       <span className=' block'>and Accessories</span>
                     </div>
-                    <div className=' text-white ParagraphText'>Upgrade your workspace with our customizable peripherals and accessories, including ergonomic keyboards, mice, printers, and docking stations, tailored to enhance productivity and meet your specific needs.</div>
+                    <div className=' text-white ParagraphText font-bold'>Upgrade your workspace with our customizable peripherals and accessories, including ergonomic keyboards, mice, printers, and docking stations, tailored to enhance productivity and meet your specific needs.</div>
                   </div>
               </motion.div>
 
@@ -417,7 +417,7 @@ const Services = () => {
                     <div className='DevelopmentTextStyle font-bold text-3xl drop-shadow-lg mb-5'>Integrated 
                       <span className=' block'>Hardware Systems </span>
                     </div>
-                    <div className=' text-white ParagraphText'>Streamline your operations with our integrated hardware systems, offering cohesive solutions that ensure compatibility and efficiency for both complex and simple setups, tailored to your business needs.</div>
+                    <div className=' text-white ParagraphText font-bold'>Streamline your operations with our integrated hardware systems, offering cohesive solutions that ensure compatibility and efficiency for both complex and simple setups, tailored to your business needs.</div>
                   </div>
               </motion.div>
 

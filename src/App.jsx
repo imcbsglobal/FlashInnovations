@@ -5,7 +5,7 @@ import Software from "./components/Software";
 import Services from "./components/Services";
 import Contact from "./components/Contact";
 import Clients from "./components/Clients";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import useLocoScroll from "./components/useLocoScroll";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 

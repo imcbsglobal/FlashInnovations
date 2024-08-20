@@ -34,7 +34,7 @@ const Clients = () => {
         </div>
 
         <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8'>
-          <div className=' mb-20 md:absolute homeTitlePosition'>
+          <div className=' mb-0 md:absolute homeTitlePosition'>
             <motion.div
             
             className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Empowering Success Through Strategic Client Partnerships</motion.div>
@@ -45,9 +45,9 @@ const Clients = () => {
           </div>
         </div>
         {/* Bottom Image */}
-        <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
+        {/* <div className=' absolute bottom-[20px] z-20 w-full left-0 bottomImage llg:z-[999] llg:bottom-[80px] dlg:bottom-[40px]'>
           <img src={bottomImage} className='w-full h-full object-cover bottomImage llg:bottom-[-10px]' alt="" />
-        </div>
+        </div> */}
       </section>
 
       <section>
@@ -57,12 +57,12 @@ const Clients = () => {
             ref={ref3}
             initial={{x:-100,opacity:0}}
             animate={inView3 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut"}} : {}}
-            className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff]'>Our Clients</motion.div>
+            className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[100px]'>Our Clients</motion.div>
             <motion.div
             ref={ref4}
             initial={{x:-100,opacity:0}}
             animate={inView4 ? {x:0,opacity:1,transition:{duration:.5,ease:"backInOut",delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:max-w-[600px] lg:max-w-[700px] md:mx-auto'>At Flash Innovations, we take pride in partnering with a diverse range of clients who trust us to deliver exceptional solutions. Our client base spans various industries, reflecting our ability to adapt and meet unique needs with precision. From large enterprises to dynamic startups, we are dedicated to understanding each client’s specific goals and providing tailored services that drive success. Our collaborative approach and commitment to excellence ensure that every project contributes to our clients’ growth and achievement.
+            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg:text-lg dlg:w-[900px]'>At Flash Innovations, we take pride in partnering with a diverse range of clients who trust us to deliver exceptional solutions. Our client base spans various industries, reflecting our ability to adapt and meet unique needs with precision. From large enterprises to dynamic startups, we are dedicated to understanding each client’s specific goals and providing tailored services that drive success. Our collaborative approach and commitment to excellence ensure that every project contributes to our clients’ growth and achievement.
             </motion.div>
             {/* Clients Lists */}
             <ClientsLogos/>

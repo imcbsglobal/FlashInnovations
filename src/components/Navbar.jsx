@@ -24,7 +24,7 @@ const Navbar = () => {
 
   return (
 
-    <header className={`GlassNavbar fixed top-0 left-0 w-full py-2 z-[999] rounded-b-3xl transition-all duration-300 ${active ? ' shadow-lg bg-[white]' : 'bg-[#ffffff42]'}`}>
+    <header className={`GlassNavbar fixed top-0 left-0 w-full py-2 z-[999] rounded-b-3xl transition-all duration-300 ${active ? ' shadow-lg bg-[white]' : 'bg-[#ffffff]'}`}>
     <div className="z-50">
         {menuOpen && <MobileNavbar setMenuOpen={setMenuOpen} />}
     </div>
