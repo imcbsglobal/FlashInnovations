@@ -1,6 +1,6 @@
 import React from 'react'
 import techVideo from "../assets/tech-video3.mp4"
-import blueShade from "../assets/blue-shade.png"
+import blueShade from "../assets/black-shade.png"
 import task from "../assets/task.png"
 import shade from "../assets/shade.png"
 import vtask from "../assets/vtask.png"
@@ -60,7 +60,7 @@ const Software = () => {
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
-        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
+        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
 

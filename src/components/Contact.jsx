@@ -1,6 +1,6 @@
 import React from 'react'
 import techVideo from "../assets/tech-video3.mp4"
-import blueShade from "../assets/blue-shade.png"
+import blueShade from "../assets/black-shade.png"
 import location from "../assets/location.png"
 import phone from "../assets/phone.png"
 import socialMedia from "../assets/social-media.png"
@@ -44,7 +44,7 @@ const Contact = () => {
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
-        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
+        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
       <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>

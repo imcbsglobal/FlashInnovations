@@ -310,7 +310,7 @@ useEffect(() => {
               ref={ref8}
               initial={{ x:-100,opacity:0}}
               animate={inView8 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software & Hardware Company</motion.div>
+              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software & Hardware Solutions</motion.div>
               <motion.div
               ref={ref9}
               initial={{ x:-100,opacity:0}}

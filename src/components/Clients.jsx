@@ -4,7 +4,7 @@ import aboutBanner from "../assets/clients-banner.jpeg"
 import blackShade from "../assets/black-shade.png"
 import bottomImage from "../assets/bottom-image.png"
 import techVideo from "../assets/tech-video3.mp4"
-import blueShade from "../assets/blue-shade.png"
+import blueShade from "../assets/black-shade.png"
 import ClientsLogos from './ClientsLogos';
 import { inView, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
@@ -21,7 +21,7 @@ const Clients = () => {
   return (
     <div className='backgroundVideo relative mt-[80px]'>
       <div className=''>
-        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover opacity-50' alt="" />
+        <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
       </div>
        <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
