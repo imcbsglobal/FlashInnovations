@@ -154,7 +154,7 @@ useEffect(() => {
        
       <div className='w-full h-screen flex justify-center items-center'>
         <div className=' TextStyle flex flex-col justify-center items-center z-50'>
-            <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[170px]'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
+            <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[100px]'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
             <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
             <div className=' flex justify-center '>
