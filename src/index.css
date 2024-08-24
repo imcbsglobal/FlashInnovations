@@ -311,9 +311,9 @@ input[type=number]::-webkit-inner-spin-button {
 .InputDesign::placeholder{
   color: white;
 }
-.NavbarFont{
+/* .NavbarFont{
   font-family: 'Nexa';
-}
+} */
 .parallax {
   background-attachment: fixed;
   background-size: cover;

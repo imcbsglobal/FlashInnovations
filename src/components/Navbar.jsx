@@ -43,7 +43,7 @@ const Navbar = () => {
                 <li className="cursor-pointer NavbarFont"><Link to='/contact'>Contact</Link></li>
             </ul>
         </div>
-        <div className=" flex justify-start items-start flex-col gap-1">
+        <div className="hidden md:flex justify-start items-start flex-col gap-1">
             <div className=" flex justify-center items-center gap-2">
                 {/* Icon */}
                 <div className="text-[#2075bb]"><FaPhoneAlt/></div>
