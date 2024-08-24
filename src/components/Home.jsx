@@ -43,6 +43,8 @@ import banner3 from "../assets/banner3.png"
 import homeVideo from "../assets/home-video.mp4"
 import blackShade from "../assets/black-shade.png"
 import homeImage from "../assets/demo-img.png"
+import intro from "../assets/intro.mp4"
+import homeSection from "../assets/home-section.jpg"
 
 
 
@@ -152,8 +154,8 @@ useEffect(() => {
        
       <div className='w-full h-screen flex justify-center items-center'>
         <div className=' TextStyle flex flex-col justify-center items-center z-50'>
-            <div className=' text-[72px] mb-10 leading-[70px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-[120px] dlg:text-[200px] parallax-text dlg:leading-[170px]'  id='parallaxTitle'>FLASH <span className='block'>INNOVATIONS</span> </div>
-            <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto quod aperiam voluptates unde, dolor, ducimus nostrum molestiae autem expedita cumque dolores harum eius quaerat facere maxime non neque a tempora.
+            <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[170px]'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
+            <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
             <div className=' flex justify-center '>
               <button className=' GradientButton px-8 py-2 relative z-30 cursor-pointer text-sm lg:text-[20px] lg:py-5'>Discover More</button>
@@ -180,16 +182,16 @@ useEffect(() => {
 
         <div className='fixed inset-0 overflow-hidden'>
           <video
-            className='w-full h-full object-cover opacity-50'
+            className='w-full h-full object-cover opacity-50 mix-blend-multiply'
             autoPlay
             loop
             muted
             playsInline
-            src={homeVideo}
+            src={intro}
           ></video>
         </div>
-        <div className='fixed inset-0 overflow-hidden z-10'>
-          <img src={blackShade} className=' w-full h-full object-cover' alt="" />
+        <div className='fixed inset-0 overflow-hidden -z-20'>
+          <img src={homeSection} className=' w-full h-full object-cover mix-blend-multiply' alt="" />
         </div>
         <div className='flex justify-center items-center h-full w-full fixed z-30'>
           <div>
