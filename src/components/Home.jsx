@@ -45,6 +45,10 @@ import blackShade from "../assets/black-shade.png"
 import homeImage from "../assets/demo-img.png"
 import intro from "../assets/intro.mp4"
 import homeSection from "../assets/home-section.jpg"
+import businessSoftware from "../assets/business-software.jpg"
+import aboutCompany from "../assets/about-company.jpg"
+import companyServices from "../assets/company-services.jpg"
+import customerSupport from "../assets/customer-support1.jpg"
 
 
 
@@ -216,7 +220,7 @@ useEffect(() => {
       </section>
 
       {/* Next Section */}
-      <section className='relative min-h-screen w-full z-50 GlassNavbar1 rounded-t-3xl '>
+      <section className='relative min-h-screen w-full z-50  bg-[#fffffff1] rounded-t-3xl '>
         {/* <div className=''>
           <img src={blueShade} className='absolute -z-10 w-full h-full object-cover opacity-50' alt="blueShade" />
           <video className='absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
@@ -233,21 +237,21 @@ useEffect(() => {
                   initial={{ opacity: 0, x: -100 }}
                   animate={inView1 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
                   transition={{ duration: 1, delay: 1, ease: "backInOut" }}
-                  className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>About Us</motion.div>
+                  className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>About Us</motion.div>
                   <motion.div
                   ref={ref2}
                   initial={{ opacity: 0, x: -100 }}
                   animate={inView2 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
                   transition={{ duration: 1, delay: 1.2, ease: "backInOut" }}
                   // variants={itemVariants}
-                  className=' text-center ParagraphText text-[#fff] mb-10 font-bold dlg:text-lg'>In the face of challenges, our resilience shines. We consistently deliver excellence, driven by a commitment to innovation and quality. Every task we undertake is a step toward achieving greatness, with an unwavering focus on surpassing expectations</motion.div>
+                  className=' text-center ParagraphText text-[#2a2828] mb-10 font-bold dlg:text-lg'>In the face of challenges, our resilience shines. We consistently deliver excellence, driven by a commitment to innovation and quality. Every task we undertake is a step toward achieving greatness, with an unwavering focus on surpassing expectations</motion.div>
                   <motion.div
                   // variants={itemVariants}
                   ref={ref3}
                   initial={{ opacity: 0, x: -100 }}
                   animate={inView3 ? { x: 0, opacity: 1 } : { opacity: 0, x: -100 }}
                   transition={{ duration: 1, delay: 1.5, ease: "backInOut" }}
-                  className='text-center ParagraphText text-[#fff] mb-5 font-bold dlg:text-lg'>We transform obstacles into opportunities, ensuring that our impact is both lasting and significant. Our dedication to pushing boundaries and redefining standards is at the core of everything we do, making us a reliable partner in any endeavor.
+                  className='text-center ParagraphText text-[#2a2828] mb-5 font-bold dlg:text-lg'>We transform obstacles into opportunities, ensuring that our impact is both lasting and significant. Our dedication to pushing boundaries and redefining standards is at the core of everything we do, making us a reliable partner in any endeavor.
                   </motion.div>
                 </motion.div>
 
@@ -258,7 +262,7 @@ useEffect(() => {
                   initial={{x:-100,opacity:0,scale:0}}
                   animate={inView4 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:.2}} : {}}
                   >
-                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className='font-bold dlg:text-lg'>We drive progress with relentless creativity and forward-thinking solutions.</div>
                     </div>
@@ -268,7 +272,7 @@ useEffect(() => {
                   initial={{x:-100,opacity:0,scale:0}}
                   animate={inView5 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:.5}} : {}}
                   >
-                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className=' font-bold dlg:text-lg'>We deliver superior results through unwavering commitment and precision.</div>
                     </div>
@@ -278,7 +282,7 @@ useEffect(() => {
                   initial={{x:-100,opacity:0,scale:0}}
                   animate={inView6 ? {x:0,opacity:1,scale:1,transition:{duration:1,ease:'backInOut',delay:1}} : {}}
                   >
-                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                    <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffffe6] ParagraphText'>
                       <div className=' text-xl'><TiTick className=''/></div>
                       <div className='font-bold dlg:text-lg'>We uphold the highest standards, ensuring trust and reliability in all we do.</div>
                     </div>
@@ -292,7 +296,7 @@ useEffect(() => {
               initial={{x:-100,opacity:0,scale:0}}
               animate={inView7 ? {x:0,opacity:1,scale:1,transition:{ease:'backInOut'}} : {}}
               className='h-[300px] w-full  lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px] BlobDesign2 bg-white'>
-                    <img src={Colleagues} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
+                    <img src={aboutCompany} className=' h-full w-full object-cover mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
                     {/* <div className=' text-center font-bold mt-3 text-lg text-[#fff]'></div> */}
                 </motion.div>
               </div>
@@ -312,20 +316,20 @@ useEffect(() => {
               ref={ref8}
               initial={{ x:-100,opacity:0}}
               animate={inView8 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software & Hardware Solutions</motion.div>
+              className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software Solutions</motion.div>
               <motion.div
               ref={ref9}
               initial={{ x:-100,opacity:0}}
               animate={inView9 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='text-center ParagraphText text-[#fff] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we champion the forefront of technology with unwavering commitment and excellence. Our cutting-edge solutions and unmatched expertise redefine industry standards, driving transformative results across diverse sectors. With a strategic approach and relentless dedication, we empower businesses to excel and navigate challenges with confidence, ensuring exceptional performance and lasting impact.</motion.div>
+              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we champion the forefront of technology with unwavering commitment and excellence. Our cutting-edge solutions and unmatched expertise redefine industry standards, driving transformative results across diverse sectors. With a strategic approach and relentless dedication, we empower businesses to excel and navigate challenges with confidence, ensuring exceptional performance and lasting impact.</motion.div>
               <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
                 <motion.div
                 ref={ref10}
                 initial={{scale:0,opacity:0}}
                 animate={inView10 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className=' flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>10+</div>
-                  <div className='text-2xl text-[#fff] dlg:text-[30px]'>Years of <span className='block'>Experience</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>20+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Years of <span className='block'>Experience</span></div>
                 </motion.div>
 
                 <motion.div
@@ -334,7 +338,7 @@ useEffect(() => {
                 animate={inView11 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
                   <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>30+</div>
-                  <div className='text-2xl text-[#fff] dlg:text-[30px]'>Skilled <span className='block'>Professionals</span></div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Skilled <span className='block'>Professionals</span></div>
                 </motion.div>
 
                 <motion.div
@@ -342,8 +346,8 @@ useEffect(() => {
                 initial={{scale:0,opacity:0}}
                 animate={inView12 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>300+</div>
-                  <div className='text-2xl text-[#fff] dlg:text-[30px]'>Projects<span className='block'>Worldwide</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>100%</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Customer<span className='block'>Satisfaction</span></div>
                 </motion.div>
 
                 <motion.div
@@ -351,8 +355,8 @@ useEffect(() => {
                 initial={{scale:0,opacity:0}}
                 animate={inView13 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>100%</div>
-                  <div className='text-2xl text-[#fff] dlg:text-[30px]'>Customer<span className='block'>Satisfaction</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>1000+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Clients<span className='block'>World Wide</span></div>
                 </motion.div>
 
               </div>
@@ -421,135 +425,107 @@ useEffect(() => {
         {/* About Section */}
 
         <section className=' section'>
-          <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
+          <div className='lg:max-w-[1200px] lg:mx-auto mb-10'>
            <div className=' md:flex justify-center items-center gap-10'>
             <div className='mb-10'>
                 <motion.div
                 ref={ref22}
                 initial={{x:-100,opacity:0}}
                 animate={inView22 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
-                className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Services
+                className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Services
                 </motion.div>
                 <motion.div
                  ref={ref23}
                  initial={{x:-100,opacity:0}}
                  animate={inView23 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
-                className='text-center ParagraphText text-[#fff] font-bold dlg:text-lg'>At Flash Innovations, we offer a full range of tailored solutions, including cutting-edge software, dynamic web and mobile applications, impactful branding, strategic digital marketing, and engaging design services, all crafted to elevate your business.</motion.div>
+                className='text-center ParagraphText text-[#2a2828] font-bold dlg:text-lg'>At Flash Innovations, we offer a full range of tailored solutions, including cutting-edge software, dynamic web and mobile applications, impactful branding, strategic digital marketing, and engaging design services, all crafted to elevate your business.</motion.div>
               </div>
 
               <motion.div
                ref={ref24}
                initial={{scale:0,opacity:0}}
                animate={inView24 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className='h-[300px] w-full  dlg:h-[400px] bg-white BlobDesign2'>
-                      <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
+              className='h-[300px] w-full  dlg:h-[400px] bg-white BlobDesign2 mb-10'>
+                      <img src={companyServices} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
               </motion.div>
            </div>
 
             {/* Services Lists */}
-            <div className=' grid grid-cols-1 place-items-center place-content-center gap-10 mt-10 lg:grid-cols-2'>
-
-              {/* First List */}
-              <motion.div 
-              className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
+            
+              <div className=' grid grid-cols-1 place-items-center md:grid-cols-2 llg:w-[1200px] mx-auto gap-10'>
 
                 <motion.div
-                // ref={ref25}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView25 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.1}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center relative'>
-                  <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={inventory} className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                ref={ref26}
+                initial={{y:-100,opacity:0}}
+                animate={inView26 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                  <div className='text-[25px] mb-5 font-bold'>Computer Hardware Sales & Services</div>
+                  <div className=''>
+                  Flash Innovations provides comprehensive Computer Hardware Sales & Services, including high-quality components and expert repairs. We ensure your systems operate efficiently and reliably with top-notch support.
                   </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Inventory Softwares</div>
-                </motion.div>
-
-                <motion.div 
-                // ref={ref26}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView26 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={customWeb}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
-                  </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Custom Web Applications</div>
-                </motion.div>
-
-                <motion.div 
-                // ref={ref27}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView27 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={mobile}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
-                  </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Mobile App Development</div>
-                </motion.div>
-
-                <motion.div 
-                // ref={ref28}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView28 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={graphicDesigning}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
-                  </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Graphic Designing</div>
-                </motion.div>
-
-              </motion.div>
- 
-              {/* Second List */}
-              <div className='grid grid-cols-2 place-items-center place-content-center gap-2 text-center'>
-
-              <motion.div
-              // ref={ref29}
-              // initial={{scale:0,opacity:0}}
-              // animate={inView29 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:.5}} : {}}
-              className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center overflow-hidden'>
-              <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={branding}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg ' alt="" />
-                  </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Branding</div>
                 </motion.div>
 
                 <motion.div
-                // ref={ref30}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView30 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={digitalMarketing}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                ref={ref27}
+                initial={{y:-100,opacity:0}}
+                animate={inView27 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className='w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                  <div className='text-[25px] mb-5 font-bold leading-[40px]'>Customized Software Development</div>
+                  <div>
+                  Flash Innovations excels in Customized Software Development, delivering tailored solutions that fit your unique business needs. Our expert team ensures seamless integration and optimal performance for your software applications.
                   </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Digital Marketing</div>
                 </motion.div>
 
                 <motion.div
-                // ref={ref31}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView31 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:1.5}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-br-3xl rounded-tl-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={ECommerce}  className=' w-full h-full object-cover rounded-br-3xl rounded-tl-3xl mix-blend-multiply blurImg' alt="" />
+                ref={ref28}
+                initial={{y:-100,opacity:0}}
+                animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                 className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Business Softwares</div>
+                  <div>
+                  At Flash Innovations, we deliver business software that streamlines operations and integrates seamlessly. Our solutions offer real-time insights, helping your business make smarter decisions and scale effectively.
                   </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>E-Commerce</div>
                 </motion.div>
 
+
                 <motion.div
-                // ref={ref32}
-                // initial={{scale:0,opacity:0}}
-                // animate={inView32 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5,delay:2}} : {}}
-                className=' h-[100px] lg:h-[200px] w-full rounded-bl-3xl rounded-tr-3xl GlassBox1 flex justify-center items-center'>
-                <div className='absolute w-full h-[100px] rounded-bl-3xl rounded-tr-3xl mix-blend-multiply -z-10 blurImg lg:h-[200px]'>
-                    <img src={sms}  className=' w-full h-full object-cover rounded-bl-3xl rounded-tr-3xl mix-blend-multiply blurImg' alt="" />
+                ref={ref29}
+                initial={{y:-100,opacity:0}}
+                animate={inView29 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                  <div className='text-[25px] mb-5 font-bold'>CCTV & Security</div>
+                  <div>
+                  Flash Innovations offers top-notch CCTV & Security solutions, providing advanced surveillance systems and reliable protection for your premises. Our expert services ensure comprehensive security and peace of mind.
                   </div>
-                  <div className=' p-5 text-[#fff] lg:text-[28px] lg:font-bold drop-shadow-lg'>Whatsapp/SMS Marketing</div>
                 </motion.div>
+
+
+                <motion.div
+                ref={ref30}
+                initial={{y:-100,opacity:0}}
+                animate={inView30 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                  <div className='text-[25px] mb-5 font-bold'>Scanners & Printers</div>
+                  <div>
+                  Flash Innovations provides high-quality Scanners & Printers, offering reliable performance and advanced features to meet all your document management needs. Trust us for efficient and durable solutions.
+                  </div>
+                </motion.div>
+
+
+                <motion.div
+                ref={ref31}
+                initial={{y:-100,opacity:0}}
+                animate={inView31 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Networking</div>
+                  <div>
+                  Flash Innovations delivers expert Networking solutions, ensuring seamless connectivity and robust performance for your business. Our services include design, installation, and support for all your network needs.
+                  </div>
+                </motion.div>
+
 
               </div>
 
-              
-            </div>
             <motion.div 
             // ref={ref33}
             // initial={{scale:0,opacity:0}}
@@ -561,165 +537,30 @@ useEffect(() => {
         </section>
 
         <section className=' section'>
-          <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
+          {/* <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <motion.div
             ref={ref34}
             initial={{x:-100,opacity:0}}
             animate={inView34 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-             className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Hardware Solutions
+             className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Hardware Solutions
              </motion.div>
             <motion.div
             ref={ref35}
             initial={{x:-100,opacity:0}}
             animate={inView35 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-            className=' text-center ParagraphText text-[#fff] md:max-w-[600px] md:mx-auto lg:max-w-[700px] font-bold dlg:text-lg'>At Flash Innovations, our hardware solutions offer top-notch reliability and performance. We provide a diverse range of advanced components, including security systems and high-performance computing devices, all tailored to your needs. Our focus on quality and innovation ensures that our hardware enhances efficiency and supports your business’s growth, keeping you ahead in a rapidly evolving technological landscape.
-            </motion.div>
+            className=' text-center ParagraphText text-[#2a2828] md:max-w-[600px] md:mx-auto lg:max-w-[700px] font-bold dlg:text-lg'>At Flash Innovations, our hardware solutions offer top-notch reliability and performance. We provide a diverse range of advanced components, including security systems and high-performance computing devices, all tailored to your needs. Our focus on quality and innovation ensures that our hardware enhances efficiency and supports your business’s growth, keeping you ahead in a rapidly evolving technological landscape.
+            </motion.div> */}
 
             {/* Hardware Lists */}
 
-            <div className=' grid grid-cols-2 place-items-center gap-5 mt-10 md:grid-cols-3 lg:grid-cols-4 lg:gap-28'>
-              
-              <motion.div
-              ref={ref36}
-              initial={{scale:0,opacity:0}}
-              animate={inView36 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px]  bg-white BlobDesign'>
-                    <img src={pos} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center font-bold text-lg text-[#fff] mt-3 '>POS</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref37}
-              initial={{scale:0,opacity:0}}
-              animate={inView37 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[230px] lg:h-[230px]  bg-white BlobDesign'>
-                    <img src={computer} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center font-bold mt-3 text-lg text-[#fff]'>Computers</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref38}
-              initial={{scale:0,opacity:0}}
-              animate={inView38 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[230px] lg:h-[230px]  bg-white BlobDesign'>
-                    <img src={barcodePrinter} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center font-bold mt-3 text-lg text-[#fff]'>Barcode Printer</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref39}
-              initial={{scale:0,opacity:0}}
-              animate={inView39 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px]  bg-white BlobDesign'>
-                    <img src={printers} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Printers</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref40}
-              initial={{scale:0,opacity:0}}
-              animate={inView40 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5 '>
-                <div className='h-[120px] w-[120px] lg:w-[230px] lg:h-[230px] bg-white BlobDesign'>
-                    <img src={handBarcode} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Hand Barcode Scanner</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref41}
-              initial={{scale:0,opacity:0}}
-              animate={inView41 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[230px] lg:h-[230px] bg-white BlobDesign'>
-                    <img src={tableBarcode} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Table Barcode Scanner</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref42}
-              initial={{scale:0,opacity:0}}
-              animate={inView42 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[270px] lg:h-[270px] bg-white BlobDesign'>
-                    <img src={lables} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Labels</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref43}
-              initial={{scale:0,opacity:0}}
-              animate={inView43 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px] bg-white BlobDesign'>
-                    <img src={cashDrawer} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Cash Drawer</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref44}
-              initial={{scale:0,opacity:0}}
-              animate={inView44 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px] bg-white BlobDesign'>
-                    <img src={weighting} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Weighting Scale</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref45}
-              initial={{scale:0,opacity:0}}
-              animate={inView45 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px] bg-white BlobDesign'>
-                    <img src={cctv} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>CCTV</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref46}
-              initial={{scale:0,opacity:0}}
-              animate={inView46 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px] bg-white BlobDesign'>
-                    <img src={biometric} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Biometric</div>
-                </div>
-              </motion.div>
-
-              <motion.div
-              ref={ref42}
-              initial={{scale:0,opacity:0}}
-              animate={inView42 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' w-full h-[200px] flex flex-col justify-center items-center gap-5'>
-                <div className='h-[120px] w-[120px] lg:w-[250px] lg:h-[250px]  bg-white BlobDesign'>
-                    <img src={networking} className=' h-full w-full object-cover rounded-full' alt="" />
-                    <div className=' text-center mt-3 font-bold text-lg text-[#fff]'>Networking</div>
-                </div>
-              </motion.div>
-
-            </div>
-            <motion.div
+            {/* <motion.div
             ref={ref43}
             initial={{scale:0,opacity:0}}
             animate={inView43 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
             className=' mt-10 flex justify-center items-center lg:mt-28'>
                 <button className='px-8 py-2 rounded-3xl GradientButton'>Know More</button>
-              </motion.div>
-          </div>
+              </motion.div> */}
+          {/* </div> */}
         </section>
 
         <section className='section'>
@@ -728,13 +569,13 @@ useEffect(() => {
               ref={ref44}
               initial={{x:-100,opacity:0}}
               animate={inView44 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Partners
+              className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Partners
               </motion.div>
               <motion.div 
               ref={ref45}
               initial={{x:-100,opacity:0}}
               animate={inView45 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className=' text-center ParagraphText text-[#fff] lg:px-56 font-bold dlg:text-lg'>At Flash Innovations, we value our strategic partnerships with industry-leading companies and technology providers. These collaborations enable us to deliver cutting-edge solutions and exceptional service to our clients. By working closely with our partners, we ensure access to the latest innovations and resources, driving success and enhancing the value we bring to your business.
+              className=' text-center ParagraphText text-[#2a2828] lg:px-56 font-bold dlg:text-lg'>At Flash Innovations, we value our strategic partnerships with industry-leading companies and technology providers. These collaborations enable us to deliver cutting-edge solutions and exceptional service to our clients. By working closely with our partners, we ensure access to the latest innovations and resources, driving success and enhancing the value we bring to your business.
               </motion.div>
 
               <div className='mt-10 lg:mt-16 overflow-hidden'>
@@ -746,17 +587,17 @@ useEffect(() => {
         <section className='section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
             <div className='md:flex justify-center items-center gap-10'>
-              <div>
+              <div className=''>
                   <motion.div
                   ref={ref46}
                   initial={{x:-100,opacity:0}}
                   animate={inView46 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-                  className='TitleText text-[#fff] text-[42px] pt-10 text-center mb-5'>Drop Us A Line</motion.div>
+                  className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5'>Drop Us A Line</motion.div>
                   <motion.div
                   ref={ref47}
                   initial={{x:-100,opacity:0}}
                   animate={inView47 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-                  className=' text-center ParagraphText text-[#fff] mb-10 font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus perspiciatis modi iure soluta a, porro officiis tenetur quae tempore deserunt debitis, explicabo reiciendis vero dignissimos, asperiores dicta quisquam aliquam.
+                  className=' text-center ParagraphText text-[#2a2828] mb-10 font-bold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ducimus perspiciatis modi iure soluta a, porro officiis tenetur quae tempore deserunt debitis, explicabo reiciendis vero dignissimos, asperiores dicta quisquam aliquam.
                   Fugit officiis sint numquam enim quia, distinctio commodi iure iusto voluptatem optio incidunt obcaecati itaque corporis mollitia rem odit vitae. Cupiditate, dolor. Iure voluptatum ratione distinctio nam cupiditate. Eligendi, at.</motion.div>
                   <motion.div
                   ref={ref48}
@@ -771,13 +612,11 @@ useEffect(() => {
               ref={ref49}
               initial={{scale:0,opacity:0}}
               animate={inView49 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-              className='h-[300px] w-full  bg-white BlobDesign2'>
-                    <img src={contactImage} className=' h-full w-full object-contain mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
+              className='h-[400px] w-full  bg-white BlobDesign2'>
+                    <img src={customerSupport} className=' h-full w-full object-cover mix-blend-multiply drop-shadow-2xl BlobDesign' alt="" />
               </motion.div>
               <motion.div
-              ref={ref48}
-              initial={{x:-100,opacity:0}}
-              animate={inView48 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
+              
               className=' flex md:hidden justify-center items-center mt-10'>
                 <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
               </motion.div>
@@ -786,9 +625,6 @@ useEffect(() => {
         </section>
 
         <motion.section
-        ref={ref50}
-        initial={{height:0,opacity:0}}
-        animate={inView50 ? {height:'100%',opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
         className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
         <Footer/>
       </motion.section>

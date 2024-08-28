@@ -59,12 +59,12 @@ const Software = () => {
 
   return (
     <div className='backgroundVideo relative mt-[80px]'>
-      <div className=''>
+      {/* <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-      </div>
+      </div> */}
 
-        <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
+        <section className='  relative overflow-hidden md:h-[600px] w-full '>
         {/* About Banner */}
         <div>
           <div className=' absolute top-0 w-full left-0 h-[600px] '>
@@ -75,7 +75,7 @@ const Software = () => {
 
         <div className=' flex justify-center items-center lg:max-w-[1200px] lg:mx-auto relative z-30 px-6 py-8 llg:py-0'>
           <div className=' mb-0 md:absolute homeTitlePosition'>
-            <div className=' text-center text-[42px] font-extrabold text-[hsl(0,0%,100%)] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Pioneering Software Solutions for Enhanced Performance</div>
+            <div className=' text-center text-[42px] font-extrabold text-[#ffffff] mb-5 TextStyle llg:text-[67px] llg:leading-[60px]'>Pioneering Software Solutions for Enhanced Performance</div>
             <div className=' text-center TextStylePara text-[#fff]'>At Flash Innovations, we pioneer software solutions designed to enhance your performance. Our innovative applications and systems are crafted to boost efficiency, streamline operations, and drive your business forward. With a focus on cutting-edge technology and tailored strategies, we ensure your software meets the highest standards and delivers exceptional results.</div>
           </div>
         </div>
@@ -85,18 +85,18 @@ const Software = () => {
         </div> */}
       </section>
 
-      <section className=' section'>
+      <section className=' section mt-10'>
         <div className='lg:w-[1200px] dlg:w-[1400px] lg:mx-auto mb-20'>
           <motion.div
           ref={ref1}
           initial={{x:-100,opacity:0}}
           animate={inView1 ? {x:0,opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Innovative Software Solutions for Superior Performance</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>Innovative Software Solutions for Superior Performance</motion.div>
           <motion.div
           ref={ref2}
           initial={{x:-100,opacity:0}}
           animate={inView2 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',dedlay:.3}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg: dlg:text-lg dlg:w-[1200px]'>At Flash Innovations, we specialize in crafting innovative software solutions designed to elevate your business’s performance. Our approach blends cutting-edge technology with deep industry insights to deliver tailored software that meets your specific needs. From streamlined operations to enhanced functionality, our solutions drive efficiency and growth, ensuring that your business remains competitive in today’s dynamic market. With a focus on quality and user experience, we transform complex challenges into seamless, effective solutions that power your success.</motion.div>
+          className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg: dlg:text-lg dlg:w-[1200px]'>At Flash Innovations, we specialize in crafting innovative software solutions designed to elevate your business’s performance. Our approach blends cutting-edge technology with deep industry insights to deliver tailored software that meets your specific needs. From streamlined operations to enhanced functionality, our solutions drive efficiency and growth, ensuring that your business remains competitive in today’s dynamic market. With a focus on quality and user experience, we transform complex challenges into seamless, effective solutions that power your success.</motion.div>
 
           {/* Software List */}
           <div className=' grid grid-cols-1 place-items-center gap-5 md:grid-cols-2'>
@@ -105,11 +105,11 @@ const Software = () => {
             ref={ref3}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView3 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.1}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] bg-[#2075bb]  rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={task} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -118,11 +118,11 @@ const Software = () => {
             ref={ref4}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView4 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.8}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-r-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] bg-[#2075bb] rounded-r-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={shade} className='h-auto w-[180px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -136,7 +136,7 @@ const Software = () => {
               <div className=''>
                 <img src={vtask} className='h-auto w-[280px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -150,7 +150,7 @@ const Software = () => {
               <div className=''>
                 <img src={dine} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -163,7 +163,7 @@ const Software = () => {
               <div className=''>
                 <img src={clublogic} className='h-auto w-[250px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -177,7 +177,7 @@ const Software = () => {
               <div className=''>
                 <img src={magnet} className='h-auto w-[110px] dlg:w-[180px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -190,7 +190,7 @@ const Software = () => {
               <div className=''>
                 <img src={auric} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -204,7 +204,7 @@ const Software = () => {
               <div className=''>
                 <img src={startstay} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#000] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -221,12 +221,12 @@ const Software = () => {
           ref={ref11}
           initial={{x:-100,opacity:0}}
           animate={inView11 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>What Are The Types Of Development ?</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>What Are The Types Of Development ?</motion.div>
             <motion.div 
             ref={ref12}
             initial={{x:-100,opacity:0}}
             animate={inView12 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] md:mx-auto lg:w-[700px] dlg:w-[900px] font-bold dlg:text-lg'>Development spans several key areas, each addressing unique needs and contributing to overall success. This includes creating applications to enhance functionality, building and managing websites for optimal user experiences, designing tools for mobile devices to ensure accessibility on the go, and developing complex systems to support organizational processes. Each area plays a crucial role in driving efficiency and performance across different platforms and technologies.</motion.div>
+            className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:w-[600px] md:mx-auto lg:w-[700px] dlg:w-[900px] font-bold dlg:text-lg'>Development spans several key areas, each addressing unique needs and contributing to overall success. This includes creating applications to enhance functionality, building and managing websites for optimal user experiences, designing tools for mobile devices to ensure accessibility on the go, and developing complex systems to support organizational processes. Each area plays a crucial role in driving efficiency and performance across different platforms and technologies.</motion.div>
 
             {/* List Of Development */}
             <div className=' grid place-items-center grid-cols-1 md:grid-cols-2 gap-5'>
@@ -307,13 +307,13 @@ const Software = () => {
             ref={ref17}
             initial={{x:-100,opacity:0}}
             animate={inView ? {x:0,opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-            className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>How Flash Innovations <span className='block'>Software Services</span> <span className='block'>Set the Standard ?</span>
+            className='text-[42px] font-extralight mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>How Flash Innovations <span className='block'>Software Services</span> <span className='block'>Set the Standard ?</span>
             </motion.div>
             <motion.div
             ref={ref18}
             initial={{y:-100,opacity:0}}
             animate={inView18 ? {y:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:.5}} : {}}
-            className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg:w-[900px] dlg:text-lg'>Flash Innovations’ software development team is highly skilled and proficient, on par with many leading software development companies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati minima sed praesentium porro aliquam labore delectus, tenetur saepe nam aperiam nemo veniam rerum voluptatem quaerat repudiandae enim. Expedita, odio.</motion.div>
+            className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg:w-[900px] dlg:text-lg'>Flash Innovations’ software development team is highly skilled and proficient, on par with many leading software development companies. Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis obcaecati minima sed praesentium porro aliquam labore delectus, tenetur saepe nam aperiam nemo veniam rerum voluptatem quaerat repudiandae enim. Expedita, odio.</motion.div>
 
             {/* Standered List */}
 
@@ -321,42 +321,42 @@ const Software = () => {
 
               <div className='w-[150px] h-[200px] p-5 hover-container'>
                 <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                  <div className='text-white text-[42px] font-bold text-center z-10 outLineFont1'>01</div>
+                  <div className='text-[#2075bb] text-[42px] font-bold text-center z-10 outLineFont1'>01</div>
                   <div className='flex justify-center items-center'>
                     <div className='ParallelogramShape absolute bottom-1'></div>
                   </div>
                 </div>
-                <div className='text-white text-center'>Tailored Solutions for Every Client</div>
+                <div className='text-[#2a2828] text-center'>Tailored Solutions for Every Client</div>
               </div>
 
                 <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>02</div>
+                      <div className=' text-[#2075bb] text-[42px] font-bold text-center z-10 outLineFont1'>02</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>
                   </div>
-                  <div className=' text-white text-center'>Dedicated Commitment to Excellence</div>
+                  <div className=' text-[#2a2828] text-center'>Dedicated Commitment to Excellence</div>
                 </div>
 
                 <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>03</div>
+                      <div className=' text-[#2075bb] text-[42px] font-bold text-center z-10 outLineFont1'>03</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>
                   </div>
-                  <div className=' text-white text-center'>Authentic and Transparent Approach</div>
+                  <div className=' text-[#2a2828] text-center'>Authentic and Transparent Approach</div>
                 </div>
 
                 <div className=' w-[150px] h-[200px] p-5 hover-container'>
                   <div className='w-full h-[50%] relative justify-center flex flex-col mb-2'>
-                      <div className=' text-white text-[42px] font-bold text-center z-10 outLineFont1'>04</div>
+                      <div className=' text-[#2075bb] text-[42px] font-bold text-center z-10 outLineFont1'>04</div>
                       <div className='flex justify-center items-center'>
                         <div className='ParallelogramShape absolute bottom-1'></div>
                       </div>
                   </div>
-                  <div className=' text-white text-center'>Efficient and Timely Deliveries</div>
+                  <div className=' text-[#2a2828] text-center'>Efficient and Timely Deliveries</div>
                 </div>
 
             </div>

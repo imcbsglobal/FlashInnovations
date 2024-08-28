@@ -63,13 +63,13 @@ const About = () => {
   
 
   return (
-    <div className='backgroundVideo relative mt-[80px]'>
-      <div className=''>
+    <div className='backgroundVideo relative mt-[80px] '>
+      {/* <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-      </div>
+      </div> */}
       
-      <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
+      <section className='  relative overflow-hidden md:h-[600px] w-full'>
         {/* About Banner */}
         <div>
           <div className=' absolute top-0 w-full left-0 h-[600px]'>
@@ -152,7 +152,7 @@ const About = () => {
           initial={{rotate:'60deg',opacity:.5,scale:2}}
           animate={inView5 ? {rotate:'0deg',opacity:1,scale:1, transition:{duration:1,ease:'backInOut'}} : {}}
           className='h-[300px] w-full lg:h-[500px]  rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
-                      <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
+                      <img src={serviceImg} className=' h-full w-full object-contain  drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
               </motion.div>
           </div>
         </div>
@@ -166,12 +166,12 @@ const About = () => {
               ref={ref6}
               initial={{x:-100, opacity:0}}
               animate={inView6 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='text-[42px] mb-5 text-center TitleText text-[#ffffff] dlg:text-[90px]'>About Us</motion.div>
+              className='text-[42px] mb-5 text-center TitleText text-[#2075bb] dlg:text-[90px]'>About Us</motion.div>
               <motion.div
               ref={ref7}
               initial={{x:-100,opacity:0}}
               animate={inView7 ? {x:0,opacity:1,transition:{duration:1.3,ease:'backInOut'}} : {}}
-              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:mx-auto font-bold dlg:text-lg'>
+              className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:mx-auto font-bold dlg:text-lg'>
                 At Flash Innovations, we take pride in our dedicated team of experienced developers and service engineers who are committed to delivering high-quality products and services. From hypermarkets and supermarkets to restaurants, hotels, hospitals, schools, jewelry stores, and health clubs, we offer tailored software and hardware solutions designed to meet the unique needs of each sector. Our team’s expertise ensures that every client receives personalized attention and effective solutions that drive success.
                 <br /> <br />
                 Our services go beyond traditional IT offerings, encompassing comprehensive solutions such as Android/iOS app development, web development, and a full range of IT services. We are dedicated to providing everything our clients need to thrive in today’s digital landscape. At Flash Innovations, we blend professionalism with a personal touch, delivering excellence in a manner that fosters lasting relationships and ongoing success for our clients.
@@ -181,8 +181,8 @@ const About = () => {
             ref={ref8}
             initial={{scale:0,opacity:0}}
             animate={inView8 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
-             className='h-[300px] w-full lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px]  bg-white BlobDesign'>
-                <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
+             className='h-[300px] w-full lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px]  bg-[#fff] BlobDesign'>
+                <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken bg-[#2075bb] drop-shadow-2xl rounded-full BlobDesign' alt="" />
             </motion.div>
           </div>
 
@@ -193,7 +193,7 @@ const About = () => {
               initial={{scale:0,opacity:0}}
               animate={inView9 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1, delay:.2}} : {}}
               >
-                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffff] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=' font-bold'>We drive progress with relentless creativity and forward-thinking solutions.</div>
                 </div>
@@ -203,7 +203,7 @@ const About = () => {
               initial={{scale:0,opacity:0}}
               animate={inView10 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:.7}} : {}}
               >
-                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffff] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className='font-bold'>We deliver superior results through unwavering commitment and precision.</div>
                 </div>
@@ -213,7 +213,7 @@ const About = () => {
               initial={{scale:0,opacity:0}}
               animate={inView11 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:1}} : {}}
               >
-                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffff] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className=' font-bold'>We uphold the highest standards, ensuring trust and reliability in all we do.</div>
                 </div>
@@ -223,7 +223,7 @@ const About = () => {
               initial={{scale:0,opacity:0}}
               animate={inView12 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:1,delay:1.3}} : {}}
               >
-                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#0091ff59]  text-[#ffffffe6] ParagraphText'>
+                <div className=' flex justify-center items-center gap-2 text-sm GlassBox p-5 rounded-xl bg-[#2075bb]  text-[#ffffff] ParagraphText'>
                   <div className=' text-xl'><TiTick className=''/></div>
                   <div className='font-bold'>We deliver excellence with unwavering dedication and innovative solutions.</div>
                 </div>
@@ -239,7 +239,7 @@ const About = () => {
           ref={ref13}
           initial={{x:-100,opacity:0}}
           animate={inView13 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-          className='text-[42px] mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>
+          className='text-[42px] mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>
           A Successful & Innovative IT Company</motion.div>
             <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10'>
               {/* Left */}
@@ -274,12 +274,12 @@ const About = () => {
                 // ref={ref17}
                 // initial={{x:-100,opacity:0}}
                 // animate={inView17 ? {x:0,opacity:1,transition:{ease:'backInOut',delay:.3,duration:.7}} : {}}
-                className=' mb-5 text-[20px] font-bold text-white SubTitleStyle dlg:text-[40px] dlg:leading-tight'>Driving Success Through Cutting-Edge Innovation and Unmatched IT Expertise</motion.div>
+                className=' mb-5 text-[20px] font-bold text-[#2a2828] SubTitleStyle dlg:text-[40px] dlg:leading-tight'>Driving Success Through Cutting-Edge Innovation and Unmatched IT Expertise</motion.div>
                 <motion.div
                 // ref={ref18}
                 // initial={{x:-100,opacity:0}}
                 // animate={inView18 ? {x:0,opacity:1,transition:{ease:'backInOut',delay:.1,duration:.7}} : {}}
-                className='text-start ParagraphText text-sm text-white mb-5 font-bold dlg:text-[17px] dlg:leading-normal'>At Flash Innovations, we pride ourselves on being at the forefront of technological advancements. 
+                className='text-start ParagraphText text-sm text-[#2a2828] mb-5 font-bold dlg:text-[17px] dlg:leading-normal'>At Flash Innovations, we pride ourselves on being at the forefront of technological advancements. 
                 Our commitment to excellence drives us to deliver cutting-edge software and hardware solutions that transform businesses. 
                 With a focus on innovation and a track record of success, we provide tailored technology solutions that empower 
                 our clients to achieve their goals and stay ahead in a rapidly evolving digital landscape.
@@ -291,28 +291,28 @@ const About = () => {
                 className=' flex flex-col justify-start items-baseline gap-5'>
 
                   <div className=' flex items-center gap-4'>
-                    <div className=' p-2 bg-white rounded-lg text-[#08f]'><TiTick/></div>
+                    <div className=' p-2 bg-[#2075bb] rounded-lg text-[#fff]'><TiTick/></div>
                     <div>
-                      <div className='mb-1 SmallTitleStyle font-bold text-white dlg:text-xl'>Excellence in Execution</div>
-                      <div className=' text-sm ParagraphText text-white font-bold'>We achieve outstanding results through meticulous attention to detail and efficiency.
+                      <div className='mb-1 SmallTitleStyle font-bold text-[#2a2828] dlg:text-xl'>Excellence in Execution</div>
+                      <div className=' text-sm ParagraphText text-[#2a2828] font-bold'>We achieve outstanding results through meticulous attention to detail and efficiency.
                       </div>
                     </div>
                   </div>
 
                   <div className=' flex items-center gap-4'>
-                    <div className=' p-2 bg-white rounded-lg text-[#08f]'><TiTick/></div>
+                    <div className=' p-2 bg-[#2075bb] rounded-lg text-[#fff]'><TiTick/></div>
                     <div>
-                      <div className='mb-1 SmallTitleStyle font-bold text-white dlg:text-xl'>Client-Centric Approach</div>
-                      <div className=' text-sm ParagraphText text-white font-bold'>We offer innovative solutions that address current challenges and anticipate future needs.
+                      <div className='mb-1 SmallTitleStyle font-bold text-[#2a2828] dlg:text-xl'>Client-Centric Approach</div>
+                      <div className=' text-sm ParagraphText text-[#2a2828] font-bold'>We offer innovative solutions that address current challenges and anticipate future needs.
                       </div>
                     </div>
                   </div>
 
                   <div className=' flex items-center gap-4'>
-                    <div className=' p-2 bg-white rounded-lg text-[#08f]'><TiTick/></div>
+                    <div className=' p-2 bg-[#2075bb] rounded-lg text-[#fff]'><TiTick/></div>
                     <div>
-                      <div className='mb-1 SmallTitleStyle font-bold text-white dlg:text-xl'>Forward-Thinking Solutions</div>
-                      <div className=' text-sm ParagraphText text-white font-bold'>We tailor our services to your unique needs, ensuring a personalized and effective partnership.
+                      <div className='mb-1 SmallTitleStyle font-bold text-[#2a2828] dlg:text-xl'>Forward-Thinking Solutions</div>
+                      <div className=' text-sm ParagraphText text-[#2a2828] font-bold'>We tailor our services to your unique needs, ensuring a personalized and effective partnership.
                       </div>
                     </div>
                   </div>
@@ -329,12 +329,12 @@ const About = () => {
           ref={ref15}
           initial={{x:-100,opacity:0}}
           animate={inView15 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.7}} : {}}
-          className='text-[42px] mb-5 text-center TitleText text-[#ffffff] dlg:text-[90px]'>Touch With Us</motion.div>
+          className='text-[42px] mb-5 text-center TitleText text-[#2075bb] dlg:text-[90px]'>Touch With Us</motion.div>
           <motion.div
           ref={ref16}
           initial={{x:-100,opacity:0}}
           animate={inView16 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.7,delay:.7}} : {}}
-          className='text-center ParagraphText text-sm text-white mb-10 md:w-[600px] md:mx-auto font-bold dlg:text-lg llg:w-[900px]'>At Flash Innovations, we guarantee top-tier customer service. We understand the value of your time, and we pledge 
+          className='text-center ParagraphText text-sm text-[#2a2828] mb-10 md:w-[600px] md:mx-auto font-bold dlg:text-lg llg:w-[900px]'>At Flash Innovations, we guarantee top-tier customer service. We understand the value of your time, and we pledge 
           to respond to all your inquiries promptly and efficiently. Your satisfaction is our priority, and we strive to provide 
           exceptional support for all your needs. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis, repudiandae, eaque quia, corporis aliquam recusandae dolorem porro numquam ipsam voluptates! Consequuntur quam beatae perspiciatis alias possimus dolor, iste deleniti?</motion.div>
           <div className=' flex justify-center items-center gap-5'>
@@ -353,12 +353,12 @@ const About = () => {
           ref={ref17}
           initial={{x:-100,opacity:0}}
           animate={inView17 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-          className='text-[42px] mb-5 text-center TitleText text-[#ffffff] dlg:text-[90px]'>Our Team</motion.div>
+          className='text-[42px] mb-5 text-center TitleText text-[#2075bb] dlg:text-[90px]'>Our Team</motion.div>
           <motion.div
           ref={ref18}
           initial={{x:-100,opacity:0}}
           animate={inView18 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:1}} : {}}
-          className='text-center ParagraphText text-sm text-white mb-10 md:w-[600px] md:mx-auto font-bold dlg:text-lg llg:w-[900px]'>At Flash Innovations, our team of skilled professionals drives our success. With expertise spanning development, design, and strategy, each member contributes to delivering exceptional results. Their dedication and collaboration ensure we consistently exceed client expectations and foster a dynamic, innovative environment.</motion.div>
+          className='text-center ParagraphText text-sm text-[#2a2828] mb-10 md:w-[600px] md:mx-auto font-bold dlg:text-lg llg:w-[900px]'>At Flash Innovations, our team of skilled professionals drives our success. With expertise spanning development, design, and strategy, each member contributes to delivering exceptional results. Their dedication and collaboration ensure we consistently exceed client expectations and foster a dynamic, innovative environment.</motion.div>
           {/* Team Members List */}
           <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 relative'>
 

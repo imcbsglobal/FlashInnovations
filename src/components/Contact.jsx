@@ -43,11 +43,11 @@ const Contact = () => {
 
   return (
     <div className='backgroundVideo relative mt-[80px]'>
-      <div className=''>
+      {/* <div className=''>
         <img src={blueShade} className=' absolute -z-10 w-full h-full object-cover' alt="" />
         <video className=' absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
-      </div>
-      <section className='  relative overflow-hidden md:h-[600px] w-full llg:h-[800px]'>
+      </div> */}
+      <section className='  relative overflow-hidden md:h-[600px] w-full'>
         {/* About Banner */}
         <div>
           <div className=' absolute top-0 w-full left-0 h-[600px]'>
@@ -68,26 +68,26 @@ const Contact = () => {
         </div> */}
       </section>
 
-      <section className='section'>
+      <section className='section mt-10'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20 grid grid-cols-1 place-items-center text-center gap-10 lg:grid-cols-3'>
           <motion.div
           ref={ref3}
           initial={ {y:-100,opacity:0}}
           animate={inView3 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
-          className=' flex flex-col justify-center items-center gap-2 GlassBox rounded-xl w-full p-5 h-[110px]  bg-[#00d0ff06]'>
-            <div className=' text-lg font-bold text-white flex justify-center items-center gap-3'><span><MdEmail/></span> Email</div>
-            <a href="mailto:innovationsflash@gmail.com"><div className=' text-[#fff]'>innovationsflash@gmail.com</div></a>
+          className=' flex flex-col justify-center items-center gap-2 GlassBox rounded-xl w-full p-5 h-[110px]  bg-[#2075bb] InputDesign'>
+            <div className=' text-lg font-bold text-white flex justify-center items-center gap-3 ContactHead'><span><MdEmail/></span> Email</div>
+            <a href="mailto:innovationsflash@gmail.com"><div className=' text-[#fff] ContactHead'>innovationsflash@gmail.com</div></a>
           </motion.div>
 
           <motion.div
           ref={ref4}
           initial={ {y:-100,opacity:0}}
           animate={inView4 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.3}} : {}}
-          className=' flex flex-col justify-center items-center gap-2 h-[110px]  GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
-            <div className='text-lg font-bold text-white flex justify-center items-center gap-3 '><span><FaPhoneAlt/></span> Phone</div>
+          className=' flex flex-col justify-center items-center gap-2 h-[110px]  GlassBox rounded-xl w-full p-5  bg-[#2075bb] InputDesign'>
+            <div className='text-lg font-bold text-white flex justify-center items-center gap-3 ContactHead'><span><FaPhoneAlt/></span> Phone</div>
             <div className='flex justify-center gap-2'>
-              <a href="tel:+91 8050695416"><div className=' text-[#fff] font-bold'>+91 8050695416</div></a>
-              <a href="tel:+91 9995175602"><div className='text-[#fff] font-bold'>+91 9995175602</div></a>
+              <a href="tel:+91 8050695416"><div className=' text-[#fff] font-bold ContactHead'>+91 8050695416</div></a>
+              <a href="tel:+91 9995175602"><div className='text-[#fff] font-bold ContactHead'>+91 9995175602</div></a>
             </div>
           </motion.div>
 
@@ -95,9 +95,9 @@ const Contact = () => {
           ref={ref5}
           initial={ {y:-100,opacity:0}}
           animate={inView5 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.7}} : {}}
-          className=' flex flex-col justify-center items-center h-[110px]  gap-2 GlassBox rounded-xl w-full p-5  bg-[#00d0ff06]'>
-            <div className='text-lg font-bold text-white flex justify-center items-center gap-3'><span><FaLocationArrow /></span> Address</div>
-            <div className=' text-[#fff]'>#677/21-22, 9th Cross, 4th Main, 4th Block, HBR Layout, 1st Stage, Bangalore - 560 043</div>
+          className=' flex flex-col justify-center items-center h-[110px]  gap-2 GlassBox rounded-xl w-full p-5  bg-[#2075bb] InputDesign'>
+            <div className='text-lg font-bold text-white flex justify-center items-center gap-3 ContactHead '><span><FaLocationArrow /></span> Address</div>
+            <div className=' text-[#fff] '>#677/21-22, 9th Cross, 4th Main, 4th Block, HBR Layout, 1st Stage, Bangalore - 560 043</div>
           </motion.div>
 
         </div>
@@ -109,12 +109,12 @@ const Contact = () => {
           ref={ref6}
           initial={{x:-100,opacity:0}}
           animate={inView6 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
-          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Our Offices</motion.div>
+          className='text-[42px] font-extralight mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>Our Offices</motion.div>
           <motion.div 
           ref={ref7}
           initial={{x:-100,opacity:0}}
           animate={inView7 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.7}} : {}}
-          className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 md:w-[600px] lg:w-[700px] dlg:w-[900px] md:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we are proud to have a robust network of offices to serve you better. Our main branch is located in Bengaluru, where we coordinate our core operations and strategic initiatives. Additionally, we have three other branches strategically placed to ensure comprehensive support and accessibility across various regions. Each office is equipped to provide local expertise and personalized service, ensuring that our clients receive consistent and high-quality support regardless of their location.</motion.div>
+          className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:w-[600px] lg:w-[700px] dlg:w-[900px] md:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we are proud to have a robust network of offices to serve you better. Our main branch is located in Bengaluru, where we coordinate our core operations and strategic initiatives. Additionally, we have three other branches strategically placed to ensure comprehensive support and accessibility across various regions. Each office is equipped to provide local expertise and personalized service, ensuring that our clients receive consistent and high-quality support regardless of their location.</motion.div>
 
           <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-3'>
 
@@ -122,7 +122,7 @@ const Contact = () => {
               ref={ref8}
               initial={ {y:-100,opacity:0}}
               animate={inView8 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
-              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              className=' w-full h-[200px]  rounded-3xl bg-[#2075bb] InputDesign relative flex justify-center items-start gap-10 px-5 py-3'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
@@ -142,7 +142,7 @@ const Contact = () => {
               ref={ref9}
               initial={ {y:-100,opacity:0}}
               animate={inView9 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.3}} : {}}
-              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              className=' w-full h-[200px]  rounded-3xl bg-[#2075bb] InputDesign relative flex justify-center items-start gap-10 p-5'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
@@ -161,12 +161,12 @@ const Contact = () => {
               ref={ref10}
               initial={ {y:-100,opacity:0}}
               animate={inView10 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut",delay:.7}} : {}}
-              className=' w-full h-[250px] bg-black rounded-3xl DarkBox relative flex justify-center items-start gap-10 p-5'>
+              className=' w-full h-[200px]  rounded-3xl bg-[#2075bb] InputDesign relative flex justify-center items-start gap-10 p-5'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
                   <div>
-                    <div className=' text-xl mb-5 text-white font-bold'>Mangalore</div>
+                    <div className=' text-xl mb-5 text-white font-bold ContactHead'>Mangalore</div>
                     <div className='text-white ParagraphText text-sm mb-5'>
                     Flash Innovations, J.M. 3rd Cross Road, 
                     Santhegalli, Bunder
@@ -187,12 +187,12 @@ const Contact = () => {
               ref={ref11}
               initial={{x:-100,opacity:0}}
               animate={inView11 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8}} : {}}
-              className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#ffffff] dlg:text-[80px]'>Get In Touch</motion.div>
+              className=' text-[42px] font-extralight mb-5 text-center TitleText text-[#2075bb] dlg:text-[80px]'>Get In Touch</motion.div>
               <motion.div
               ref={ref12}
               initial={{x:-100,opacity:0}}
               animate={inView12 ? {x:0,opacity:1,transition:{ease:"backInOut",duration:.8,delay:.3}} : {}}
-              className='text-sm text-center text-[#ffffffe6] ParagraphText mb-7 font-bold dlg:text-lg'>We’d love to hear from you! Whether you have questions, need support, or want to explore how we can assist with your business needs, reaching out is simple. Contact us via phone, email, or our online form, and our responsive team will get back to you promptly. Your inquiries and feedback are important to us, and we’re here to ensure you receive the assistance and information you need to move forward.</motion.div>
+              className='text-sm text-center text-[#2a2828] ParagraphText mb-7 font-bold dlg:text-lg'>We’d love to hear from you! Whether you have questions, need support, or want to explore how we can assist with your business needs, reaching out is simple. Contact us via phone, email, or our online form, and our responsive team will get back to you promptly. Your inquiries and feedback are important to us, and we’re here to ensure you receive the assistance and information you need to move forward.</motion.div>
           </div>
 
           <div className='md:w-[50%]'>

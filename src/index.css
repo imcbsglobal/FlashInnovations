@@ -106,7 +106,10 @@
   src: url('../src/fonts/agreloy/AgreloyOut1.otf'),
         url('../src/fonts/agreloy/AgreloyOut1.ttf');
 }
-
+@font-face{
+  font-family: 'Nexa1';
+  src: url('../src/fonts/nexa/Nexa-Heavy.ttf');
+}
 *{
   margin: 0;
   padding: 0;
@@ -141,7 +144,8 @@ html {
 }
 
 body {
-  background: linear-gradient(108deg, #4B9EFF, #0087F5);
+  /* background: linear-gradient(108deg, #4B9EFF, #0087F5); */
+  background-color:#fffffff1;
 }
 .GradientButton{
   background-color: #161a20;
@@ -249,12 +253,16 @@ body {
 box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
 }
 .BorderDesignBox{
-  -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
-  -moz-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
-  box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
+  border: none;
+  outline: none;
+  -webkit-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
+  -moz-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
+  box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
   backdrop-filter: blur(25px);
-  background: linear-gradient(to bottom right, #ffffff, rgba(179, 172, 250, 0.997));
+  /* background: linear-gradient(to bottom right, #008cff, rgba(47, 122, 150, 0.789)); */
+  background-color: #008cff;
   border: 1px solid white;
+  color: white;
 }
 .DarkBox{
   -webkit-box-shadow: 1px 5px 19px 0px rgba(0,0,0,0.55);
@@ -288,7 +296,7 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
 }
 
 .ContactHead{
-  font-family: 'Nexa', sans-serif;
+  font-family: 'Nexa1', sans-serif;
   font-weight: 800;
 }
 .InputDesign{
@@ -299,7 +307,7 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   -moz-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
   box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
   backdrop-filter: blur(25px);
-  background: linear-gradient(to bottom right, #008cff, #e100);
+  background: linear-gradient(to bottom right, #008cff, rgba(47, 122, 150, 0.789));
   border: 1px solid white;
   color: white;
 }
@@ -572,7 +580,7 @@ top: 25px;
 }
 .outLineFont{
   font-family: 'KenyanCofee';
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 2px #2075bb;
   color: transparent;
 }
 .outLineFont1{
