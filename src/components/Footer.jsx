@@ -24,10 +24,12 @@ const Footer = () => {
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     </div>
                     <div className='text-white'>Customer Care Number</div>
-                    <div className=' flex justify-center items-center gap-2'>
-                        <div className='text-xl text-[#ffffffe9]'><IoCallSharp/></div>
-                        <div className=' font-semibold text-white'>+91987565464578</div>
-                    </div>
+                    <a href="tel:+91 8050695416">
+                        <div className=' flex justify-center items-center gap-2'>
+                            <div className='text-xl text-[#ffffffe9]'><IoCallSharp/></div>
+                            <div className=' font-semibold text-white'>+91 8050695416</div>
+                        </div>
+                    </a>
                     <div className=' flex items-center justify-center gap-2'>
                         <div className=' bg-[#000000e9] p-1 rounded-full text-[#fff] shadow-lg'>
                             <FaFacebook className=''/>

@@ -21,6 +21,8 @@ import aboutBanner from "../assets/about-banner.jpg"
 import blackShade from "../assets/black-shade.png"
 import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
+import aboutCompany from "../assets/about-company.jpg"
+import companyServices from "../assets/company-services.jpg"
 
 
 
@@ -152,7 +154,7 @@ const About = () => {
           initial={{rotate:'60deg',opacity:.5,scale:2}}
           animate={inView5 ? {rotate:'0deg',opacity:1,scale:1, transition:{duration:1,ease:'backInOut'}} : {}}
           className='h-[300px] w-full lg:h-[500px]  rounded-tl-[20%] rounded-br-[20%] md:rounded-tl-[30%] md:rounded-br-[30%] BorderDesignBox md:w-[45%]'>
-                      <img src={serviceImg} className=' h-full w-full object-contain  drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
+                      <img src={aboutCompany} className=' h-full w-full object-cover  drop-shadow-2xl rounded-tl-[10%] rounded-br-[10%] md:rounded-tl-[20%] md:rounded-br-[20%]' alt="" />
               </motion.div>
           </div>
         </div>
@@ -182,7 +184,7 @@ const About = () => {
             initial={{scale:0,opacity:0}}
             animate={inView8 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
              className='h-[300px] w-full lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px]  bg-[#fff] BlobDesign'>
-                <img src={serviceImg} className=' h-full w-full object-contain mix-blend-darken bg-[#2075bb] drop-shadow-2xl rounded-full BlobDesign' alt="" />
+                <img src={companyServices} className=' h-full w-full object-cover mix-blend-darken bg-[#2075bb] drop-shadow-2xl rounded-full BlobDesign' alt="" />
             </motion.div>
           </div>
 

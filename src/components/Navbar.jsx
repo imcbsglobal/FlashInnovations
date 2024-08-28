@@ -44,16 +44,20 @@ const Navbar = () => {
             </ul>
         </div>
         <div className="hidden md:flex justify-start items-start flex-col gap-1">
-            <div className=" flex justify-center items-center gap-2">
-                {/* Icon */}
-                <div className="text-[#2075bb]"><FaPhoneAlt/></div>
-                <div className="font-semibold">+91 9776556476879</div>
-            </div>
-            <div className="flex justify-center items-center gap-2">
-                {/* Icon */}
-                <div className="text-[#2075bb]"><MdEmail/></div>
-                <div className="font-semibold">info@flashinnovations.in</div>
-            </div>
+            <a href="tel:+91 8050695416">
+                <div className=" flex justify-center items-center gap-2">
+                    {/* Icon */}
+                    <div className="text-[#2075bb]"><FaPhoneAlt/></div>
+                    <div className="font-semibold">+91 8050695416</div>
+                </div>
+            </a>
+            <a href="mailto:innovationsflash@gmail.com">
+                <div className="flex justify-center items-center gap-2">
+                    {/* Icon */}
+                    <div className="text-[#2075bb]"><MdEmail/></div>
+                    <div className="font-semibold">innovationsflash@gmail.com</div>
+                </div>
+            </a>
         </div>
         <div className="md:hidden">
             <CgMenuRight className='text-2xl font-bold text-[#0d00ff] cursor-pointer drop-shadow-sm' onClick={() => setMenuOpen(true)} />

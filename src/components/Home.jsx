@@ -124,22 +124,35 @@ const Home = () => {
 // Parallax Effect
 
 useEffect(() => {
+  let scrollPosition = 0;
+
   const handleScroll = () => {
-    const title = document.getElementById('parallaxTitle');
-    const title2 = document.getElementById('parallaxTitle2');
+    // Update scroll position
+    scrollPosition = window.scrollY;
+    
+    // Use requestAnimationFrame for smoother updates
+    requestAnimationFrame(() => {
+      const title = document.getElementById('parallaxTitle');
+      const title2 = document.getElementById('parallaxTitle2');
+      const circle1 = document.querySelector('.ParentCircle');
+      const circle2 = document.querySelector('.ParentCircle2');
 
-    const circle1 = document.querySelector('.ParentCircle');
-    const circle2 = document.querySelector('.ParentCircle2');
-    const scrollPosition = window.scrollY;
+      if (title) {
+        title.style.transform = `translateX(-${scrollPosition * 0.3}px)`;
+      }
 
-    // Move the title to the left
-    title.style.transform = `translateX(-${scrollPosition * 0.3}px)`;
-    title2.style.transform = `translateX(${scrollPosition * 0.3}px)`;
+      if (title2) {
+        title2.style.transform = `translateX(${scrollPosition * 0.3}px)`;
+      }
 
+      if (circle1) {
+        circle1.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+      }
 
-    // Move the circles upwards
-    circle1.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
-    circle2.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+      if (circle2) {
+        circle2.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+      }
+    });
   };
 
   window.addEventListener('scroll', handleScroll);
@@ -156,9 +169,9 @@ useEffect(() => {
       {/* Parallax Section */}
       <section className='relative min-h-screen w-full -z-10 overflow-hidden'>
        
-      <div className='w-full h-screen flex justify-center items-center'>
+      <div className='w-full h-screen flex justify-center items-center scroll-smooth'>
         <div className=' TextStyle flex flex-col justify-center items-center z-50'>
-            <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[100px]'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
+            <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] md:leading-[75px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[100px] scroll-smooth'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
             <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
             <div className=' flex justify-center '>
@@ -168,7 +181,7 @@ useEffect(() => {
       </div>
 
       {/* Rotate Animation */}
-      <div className=' relative z-30 mt-[-180px]   gap-10'>
+      <div className=' relative z-30 mt-[-180px]   gap-10 hidden lg:block scroll-smooth'>
               <div className=' flex justify-between px-6 lg:px-56'>
               <div className=' flex justify-start items-center'>
                 <div className='ParentCircle'>
@@ -446,7 +459,7 @@ useEffect(() => {
                initial={{scale:0,opacity:0}}
                animate={inView24 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
               className='h-[300px] w-full  dlg:h-[400px] bg-white BlobDesign2 mb-10'>
-                      <img src={companyServices} className=' h-full w-full object-contain mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
+                      <img src={companyServices} className=' h-full w-full object-cover mix-blend-darken drop-shadow-2xl rounded-full BlobDesign' alt="" />
               </motion.div>
            </div>
 
@@ -458,7 +471,7 @@ useEffect(() => {
                 ref={ref26}
                 initial={{y:-100,opacity:0}}
                 animate={inView26 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                className=' w-full h-[350px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 '>
                   <div className='text-[25px] mb-5 font-bold'>Computer Hardware Sales & Services</div>
                   <div className=''>
                   Flash Innovations provides comprehensive Computer Hardware Sales & Services, including high-quality components and expert repairs. We ensure your systems operate efficiently and reliably with top-notch support.
@@ -469,8 +482,8 @@ useEffect(() => {
                 ref={ref27}
                 initial={{y:-100,opacity:0}}
                 animate={inView27 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className='w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
-                  <div className='text-[25px] mb-5 font-bold leading-[40px]'>Customized Software Development</div>
+                className='w-full h-[350px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 md:py-10 py-5 '>
+                  <div className='text-[25px] mb-5 font-bold md:leading-[40px] leading-[30px]'>Customized Software Development</div>
                   <div>
                   Flash Innovations excels in Customized Software Development, delivering tailored solutions that fit your unique business needs. Our expert team ensures seamless integration and optimal performance for your software applications.
                   </div>
@@ -564,7 +577,7 @@ useEffect(() => {
         </section>
 
         <section className='section'>
-          <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
+          <div className='lg:max-w-[1200px] lg:mx-auto mb-5'>
               <motion.div
               ref={ref44}
               initial={{x:-100,opacity:0}}

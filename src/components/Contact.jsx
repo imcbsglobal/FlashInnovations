@@ -122,13 +122,13 @@ const Contact = () => {
               ref={ref8}
               initial={ {y:-100,opacity:0}}
               animate={inView8 ? {y:0,opacity:1,transition:{duration:.8,ease:"backInOut"}} : {}}
-              className=' w-full h-[200px]  rounded-3xl bg-[#2075bb] InputDesign relative flex justify-center items-start gap-10 px-5 py-3'>
+              className=' w-full h-[250px] md:h-[200px]  rounded-3xl bg-[#2075bb] InputDesign relative flex justify-center items-start gap-10 px-5 py-3'>
                   <div className=' w-[20%]'>
                     <IoLocationOutline className=' text-[42px] text-[#00c8ff]'/>
                   </div>
                   <div>
-                    <div className=' text-xl mb-5 text-white font-bold ContactHead'>Calicut</div>
-                    <div className='text-white ParagraphText text-sm mb-5'>
+                    <div className=' text-xl mb-2 llg:mb-5 text-white font-bold ContactHead'>Calicut</div>
+                    <div className='text-white ParagraphText text-sm mb-2 llg:mb-5'>
                       Flash Innovations 1stFloor,
                       Smart Building Mannur Valavu,
                       Kadalundi,Kozhikode - 673328
