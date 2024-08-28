@@ -156,8 +156,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1;
-  font-family: 'Sui';
+  pointer-events: auto; /* Ensure button can be clicked */
+  z-index: 50; /* Higher than overlapping elements */
+  font-family: 'BankGothic';
 }
 .GradientButton::after{
   content: '';
@@ -579,7 +580,7 @@ top: 25px;
   color: white;
 }
 .outLineFont{
-  font-family: 'KenyanCofee';
+  font-family: 'Nexa1';
   -webkit-text-stroke: 2px #2075bb;
   color: transparent;
 }

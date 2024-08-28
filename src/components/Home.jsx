@@ -167,15 +167,15 @@ useEffect(() => {
   return (
     <div  className=''>
       {/* Parallax Section */}
-      <section className='relative min-h-screen w-full -z-10 overflow-hidden'>
+      <section className='relative min-h-screen w-full z-[997] overflow-hidden'>
        
       <div className='w-full h-screen flex justify-center items-center scroll-smooth'>
-        <div className=' TextStyle flex flex-col justify-center items-center z-50'>
+        <div className=' TextStyle flex flex-col justify-center items-center'>
             <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] md:leading-[75px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[100px] scroll-smooth'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
             <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
-            <div className=' flex justify-center '>
-              <button className=' GradientButton px-8 py-2 relative z-30 cursor-pointer text-sm lg:text-[20px] lg:py-5'>Discover More</button>
+            <div className=' flex justify-center z-[999] relative'>
+              <button className=' GradientButton px-8 py-2  cursor-pointer text-sm lg:text-[20px] lg:py-5'>Discover More</button>
             </div>
         </div>
       </div>
@@ -197,7 +197,7 @@ useEffect(() => {
               </div>
             </div>
 
-        <div className='fixed inset-0 overflow-hidden'>
+        <div className='fixed inset-0 overflow-hidden -z-10'>
           <video
             className='w-full h-full object-cover opacity-50 mix-blend-multiply'
             autoPlay
@@ -210,7 +210,7 @@ useEffect(() => {
         <div className='fixed inset-0 overflow-hidden -z-20'>
           <img src={homeSection} className=' w-full h-full object-cover mix-blend-multiply' alt="" />
         </div>
-        <div className='flex justify-center items-center h-full w-full fixed z-30'>
+        <div className='flex justify-center items-center h-full w-full  '>
           <div>
             {/* <div
             className='TextStyle text-[62px]  font-bold text-[#fff] text-center md:text-[72px] lg:text-[152px] lg:leading-tight parallax-text ' id='parallaxTitle'>
@@ -233,12 +233,12 @@ useEffect(() => {
       </section>
 
       {/* Next Section */}
-      <section className='relative min-h-screen w-full z-50  bg-[#fffffff1] rounded-t-3xl '>
+      <section className='relative min-h-screen w-full z-[998]  bg-[#fffffff1] rounded-t-3xl '>
         {/* <div className=''>
           <img src={blueShade} className='absolute -z-10 w-full h-full object-cover opacity-50' alt="blueShade" />
           <video className='absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
         </div> */}
-        <div className=' lg:mx-auto mb-20 section'>
+        <div className=' lg:mx-auto mb-10 section'>
           <div className='flex justify-center items-center h-full'>
             <div className=' md:flex justify-center items-center gap-10  lg:mx-auto'>
               <div className='mb-10 md:w-[50%]'>
@@ -315,27 +315,7 @@ useEffect(() => {
               </div>
             </div>
           </div>
-          
-        </div>
-
-        {/* Next Section */}
-
-        <section className='section'>
-          <div className=' lg:mx-auto mb-20'>
-            {/* <div className=' flex justify-center'>
-              <div className='BlobAnimation1 w-[150px] h-[170px] absolute -z-10 opacity-20'></div>
-            </div> */}
-              <motion.div
-              ref={ref8}
-              initial={{ x:-100,opacity:0}}
-              animate={inView8 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software Solutions</motion.div>
-              <motion.div
-              ref={ref9}
-              initial={{ x:-100,opacity:0}}
-              animate={inView9 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we champion the forefront of technology with unwavering commitment and excellence. Our cutting-edge solutions and unmatched expertise redefine industry standards, driving transformative results across diverse sectors. With a strategic approach and relentless dedication, we empower businesses to excel and navigate challenges with confidence, ensuring exceptional performance and lasting impact.</motion.div>
-              <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
+          <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4'>
                 <motion.div
                 ref={ref10}
                 initial={{scale:0,opacity:0}}
@@ -373,6 +353,63 @@ useEffect(() => {
                 </motion.div>
 
               </div>
+        </div>
+
+        {/* Next Section */}
+
+        <section className='section'>
+          <div className=' lg:mx-auto mb-10'>
+            {/* <div className=' flex justify-center'>
+              <div className='BlobAnimation1 w-[150px] h-[170px] absolute -z-10 opacity-20'></div>
+            </div> */}
+              <motion.div
+              ref={ref8}
+              initial={{ x:-100,opacity:0}}
+              animate={inView8 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+              className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[78px]'>Software Solutions</motion.div>
+              <motion.div
+              ref={ref9}
+              initial={{ x:-100,opacity:0}}
+              animate={inView9 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>At Flash Innovations, we champion the forefront of technology with unwavering commitment and excellence. Our cutting-edge solutions and unmatched expertise redefine industry standards, driving transformative results across diverse sectors. With a strategic approach and relentless dedication, we empower businesses to excel and navigate challenges with confidence, ensuring exceptional performance and lasting impact.</motion.div>
+              {/* <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4 mb-10'>
+                <motion.div
+                ref={ref10}
+                initial={{scale:0,opacity:0}}
+                animate={inView10 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
+                className=' flex justify-center items-center gap-2'>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>20+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Years of <span className='block'>Experience</span></div>
+                </motion.div>
+
+                <motion.div
+                ref={ref11}
+                initial={{scale:0,opacity:0}}
+                animate={inView11 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
+                className='flex justify-center items-center gap-2'>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>30+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Skilled <span className='block'>Professionals</span></div>
+                </motion.div>
+
+                <motion.div
+                ref={ref12}
+                initial={{scale:0,opacity:0}}
+                animate={inView12 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
+                className='flex justify-center items-center gap-2'>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>100%</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Customer<span className='block'>Satisfaction</span></div>
+                </motion.div>
+
+                <motion.div
+                ref={ref13}
+                initial={{scale:0,opacity:0}}
+                animate={inView13 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
+                className='flex justify-center items-center gap-2'>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>1000+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Clients<span className='block'>World Wide</span></div>
+                </motion.div>
+
+              </div> */}
               <div className=' grid grid-cols-2 place-items-center place-content-center w-full h-[300px] lg:h-[200px] rounded-3xl gap-5 p-5 GlassBox bg-[#ffffff] lg:w-[900px] dlg:w-[1400px] dlg:h-[300px]  lg:mx-auto lg:grid-cols-4'>
                 <motion.div
                 ref={ref14}
@@ -433,6 +470,22 @@ useEffect(() => {
               </div>
           </div>
         </section>
+
+        {/* Hardware Solutions */}
+
+        <section className=' section'>
+          <div className='lg:max-w-[1200px] lg:mx-auto mb-10'>
+            <div>
+              <div className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Hardware Solutions</div>
+              <div className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia quibusdam, id delectus tenetur rerum velit earum corporis doloremque modi aliquid accusamus architecto, repellendus facere similique provident consequuntur inventore. Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis asperiores amet aut libero provident voluptatum sint, cum recusandae. Magnam laboriosam nostrum amet soluta ducimus, reprehenderit placeat architecto tenetur voluptatibus?</div>
+            </div>
+
+            {/* Hardware List */}
+            <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10 llg:w-[1400px]'>
+
+            </div>
+          </div>
+        </section>
         
 
         {/* About Section */}
@@ -445,7 +498,7 @@ useEffect(() => {
                 ref={ref22}
                 initial={{x:-100,opacity:0}}
                 animate={inView22 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:1}} : {}}
-                className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Our Services
+                className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Other Services
                 </motion.div>
                 <motion.div
                  ref={ref23}
