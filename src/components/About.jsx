@@ -110,7 +110,7 @@ const About = () => {
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={exp} alt="" />
                 </div>
-                <div className='text-[#3c3a3a] text-3xl font-semibold'>20+</div>
+                <div className='text-[#3c3a3a] text-3xl font-semibold'>10+</div>
                 <div className=' text-[#625d5d]'>Year of <span className=' block'>Experience</span></div>
             </motion.div>
 

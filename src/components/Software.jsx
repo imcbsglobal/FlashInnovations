@@ -115,7 +115,7 @@ const Software = () => {
                 <img src={task} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              TASK'OS is a robust Windows-based financial management tool that helps businesses track transactions, inventory, sales, and deliveries. It ensures product availability, creates detailed reports, and delivers real-time financial insights, all designed to streamline operations and support strategic decision-making.
               </div>
             </motion.div>
 
@@ -128,7 +128,7 @@ const Software = () => {
                 <img src={shade} className='h-auto w-[180px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              Shade Hospital Management Software is an adaptable solution for healthcare facilities, providing essential tools for patient tracking, appointment coordination, billing, revenue oversight, and comprehensive reporting. It aims to simplify administrative tasks and enhance the quality of patient care.
               </div>
             </motion.div>
           
@@ -142,7 +142,7 @@ const Software = () => {
                 <img src={vtask} className='h-auto w-[280px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              VTASK is a Pharmacy Management software that automates inventory control, revenue tracking, and billing processes, serving both wholesale and retail sectors. It offers robust reporting and analytics, enhancing efficiency, accuracy, and overall patient safety.
               </div>
             </motion.div>
 
@@ -156,7 +156,7 @@ const Software = () => {
                 <img src={dine} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              DINE is a restaurant management software that simplifies ordering, billing, and payment processes. It integrates seamlessly with POS systems and Android platforms, and provides detailed reports and analytics on sales, inventory, and customer behavior.
               </div>
             </motion.div>
 
@@ -169,7 +169,7 @@ const Software = () => {
                 <img src={clublogic} className='h-auto w-[250px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              STARSTAY is an intuitive hotel management software that enhances operations such as front-desk management, room bookings, billing, housekeeping, and reporting. It automates manual tasks and integrates with other systems to boost efficiency and streamline hotel management.
               </div>
             </motion.div>
 
@@ -183,7 +183,7 @@ const Software = () => {
                 <img src={magnet} className='h-auto w-[110px] dlg:w-[180px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              Magnet is a digital platform designed to streamline school operations and enhance data accuracy and communication. It simplifies managing student and teacher records, tracking attendance, and other administrative tasks, enabling schools to concentrate on delivering quality education.
               </div>
             </motion.div>
 
@@ -196,7 +196,7 @@ const Software = () => {
                 <img src={auric} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              Auric is a software solution tailored for jewellery retailers, wholesalers, and manufacturers. It supports inventory management, customer tracking, sales, and accounting, with features such as barcoding, gemstone tracking, and product customization.
               </div>
             </motion.div>
 
@@ -210,7 +210,7 @@ const Software = () => {
                 <img src={startstay} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              Club Logic is a software solution for fitness clubs and gyms that optimizes membership management, attendance tracking, scheduling, billing, and fee collection. It saves time and boosts customer satisfaction through streamlined operations and efficient management.
               </div>
             </motion.div>
 

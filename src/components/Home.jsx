@@ -326,7 +326,7 @@ const Home = () => {
                 initial={{scale:0,opacity:0}}
                 animate={inView10 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className=' flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>20+</div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>10+</div>
                   <div className='text-2xl text-[#2a2828] dlg:text-[25px]'>Years of <span className='block'>Experience</span></div>
                 </motion.div>
 
@@ -496,7 +496,7 @@ const Home = () => {
               ref={ref51}
               initial={{x:-100,opacity:0}}
               animate={inView51 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia quibusdam, id delectus tenetur rerum velit earum corporis doloremque modi aliquid accusamus architecto, repellendus facere similique provident consequuntur inventore. Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis asperiores amet aut libero provident voluptatum sint, cum recusandae. Magnam laboriosam nostrum amet soluta ducimus, reprehenderit placeat architecto tenetur voluptatibus?</motion.div>
+              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>Flash Innovations provides comprehensive Hardware Solutions designed to meet your business's unique needs. From supplying high-quality components to offering expert installation and maintenance services, we ensure that your infrastructure runs smoothly and efficiently. Whether you're upgrading existing systems or building new ones, our hardware solutions are reliable, scalable, and backed by dedicated support for optimal performance.</motion.div>
             </div>
 
             {/* Hardware List */}
@@ -614,6 +614,30 @@ const Home = () => {
                   Flash Innovations provides creative Graphic Designing services, crafting visually stunning designs that elevate your brand. From logos to marketing materials, we deliver impactful visuals that capture attention.
                   </div>
                 </motion.div>
+
+                <motion.div
+                ref={ref28}
+                initial={{y:-100,opacity:0}}
+                animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Website & Web Applications</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations specializes in designing and developing websites and web applications that are dynamic, responsive, and user-friendly. We create solutions that enhance your online presence and deliver a seamless digital experience.
+                  </div>
+                </motion.div>
+
+
+                <motion.div
+                ref={ref28}
+                initial={{y:-100,opacity:0}}
+                animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Mobile Applications</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations develops custom mobile applications that are intuitive, fast, and tailored to your business needs. Our apps deliver a smooth user experience across both iOS and Android platforms.
+                  </div>
+                </motion.div>
+
 
                 <motion.div
                 ref={ref28}

@@ -123,7 +123,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>POS System</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We offers efficient POS systems that simplify sales transactions, manage inventory, and provide detailed reports, enhancing overall business operations.
               </div>
             </motion.div>
 
@@ -139,7 +139,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Computers</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We offers reliable Computer solutions, providing high-performance hardware and expert support. From upgrades to repairs, we ensure your systems operate at their best.
               </div>
             </motion.div>
 
@@ -155,7 +155,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Barcode Printer</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We provides efficient Barcode Printers, designed for reliable and high-quality printing of barcode labels. Our solutions ensure accuracy and ease of use for effective inventory management and tracking.
               </div>
             </motion.div>
 
@@ -171,7 +171,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Printers</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We offers versatile Printers that deliver high-quality prints for all your needs. From office documents to marketing materials, our printers ensure sharp, reliable, and efficient performance.
               </div>
             </motion.div>
 
@@ -187,7 +187,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Hand Barcode Scanner</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We provides handheld Barcode Scanners designed for quick and accurate data capture. These scanners enhance inventory management and streamline checkout processes with reliable performance and ease of use
               </div>
             </motion.div>
 
@@ -203,7 +203,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Table Barcode Scanner</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We offers table Barcode Scanners that provide efficient and precise data capture for busy environments. Ideal for point-of-sale systems and inventory management, these scanners ensure quick and accurate processing.
               </div>
             </motion.div>
 
@@ -219,7 +219,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Labels</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We provides high-quality Labels for various applications, including product identification, inventory management, and branding. Our labels offer durability and clarity, ensuring reliable performance across different uses.
               </div>
             </motion.div>
 
@@ -237,7 +237,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Cash Drawer</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We offers digital Cash Drawers that provide secure and efficient cash handling. With features like electronic locking mechanisms and easy integration with POS systems, our cash drawers ensure accuracy and streamline transactions.
               </div>
             </motion.div>
 
@@ -253,7 +253,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Weighting Scale</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We provides digital Weighting Scales that offer precise and reliable measurements. Ideal for retail and industrial applications, our scales ensure accurate weight readings and seamless integration with other systems.
               </div>
             </motion.div>
 
@@ -270,7 +270,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>CCTV</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              Flash Innovations offers advanced CCTV solutions for comprehensive surveillance and security. Our systems provide high-quality video capture and real-time monitoring to ensure the safety and protection of your premises.
               </div>
             </motion.div>
 
@@ -287,7 +287,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Biometric</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We provides cutting-edge Biometric solutions for secure and efficient access control. Our systems use advanced fingerprint and facial recognition technology to enhance security and streamline user authentication.
               </div>
             </motion.div>
 
@@ -304,7 +304,7 @@ const Services = () => {
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Networking</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
+              We delivers robust Networking solutions, ensuring seamless connectivity and reliable performance. Our services include network design, installation, and support to keep your systems running smoothly and efficiently.
               </div>
             </motion.div>
 

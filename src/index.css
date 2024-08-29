@@ -324,7 +324,7 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   -moz-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
   box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
   backdrop-filter: blur(25px);
-  background: linear-gradient(to bottom right, #008cff, rgba(47, 122, 150, 0.789));
+  background: linear-gradient(to bottom right, #008cff, rgba(7, 61, 80, 0.789));
   border: 1px solid white;
   color: white;
 }

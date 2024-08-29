@@ -68,7 +68,7 @@ const Navbar = () => {
             </a>
         </div>
         <div className="md:hidden">
-            <CgMenuRight className='text-2xl font-bold text-[#0d00ff] cursor-pointer drop-shadow-sm' onClick={() => setMenuOpen(true)} />
+            <CgMenuRight className='text-2xl font-bold text-[#2075bb] cursor-pointer drop-shadow-sm' onClick={() => setMenuOpen(true)} />
         </div>
     </nav>
 </header>
