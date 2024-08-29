@@ -2,7 +2,7 @@ import logo from "../assets/logo.png"
 import { CgMenuRight } from "react-icons/cg";
 import MobileNavbar from './MobileNavbar';
 import React, { useState, useEffect } from 'react';
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { FaPhoneAlt } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 
@@ -23,6 +23,14 @@ const Navbar = () => {
         setMenuOpen(!menuOpen)
     }
 
+    const location = useLocation()
+
+    const getLinkClassName = (path) => {
+        return location.pathname === path
+            ? 'NavbarHover active-link'
+            : 'NavbarHover';
+    };
+
   return (
 
     <header className={`GlassNavbar fixed top-0 left-0 w-full py-2 z-[999] rounded-b-3xl transition-all duration-300 ${active ? ' shadow-lg bg-[white]' : 'bg-[#ffffff]'}`}>
@@ -35,12 +43,12 @@ const Navbar = () => {
         </div>
         <div className='hidden md:flex md:gap-5'>
             <ul className="flex justify-center gap-5 items-center font-bold text-[#000000]">
-                <li className="cursor-pointer NavbarFont"><Link to='/'>Home</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/about'>About</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/Software'>Softwares</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/services'>Services</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/clients'>Clients</Link></li>
-                <li className="cursor-pointer NavbarFont"><Link to='/contact'>Contact</Link></li>
+                <Link className={getLinkClassName("/")} to='/'><li className="cursor-pointer NavbarFont">Home</li></Link>
+                <Link className={getLinkClassName("/about")} to='/about'><li className="cursor-pointer NavbarFont">About</li></Link>
+                <Link className={getLinkClassName("/Software")} to='/Software'><li className="cursor-pointer NavbarFont">Softwares</li></Link>
+                <Link className={getLinkClassName("/services")} to='/services'><li className="cursor-pointer NavbarFont">Services</li></Link>
+                <Link className={getLinkClassName("/clients")} to='/clients'><li className="cursor-pointer NavbarFont">Clients</li></Link>
+                <Link className={getLinkClassName("/contact")} to='/contact'><li className="cursor-pointer NavbarFont">Contact</li></Link>
             </ul>
         </div>
         <div className="hidden md:flex justify-start items-start flex-col gap-1">

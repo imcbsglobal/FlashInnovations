@@ -159,6 +159,7 @@ body {
   pointer-events: auto; /* Ensure button can be clicked */
   z-index: 50; /* Higher than overlapping elements */
   font-family: 'BankGothic';
+  transition: all .2s linear;
 }
 .GradientButton::after{
   content: '';
@@ -179,6 +180,9 @@ body {
   -webkit-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
   -moz-box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
   box-shadow: -1px 2px 8px 0px rgba(0,0,0,0.3);
+}
+.GradientButton:hover{
+  background: linear-gradient(0deg, rgba(4,203,255,1) 0%, rgba(2,60,61,1) 100%);
 }
 .TextStyle{
   font-family: 'BankGothic',sans-serif;
@@ -263,6 +267,18 @@ box-shadow: inset -7px 12px 22px -7px rgba(0,0,0,0.58);
   /* background: linear-gradient(to bottom right, #008cff, rgba(47, 122, 150, 0.789)); */
   background-color: #008cff;
   border: 1px solid white;
+  color: white;
+}
+.BorderDesignBox2{
+  border: none;
+  outline: none;
+  -webkit-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
+  -moz-box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.51);
+  box-shadow: -2px -1px 8px 0px rgba(0,0,0,0.21);
+  backdrop-filter: blur(25px);
+  /* background: linear-gradient(to bottom right, #008cff, rgba(47, 122, 150, 0.789)); */
+  background-color: #ffffff;
+  border: .2px solid #2a2828;
   color: white;
 }
 .DarkBox{
@@ -604,6 +620,16 @@ top: 25px;
 .parallax-text {
   transition: transform 0.3s ease-out;
   will-change: transform;
+}
+.NavbarHover{
+  transition: all .2s ease;
+}
+.NavbarHover:hover{
+  color: #b8b7b5;
+}
+.active-link{
+  color: #008cff;
+
 }
 /* @media screen and (min-width:1700px){
   .aboutBanner{

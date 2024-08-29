@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import techVideo from "../assets/tech-video3.mp4"
 import blueShade from "../assets/black-shade.png"
 import task from "../assets/task.png"
@@ -23,6 +23,10 @@ import { useInView } from "react-intersection-observer";
 
 
 const Software = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
@@ -99,17 +103,18 @@ const Software = () => {
           className='text-sm text-center text-[#2a2828] ParagraphText mb-7 md:w-[600px] lg:w-[700px] md:mx-auto font-bold dlg: dlg:text-lg dlg:w-[1200px]'>At Flash Innovations, we specialize in crafting innovative software solutions designed to elevate your business’s performance. Our approach blends cutting-edge technology with deep industry insights to deliver tailored software that meets your specific needs. From streamlined operations to enhanced functionality, our solutions drive efficiency and growth, ensuring that your business remains competitive in today’s dynamic market. With a focus on quality and user experience, we transform complex challenges into seamless, effective solutions that power your success.</motion.div>
 
           {/* Software List */}
+          
           <div className=' grid grid-cols-1 place-items-center gap-5 md:grid-cols-2'>
             
             <motion.div
             ref={ref3}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView3 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.1}} : {}}
-            className=' w-full h-[300px] bg-[#2075bb]  rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] bg-[#ffffff]  rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={task} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -118,11 +123,11 @@ const Software = () => {
             ref={ref4}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView4 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.8}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] bg-[#2075bb] rounded-r-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] bg-[#2075bb] rounded-r-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={shade} className='h-auto w-[180px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -132,11 +137,11 @@ const Software = () => {
           ref={ref5}
           initial={{scale:0,opacity:0,y:-30}}
           animate={inView5 ? {scale:1,opacity:1,y:0,transition:{duration:.3,ease:'backInOut',delay:.5}} : {}}
-          className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+          className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={vtask} className='h-auto w-[280px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -146,11 +151,11 @@ const Software = () => {
             ref={ref6}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView6 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.8}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={dine} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -159,11 +164,11 @@ const Software = () => {
             ref={ref7}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView7 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.1}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={clublogic} className='h-auto w-[250px] dlg:w-[350px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -173,11 +178,11 @@ const Software = () => {
             ref={ref8}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView8 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.3}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={magnet} className='h-auto w-[110px] dlg:w-[180px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -186,11 +191,11 @@ const Software = () => {
             ref={ref9}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView9 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.5}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={auric} className='h-auto w-[280px] dlg:w-[380px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -200,11 +205,11 @@ const Software = () => {
             ref={ref10}
             initial={{scale:0,opacity:0,y:-30}}
             animate={inView10 ? {scale:1,opacity:1,y:0,transition:{duration:.7,ease:'backInOut',delay:.8}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=''>
                 <img src={startstay} className='h-auto w-[200px] dlg:w-[300px] drop-shadow-md' alt="" />
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -363,7 +368,7 @@ const Software = () => {
 
           </div>
       </section>
-      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
       </section>
     </div>

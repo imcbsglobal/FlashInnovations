@@ -49,11 +49,16 @@ import businessSoftware from "../assets/business-software.jpg"
 import aboutCompany from "../assets/about-company.jpg"
 import companyServices from "../assets/company-services.jpg"
 import customerSupport from "../assets/customer-support1.jpg"
+import { Link } from "react-router-dom"
 
 
 
 
 const Home = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
   
 
   const { ref: ref1, inView: inView1 } = useInView();
@@ -123,44 +128,44 @@ const Home = () => {
 
 // Parallax Effect
 
-useEffect(() => {
-  let scrollPosition = 0;
+  useEffect(() => {
+    let scrollPosition = 0;
 
-  const handleScroll = () => {
-    // Update scroll position
-    scrollPosition = window.scrollY;
-    
-    // Use requestAnimationFrame for smoother updates
-    requestAnimationFrame(() => {
-      const title = document.getElementById('parallaxTitle');
-      const title2 = document.getElementById('parallaxTitle2');
-      const circle1 = document.querySelector('.ParentCircle');
-      const circle2 = document.querySelector('.ParentCircle2');
+    const handleScroll = () => {
+      // Update scroll position
+      scrollPosition = window.scrollY;
+      
+      // Use requestAnimationFrame for smoother updates
+      requestAnimationFrame(() => {
+        const title = document.getElementById('parallaxTitle');
+        const title2 = document.getElementById('parallaxTitle2');
+        const circle1 = document.querySelector('.ParentCircle');
+        const circle2 = document.querySelector('.ParentCircle2');
 
-      if (title) {
-        title.style.transform = `translateX(-${scrollPosition * 0.3}px)`;
-      }
+        if (title) {
+          title.style.transform = `translateX(-${scrollPosition * 0.3}px)`;
+        }
 
-      if (title2) {
-        title2.style.transform = `translateX(${scrollPosition * 0.3}px)`;
-      }
+        if (title2) {
+          title2.style.transform = `translateX(${scrollPosition * 0.3}px)`;
+        }
 
-      if (circle1) {
-        circle1.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
-      }
+        if (circle1) {
+          circle1.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+        }
 
-      if (circle2) {
-        circle2.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
-      }
-    });
-  };
+        if (circle2) {
+          circle2.style.transform = `translateY(-${scrollPosition * 0.5}px)`;
+        }
+      });
+    };
 
-  window.addEventListener('scroll', handleScroll);
+    window.addEventListener('scroll', handleScroll);
 
-  return () => {
-    window.removeEventListener('scroll', handleScroll);
-  };
-}, []);
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
 
 
@@ -175,7 +180,7 @@ useEffect(() => {
             <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
             </div>
             <div className=' flex justify-center z-[999] relative'>
-              <button className=' GradientButton px-8 py-2  cursor-pointer text-sm lg:text-[20px] lg:py-5'>Discover More</button>
+              <button className=' GradientButton px-8 py-2  cursor-pointer text-sm lg:text-[20px] lg:py-5' onClick={()=>document.getElementById('aboutsection').scrollIntoView({ behavior: 'smooth' })}>Discover More</button>
             </div>
         </div>
       </div>
@@ -233,7 +238,7 @@ useEffect(() => {
       </section>
 
       {/* Next Section */}
-      <section className='relative min-h-screen w-full z-[998]  bg-[#fffffff1] rounded-t-3xl '>
+      <section className='relative min-h-screen w-full z-[998]  bg-[#fffffff1] rounded-t-3xl ' id='aboutsection'>
         {/* <div className=''>
           <img src={blueShade} className='absolute -z-10 w-full h-full object-cover opacity-50' alt="blueShade" />
           <video className='absolute top-0 -z-10 opacity-15 mix-blend-multiply' autoPlay loop muted playsInline src={techVideo} style={{ width: '100%', height: '100%', objectFit:'cover' }}></video>
@@ -315,14 +320,14 @@ useEffect(() => {
               </div>
             </div>
           </div>
-          <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:grid-cols-4'>
+          <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:flex justify-center items-center md:gap-10'>
                 <motion.div
                 ref={ref10}
                 initial={{scale:0,opacity:0}}
                 animate={inView10 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className=' flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>20+</div>
-                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Years of <span className='block'>Experience</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>20+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[25px]'>Years of <span className='block'>Experience</span></div>
                 </motion.div>
 
                 <motion.div
@@ -330,8 +335,8 @@ useEffect(() => {
                 initial={{scale:0,opacity:0}}
                 animate={inView11 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>30+</div>
-                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Skilled <span className='block'>Professionals</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>30+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[25px]'>Skilled <span className='block'>Professionals</span></div>
                 </motion.div>
 
                 <motion.div
@@ -339,8 +344,8 @@ useEffect(() => {
                 initial={{scale:0,opacity:0}}
                 animate={inView12 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>100%</div>
-                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Customer<span className='block'>Satisfaction</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>100%</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[25px]'>Customer<span className='block'>Satisfaction</span></div>
                 </motion.div>
 
                 <motion.div
@@ -348,8 +353,8 @@ useEffect(() => {
                 initial={{scale:0,opacity:0}}
                 animate={inView13 ? {scale:1,opacity:1,transition:{duration:0.5,ease:'backInOut'}} : {}}
                 className='flex justify-center items-center gap-2'>
-                  <div className='text-[52px] font-bold outLineFont dlg:text-[100px]'>1000+</div>
-                  <div className='text-2xl text-[#2a2828] dlg:text-[30px]'>Clients<span className='block'>World Wide</span></div>
+                  <div className='text-[52px] font-bold outLineFont dlg:text-[80px]'>1000+</div>
+                  <div className='text-2xl text-[#2a2828] dlg:text-[25px]'>Clients<span className='block'>World Wide</span></div>
                 </motion.div>
 
               </div>
@@ -468,6 +473,12 @@ useEffect(() => {
                   <img src={starstay} className='w-auto h-[38px] dlg:h-[70px]' alt="" />
                 </motion.div>
               </div>
+
+              <div className=' flex justify-center items-center mt-10'>
+                <Link to='/software'>
+                  <button className='px-8 py-3 rounded-3xl GradientButton'>Know More</button>
+                </Link>
+              </div>
           </div>
         </section>
 
@@ -476,19 +487,81 @@ useEffect(() => {
         <section className=' section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-10'>
             <div>
-              <div className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Hardware Solutions</div>
-              <div className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia quibusdam, id delectus tenetur rerum velit earum corporis doloremque modi aliquid accusamus architecto, repellendus facere similique provident consequuntur inventore. Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis asperiores amet aut libero provident voluptatum sint, cum recusandae. Magnam laboriosam nostrum amet soluta ducimus, reprehenderit placeat architecto tenetur voluptatibus?</div>
+              <motion.div
+              ref={ref50}
+              initial={{x:-100,opacity:0}}
+              animate={inView50 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+              className='TitleText text-[#2075bb] text-[42px] pt-10 text-center mb-5 dlg:text-[100px]'>Hardware Solutions</motion.div>
+              <motion.div
+              ref={ref51}
+              initial={{x:-100,opacity:0}}
+              animate={inView51 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+              className='text-center ParagraphText text-[#2a2828] mb-10 lg:max-w-[900px] lg:mx-auto font-bold dlg:text-lg'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur mollitia quibusdam, id delectus tenetur rerum velit earum corporis doloremque modi aliquid accusamus architecto, repellendus facere similique provident consequuntur inventore. Id?Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt quis asperiores amet aut libero provident voluptatum sint, cum recusandae. Magnam laboriosam nostrum amet soluta ducimus, reprehenderit placeat architecto tenetur voluptatibus?</motion.div>
             </div>
 
             {/* Hardware List */}
-            <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10 llg:w-[1400px]'>
+            <div className='grid grid-cols-1 place-items-center md:grid-cols-2 gap-10 dlg:w-[1200px] mx-auto'>
+
+                <motion.div
+                ref={ref52}
+                initial={{y:-100,opacity:1}}
+                animate={inView52 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[280px] lg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                <div className='text-[25px] mb-5 font-bold'>Computer Hardware Sales & Services</div>
+                  <div className=' text-sm lg:text-base'>
+                  Flash Innovations provides comprehensive Computer Hardware Sales & Services, including high-quality components and expert repairs. We ensure your systems operate efficiently and reliably with top-notch support.
+                  </div>
+                </motion.div>
+
+                <motion.div
+                ref={ref53}
+                initial={{y:-100,opacity:1}}
+                animate={inView53 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>CCTV & Security</div>
+                    <div className='text-sm lg:text-base'>
+                      Flash Innovations offers top-notch CCTV & Security solutions, providing advanced surveillance systems and reliable protection for your premises. Our expert services ensure comprehensive security and peace of mind.
+                    </div>
+                </motion.div>
+
+                <motion.div
+                ref={ref54}
+                initial={{y:-100,opacity:1}}
+                animate={inView54 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Scanners & Printers</div>
+                  <div className='text-sm lg:text-base'>
+                    Flash Innovations provides high-quality Scanners & Printers, offering reliable performance and advanced features to meet all your document management needs. Trust us for efficient and durable solutions.
+                  </div>
+                </motion.div>
+
+                <motion.div
+                ref={ref55}
+                initial={{y:-100,opacity:1}}
+                animate={inView55 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Networking</div>
+                  <div className='text-sm lg:text-base'>
+                    Flash Innovations delivers expert Networking solutions, ensuring seamless connectivity and robust performance for your business. Our services include design, installation, and support for all your network needs.
+                  </div>
+                </motion.div>
 
             </div>
+
+            <motion.div
+            ref={ref56}
+            initial={{x:-100,opacity:1}}
+            animate={inView56 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
+            className=' flex justify-center items-center mt-10'>
+              <Link to='/services'>
+                <button className='px-8 py-3 rounded-3xl GradientButton'>Know More</button>
+              </Link>
+            </motion.div>
           </div>
         </section>
         
 
-        {/* About Section */}
+        {/* Other Services Section */}
 
         <section className=' section'>
           <div className='lg:max-w-[1200px] lg:mx-auto mb-10'>
@@ -516,7 +589,7 @@ useEffect(() => {
               </motion.div>
            </div>
 
-            {/* Services Lists */}
+            {/* Other Services Lists */}
             
               <div className=' grid grid-cols-1 place-items-center md:grid-cols-2 llg:w-[1200px] mx-auto gap-10'>
 
@@ -524,10 +597,10 @@ useEffect(() => {
                 ref={ref26}
                 initial={{y:-100,opacity:0}}
                 animate={inView26 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[350px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 '>
-                  <div className='text-[25px] mb-5 font-bold'>Computer Hardware Sales & Services</div>
-                  <div className=''>
-                  Flash Innovations provides comprehensive Computer Hardware Sales & Services, including high-quality components and expert repairs. We ensure your systems operate efficiently and reliably with top-notch support.
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 '>
+                  <div className='text-[25px] mb-5 font-bold'>Digital Marketing</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations offers strategic Digital Marketing services to boost your online presence. From SEO to social media campaigns, we help your business reach and engage the right audience effectively.
                   </div>
                 </motion.div>
 
@@ -535,10 +608,10 @@ useEffect(() => {
                 ref={ref27}
                 initial={{y:-100,opacity:0}}
                 animate={inView27 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className='w-full h-[350px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 md:py-10 py-5 '>
-                  <div className='text-[25px] mb-5 font-bold md:leading-[40px] leading-[30px]'>Customized Software Development</div>
-                  <div>
-                  Flash Innovations excels in Customized Software Development, delivering tailored solutions that fit your unique business needs. Our expert team ensures seamless integration and optimal performance for your software applications.
+                className='w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 md:py-10 py-5 '>
+                  <div className='text-[25px] mb-5 font-bold md:leading-[40px] leading-[30px]'>Graphic Designing</div>
+                  <div className=' text-sm lg:text-base'>
+                  Flash Innovations provides creative Graphic Designing services, crafting visually stunning designs that elevate your brand. From logos to marketing materials, we deliver impactful visuals that capture attention.
                   </div>
                 </motion.div>
 
@@ -546,10 +619,10 @@ useEffect(() => {
                 ref={ref28}
                 initial={{y:-100,opacity:0}}
                 animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                 className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
-                  <div className='text-[25px] mb-5 font-bold'>Business Softwares</div>
-                  <div>
-                  At Flash Innovations, we deliver business software that streamlines operations and integrates seamlessly. Our solutions offer real-time insights, helping your business make smarter decisions and scale effectively.
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Branding</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations specializes in creative Graphic Designing, delivering impactful visuals that elevate your brand. Our designs capture attention and communicate your message with clarity and style.
                   </div>
                 </motion.div>
 
@@ -558,10 +631,10 @@ useEffect(() => {
                 ref={ref29}
                 initial={{y:-100,opacity:0}}
                 animate={inView29 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
-                  <div className='text-[25px] mb-5 font-bold'>CCTV & Security</div>
-                  <div>
-                  Flash Innovations offers top-notch CCTV & Security solutions, providing advanced surveillance systems and reliable protection for your premises. Our expert services ensure comprehensive security and peace of mind.
+                className=' w-full h-[280px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>Whatsapp / SMS Marketing</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations provides effective WhatsApp & SMS Marketing solutions, enabling direct and personalized communication with your audience. Our services help you reach customers quickly and efficiently.
                   </div>
                 </motion.div>
 
@@ -570,10 +643,10 @@ useEffect(() => {
                 ref={ref30}
                 initial={{y:-100,opacity:0}}
                 animate={inView30 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
-                  <div className='text-[25px] mb-5 font-bold'>Scanners & Printers</div>
-                  <div>
-                  Flash Innovations provides high-quality Scanners & Printers, offering reliable performance and advanced features to meet all your document management needs. Trust us for efficient and durable solutions.
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                  <div className='text-[25px] mb-5 font-bold'>SEO</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations offers expert SEO services to improve your website's visibility and ranking. We optimize your content and strategies to drive organic traffic and boost your online presence.
                   </div>
                 </motion.div>
 
@@ -582,23 +655,17 @@ useEffect(() => {
                 ref={ref31}
                 initial={{y:-100,opacity:0}}
                 animate={inView31 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
-                  <div className='text-[25px] mb-5 font-bold'>Networking</div>
-                  <div>
-                  Flash Innovations delivers expert Networking solutions, ensuring seamless connectivity and robust performance for your business. Our services include design, installation, and support for all your network needs.
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                  <div className='text-[25px] mb-5 font-bold'>E - Commerce</div>
+                  <div className='text-sm lg:text-base'>
+                  Flash Innovations delivers powerful E-Commerce solutions that help you build and grow your online store. From user-friendly design to secure payment integration, we ensure a seamless shopping experience for your customers.
                   </div>
                 </motion.div>
 
 
               </div>
 
-            <motion.div 
-            // ref={ref33}
-            // initial={{scale:0,opacity:0}}
-            // animate={inView33 ? {scale:1,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
-            className=' flex justify-center items-center mt-10 lg:mt-16'>
-                <button className='px-8 py-2 rounded-3xl GradientButton'>Know More</button>
-              </motion.div>
+            
           </div>
         </section>
 
@@ -670,7 +737,9 @@ useEffect(() => {
                   initial={{x:-100,opacity:0}}
                   animate={inView48 ? {x:0,opacity:1,transition:{ease:'backInOut',duration:.5}} : {}}
                   className=' hidden md:flex justify-center items-center mt-10'>
-                    <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
+                    <Link to='/contact'>
+                      <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
+                    </Link>
                   </motion.div>
               </div>
 
@@ -684,14 +753,17 @@ useEffect(() => {
               <motion.div
               
               className=' flex md:hidden justify-center items-center mt-10'>
-                <button className=' px-8 py-2 rounded-3xl GradientButton'>Contact Us</button>
+                   <Link to='/contact'>
+                      <button className='px-8 py-3 rounded-3xl GradientButton'>Know More</button>
+                   </Link>
+                
               </motion.div>
             </div>
           </div>  
         </section>
 
         <motion.section
-        className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+        className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
       </motion.section>
 

@@ -7,14 +7,14 @@ import { RiWhatsappFill } from "react-icons/ri";
 
 const Footer = () => {
   return (
-    <section className='Waves'>
+    <section className='Waves relative z-[997]'>
         <div className=' w-full h-[30%]'>
             <div className='wave wave1'></div>
             <div className='wave wave2'></div>
             <div className='wave wave3'></div>
             <div className='wave wave4'></div>
         </div>
-        <div className='WaveFooter w-full h-[100%] mt-[-360px] md:mt-[-162px] lg:mt-[-75px] bg-[#2075bb] z-30'>
+        <div className='WaveFooter w-full h-[100%] mt-[-360px] md:mt-[-162px] lg:mt-[-75px] bg-[#2075bb] z-[997] relative'>
             <div className='grid grid-cols-1 place-items-center place-content-center gap-10 px-6 md:grid-cols-2 lg:grid-cols-4 md:place-content-start lg:max-w-[1200px] md:mx-auto md:place-items-center'>
                 <div className='flex flex-col justify-center items-center text-center gap-2'>
                     <div className=' w-auto h-[80px] mt-10'>
@@ -44,7 +44,7 @@ const Footer = () => {
                 </div>
 
                 {/* Software Service */}
-                <div>
+                <div className=' z-[999]'>
                 <div className=' font-bold text-[#ffffffe9] text-xl text-center mb-5'>Our Services</div>
                     <ul className='flex flex-col justify-center items-center gap-2 font-semibold text-[#ffffff]'>
                         <li>Inventory Softwares</li>
@@ -60,7 +60,7 @@ const Footer = () => {
                 </div>
 
                 {/* Hardware Service */}
-                <div>
+                <div className=' relative z-[999]'>
                     <div className=' font-bold text-[#ffffffe9] text-xl mb-5'>Our Hardware Solutions</div>
                     <ul className='flex flex-col justify-center items-center gap-2 font-semibold text-[#ffffff]'>
                         <li>POS</li>
@@ -76,7 +76,7 @@ const Footer = () => {
                     </ul>
                 </div>
 
-                <div>
+                <div className=' relative z-[999]'>
                     <div className=' font-bold text-[#ffffffe9] text-xl mb-5'>Our Company</div>
                     <ul className='flex flex-col justify-center items-center gap-2 font-semibold text-[#ffffff]'>
                         <li>Home</li>
@@ -93,7 +93,7 @@ const Footer = () => {
 
         {/* Bottom Tight */}
         {/* <div className=' absolute w-full h-[300px] bg-[#ffffff] bottom-0 left-0 -z-10'></div> */}
-        <div className=' absolute bottom-0 w-full h-[100px] bg-[#ffffff] m-0 p-0 flex justify-center items-center'>
+        <div className=' absolute bottom-0 w-full h-[100px] bg-[#ffffff] m-0 p-0 flex justify-center items-center z-[999]'>
             <div className=' text-center flex justify-center items-center text-[#000] font-normal'>copyright©2024 <span className=' ml-1 font-semibold text-[#2075bb]'>Flash Innovations</span></div>
         </div>
     </section>

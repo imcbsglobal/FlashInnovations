@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import techVideo from "../assets/tech-video3.mp4"
 import blueShade from "../assets/black-shade.png"
 import pos from "../assets/pos.png"
@@ -29,7 +29,10 @@ import integratedHardware from "../assets/Integrated-hardware.jpg"
 
 const Services = () => {
 
-  
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
+
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
   const { ref: ref3, inView: inView3 } = useInView({ triggerOnce: true });
@@ -112,14 +115,14 @@ const Services = () => {
         ref={ref3}
         initial={{scale:0,opacity:0}}
         animate={inView3 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-        className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+        className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
               <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={pos} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>POS System</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>POS System</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -128,14 +131,14 @@ const Services = () => {
             ref={ref4}
             initial={{scale:0,opacity:0}}
             animate={inView4 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={computer} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Computers</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Computers</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -144,14 +147,14 @@ const Services = () => {
             ref={ref5}
             initial={{scale:0,opacity:0}}
             animate={inView5 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={barcodePrinter} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Barcode Printer</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Barcode Printer</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -160,14 +163,14 @@ const Services = () => {
             ref={ref6}
             initial={{scale:0,opacity:0}}
             animate={inView6 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={printers} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Printers</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Printers</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -176,14 +179,14 @@ const Services = () => {
             ref={ref7}
             initial={{scale:0,opacity:0}}
             animate={inView7 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={handBarcode} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Hand Barcode Scanner</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Hand Barcode Scanner</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -192,14 +195,14 @@ const Services = () => {
             ref={ref8}
             initial={{scale:0,opacity:0}}
             animate={inView8 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={tableBarcode} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Table Barcode Scanner</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Table Barcode Scanner</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -208,14 +211,14 @@ const Services = () => {
             ref={ref9}
             initial={{scale:0,opacity:0}}
             animate={inView9 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={lables} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Labels</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Labels</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -226,14 +229,14 @@ const Services = () => {
             ref={ref10}
             initial={{scale:0,opacity:0}}
             animate={inView10 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={cashDrawer} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Cash Drawer</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Cash Drawer</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -242,14 +245,14 @@ const Services = () => {
             ref={ref11}
             initial={{scale:0,opacity:0}}
             animate={inView11 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={weighting} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Weighting Scale</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Weighting Scale</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -259,14 +262,14 @@ const Services = () => {
             ref={ref12}
             initial={{scale:0,opacity:0}}
             animate={inView12 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={cctv} className='w-auto h-[100px] drop-shadow-2xl dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>CCTV</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>CCTV</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -276,14 +279,14 @@ const Services = () => {
             ref={ref13}
             initial={{scale:0,opacity:0}}
             animate={inView13 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-br-[20%] rounded-tr-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={biometric} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Biometric</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Biometric</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -293,14 +296,14 @@ const Services = () => {
             ref={ref14}
             initial={{scale:0,opacity:0}}
             animate={inView14 ? {scale:1,opacity:1,transition:{duration:.7,ease:'backInOut'}} : {}}
-            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
+            className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
                   <img src={networking} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px]  dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#fff] dlg:text-[28px]'>Networking</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Networking</div>
               </div>
-              <div className='ParagraphText text-[#fff] text-sm md:text-base font-bold'>
+              <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nobis aliquam ea commodi odio facere, velit, porro minus dolorum rerum asperiores eveniet laborum laudantium optio molestiae. Reiciendis sed amet odit sunt?
               </div>
             </motion.div>
@@ -425,7 +428,7 @@ const Services = () => {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
       </section>
     </div>

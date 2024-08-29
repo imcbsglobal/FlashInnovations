@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import techVideo from "../assets/tech-video3.mp4"
 import blueShade from "../assets/black-shade.png"
 import exp from "../assets/exp.png"
@@ -29,6 +29,10 @@ import companyServices from "../assets/company-services.jpg"
 
 
 const About = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
@@ -106,7 +110,7 @@ const About = () => {
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={exp} alt="" />
                 </div>
-                <div className='text-[#3c3a3a] text-3xl font-semibold'>10+</div>
+                <div className='text-[#3c3a3a] text-3xl font-semibold'>20+</div>
                 <div className=' text-[#625d5d]'>Year of <span className=' block'>Experience</span></div>
             </motion.div>
 
@@ -118,7 +122,7 @@ const About = () => {
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={skill} alt="" />
                 </div>
-                <div className='text-[#3c3a3a] text-3xl font-semibold'>10+</div>
+                <div className='text-[#3c3a3a] text-3xl font-semibold'>30+</div>
                 <div className=' text-[#625d5d]'>Skilled<span className=' block'>Professionals</span></div>
             </motion.div>
             </div>
@@ -144,8 +148,8 @@ const About = () => {
                   <div className='w-[80%] h-[50%]'>
                     <img className='w-full h-full object-contain' src={project} alt="" />
                   </div>
-                  <div className='text-[#3c3a3a] text-3xl font-semibold'>300+</div>
-                  <div className=' text-[#625d5d]'>Projects<span className=' block'>Worldwide</span></div>
+                  <div className='text-[#3c3a3a] text-3xl font-semibold'>1000+</div>
+                  <div className=' text-[#625d5d]'>Clients<span className=' block'>Worldwide</span></div>
               </motion.div>
             </div>
           </div>
@@ -183,7 +187,7 @@ const About = () => {
             ref={ref8}
             initial={{scale:0,opacity:0}}
             animate={inView8 ? {scale:1,opacity:1,transition:{ease:'backInOut'}} : {}}
-             className='h-[300px] w-full lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px]  bg-[#fff] BlobDesign'>
+             className='h-[300px] w-full lg:h-[500px] lg:w-[500px] dlg:w-[600px] dlg:h-[600px]  bg-[#fff] BlobDesign2'>
                 <img src={companyServices} className=' h-full w-full object-cover mix-blend-darken bg-[#2075bb] drop-shadow-2xl rounded-full BlobDesign' alt="" />
             </motion.div>
           </div>
@@ -453,7 +457,7 @@ const About = () => {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
       </section>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from './Footer';
 import aboutBanner from "../assets/clients-banner.jpeg"
 import blackShade from "../assets/black-shade.png"
@@ -10,6 +10,10 @@ import { inView, motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
 
 const Clients = () => {
+
+  useEffect(()=>{
+    window.scrollTo(0,0)
+  },[])
 
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
   const { ref: ref2, inView: inView2 } = useInView({ triggerOnce: true });
@@ -70,7 +74,7 @@ const Clients = () => {
         </div>
       </section>
 
-      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-50'>
+      <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
       </section>
     </div>
