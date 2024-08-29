@@ -177,7 +177,7 @@ const Home = () => {
       <div className='w-full h-screen flex justify-center items-center scroll-smooth'>
         <div className=' TextStyle flex flex-col justify-center items-center'>
             <div className=' text-[42px] mb-10 leading-[40px]  font-bold text-[#fff] text-center md:text-[72px] md:leading-[75px] lg:text-[72px] lg:leading-[70px] dlg:text-[100px] parallax-text dlg:leading-[100px] scroll-smooth'  id='parallaxTitle'>Shaping the Future  <span className='block'>Through Precision and Power</span> </div>
-            <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo numquam quisquam officiis commodi odit labore aut vitae! Ipsum itaque sapiente recusandae. Unde error sunt soluta voluptates consequatur labore in doloremque! Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+            <div id='parallaxTitle2' className='ParagraphText leading-normal text-center text-white mb-10 lg:w-[900px] mx-auto px-10 font-bold'>Shaping the Future Through Precision and Power, we provide innovative solutions that blend meticulous craftsmanship with advanced technology. Our commitment to excellence ensures your business achieves peak efficiency and remains competitive in an ever-evolving market.
             </div>
             <div className=' flex justify-center z-[999] relative'>
               <button className=' GradientButton px-8 py-2  cursor-pointer text-sm lg:text-[20px] lg:py-5' onClick={()=>document.getElementById('aboutsection').scrollIntoView({ behavior: 'smooth' })}>Discover More</button>
