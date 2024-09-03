@@ -46,6 +46,7 @@ const Navbar = () => {
                 <Link className={getLinkClassName("/")} to='/'><li className="cursor-pointer NavbarFont">Home</li></Link>
                 <Link className={getLinkClassName("/about")} to='/about'><li className="cursor-pointer NavbarFont">About</li></Link>
                 <Link className={getLinkClassName("/Software")} to='/Software'><li className="cursor-pointer NavbarFont">Softwares</li></Link>
+                <Link className={getLinkClassName("/hardwares")} to='/hardwares'><li className="cursor-pointer NavbarFont">Hardwares</li></Link>
                 <Link className={getLinkClassName("/services")} to='/services'><li className="cursor-pointer NavbarFont">Services</li></Link>
                 <Link className={getLinkClassName("/clients")} to='/clients'><li className="cursor-pointer NavbarFont">Clients</li></Link>
                 <Link className={getLinkClassName("/contact")} to='/contact'><li className="cursor-pointer NavbarFont">Contact</li></Link>

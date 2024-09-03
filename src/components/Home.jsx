@@ -50,6 +50,22 @@ import aboutCompany from "../assets/about-company.jpg"
 import companyServices from "../assets/company-services.jpg"
 import customerSupport from "../assets/customer-support1.jpg"
 import { Link } from "react-router-dom"
+import clientsBanner from "../assets/clients-banner.jpeg"
+import other1 from "../assets/other1.jpg"
+import other2 from "../assets/other2.jpg"
+import other3 from "../assets/other3.jpg"
+import other4 from "../assets/other4.jpg"
+import other5 from "../assets/other5.jpg"
+import other6 from "../assets/other6.jpg"
+import other7 from "../assets/other7.jpg"
+import other8 from "../assets/other8.jpg"
+import hard1 from "../assets/hard1.jpeg"
+import hard2 from "../assets/hard2.jpg"
+import hard3 from "../assets/hard3.jpeg"
+import hard4 from "../assets/hard4.jpg"
+import hard5 from "../assets/hard5.jpeg"
+
+
 
 
 
@@ -506,9 +522,12 @@ const Home = () => {
                 ref={ref52}
                 initial={{y:-100,opacity:1}}
                 animate={inView52 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[280px] lg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                className=' w-full h-[280px] lg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={hard3} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                 <div className='text-[25px] mb-5 font-bold'>Computer Hardware Sales & Services</div>
-                  <div className=' text-sm lg:text-base'>
+                  <div className=' text-sm lg:text-base lg:font-medium'>
                   Flash Innovations provides comprehensive Computer Hardware Sales & Services, including high-quality components and expert repairs. We ensure your systems operate efficiently and reliably with top-notch support.
                   </div>
                 </motion.div>
@@ -518,8 +537,11 @@ const Home = () => {
                 initial={{y:-100,opacity:1}}
                 animate={inView53 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={hard4} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>CCTV & Security</div>
-                    <div className='text-sm lg:text-base'>
+                    <div className='text-sm lg:text-base lg:font-medium'>
                       Flash Innovations offers top-notch CCTV & Security solutions, providing advanced surveillance systems and reliable protection for your premises. Our expert services ensure comprehensive security and peace of mind.
                     </div>
                 </motion.div>
@@ -529,8 +551,11 @@ const Home = () => {
                 initial={{y:-100,opacity:1}}
                 animate={inView54 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={hard1} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Scanners & Printers</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                     Flash Innovations provides high-quality Scanners & Printers, offering reliable performance and advanced features to meet all your document management needs. Trust us for efficient and durable solutions.
                   </div>
                 </motion.div>
@@ -540,8 +565,11 @@ const Home = () => {
                 initial={{y:-100,opacity:1}}
                 animate={inView55 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={hard2} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Networking</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                     Flash Innovations delivers expert Networking solutions, ensuring seamless connectivity and robust performance for your business. Our services include design, installation, and support for all your network needs.
                   </div>
                 </motion.div>
@@ -553,7 +581,7 @@ const Home = () => {
             initial={{x:-100,opacity:1}}
             animate={inView56 ? {x:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
             className=' flex justify-center items-center mt-10'>
-              <Link to='/services'>
+              <Link to='/hardwares'>
                 <button className='px-8 py-3 rounded-3xl GradientButton'>Know More</button>
               </Link>
             </motion.div>
@@ -597,9 +625,13 @@ const Home = () => {
                 ref={ref26}
                 initial={{y:-100,opacity:0}}
                 animate={inView26 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 '>
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-5 md:py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={clientsBanner} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
+
                   <div className='text-[25px] mb-5 font-bold'>Digital Marketing</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations offers strategic Digital Marketing services to boost your online presence. From SEO to social media campaigns, we help your business reach and engage the right audience effectively.
                   </div>
                 </motion.div>
@@ -608,9 +640,12 @@ const Home = () => {
                 ref={ref27}
                 initial={{y:-100,opacity:0}}
                 animate={inView27 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className='w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 md:py-10 py-5 '>
+                className='w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 md:py-10 py-5 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other4} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold md:leading-[40px] leading-[30px]'>Graphic Designing</div>
-                  <div className=' text-sm lg:text-base'>
+                  <div className=' text-sm lg:text-base lg:font-medium'>
                   Flash Innovations provides creative Graphic Designing services, crafting visually stunning designs that elevate your brand. From logos to marketing materials, we deliver impactful visuals that capture attention.
                   </div>
                 </motion.div>
@@ -619,9 +654,12 @@ const Home = () => {
                 ref={ref28}
                 initial={{y:-100,opacity:0}}
                 animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10'>
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other5} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Website & Web Applications</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations specializes in designing and developing websites and web applications that are dynamic, responsive, and user-friendly. We create solutions that enhance your online presence and deliver a seamless digital experience.
                   </div>
                 </motion.div>
@@ -631,9 +669,12 @@ const Home = () => {
                 ref={ref28}
                 initial={{y:-100,opacity:0}}
                 animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other3} className='w-full h-full object-cover rounded-3xl opacity-5' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Mobile Applications</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations develops custom mobile applications that are intuitive, fast, and tailored to your business needs. Our apps deliver a smooth user experience across both iOS and Android platforms.
                   </div>
                 </motion.div>
@@ -643,9 +684,12 @@ const Home = () => {
                 ref={ref28}
                 initial={{y:-100,opacity:0}}
                 animate={inView28 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                 className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other2} className='w-full h-full object-cover rounded-3xl opacity-5' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Branding</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations specializes in creative Graphic Designing, delivering impactful visuals that elevate your brand. Our designs capture attention and communicate your message with clarity and style.
                   </div>
                 </motion.div>
@@ -655,9 +699,12 @@ const Home = () => {
                 ref={ref29}
                 initial={{y:-100,opacity:0}}
                 animate={inView29 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[280px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10'>
+                className=' w-full h-[280px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-2 lg:py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other8} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>Whatsapp / SMS Marketing</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations provides effective WhatsApp & SMS Marketing solutions, enabling direct and personalized communication with your audience. Our services help you reach customers quickly and efficiently.
                   </div>
                 </motion.div>
@@ -667,9 +714,12 @@ const Home = () => {
                 ref={ref30}
                 initial={{y:-100,opacity:0}}
                 animate={inView30 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 '>
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other1} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>SEO</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations offers expert SEO services to improve your website's visibility and ranking. We optimize your content and strategies to drive organic traffic and boost your online presence.
                   </div>
                 </motion.div>
@@ -679,9 +729,12 @@ const Home = () => {
                 ref={ref31}
                 initial={{y:-100,opacity:0}}
                 animate={inView31 ? {y:0,opacity:1,transition:{duration:1,ease:'backInOut'}} : {}}
-                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10'>
+                className=' w-full h-[250px] llg:h-[250px] rounded-3xl BorderDesignBox px-10 py-10 relative'>
+                  <div className='absolute h-[250px] w-full rounded-3xl top-0 left-0'>
+                    <img src={other6} className='w-full h-full object-cover rounded-3xl opacity-10' alt="" />
+                  </div>
                   <div className='text-[25px] mb-5 font-bold'>E - Commerce</div>
-                  <div className='text-sm lg:text-base'>
+                  <div className='text-sm lg:text-base lg:font-medium'>
                   Flash Innovations delivers powerful E-Commerce solutions that help you build and grow your online store. From user-friendly design to secure payment integration, we ensure a seamless shopping experience for your customers.
                   </div>
                 </motion.div>

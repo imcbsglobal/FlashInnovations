@@ -8,6 +8,7 @@ import Clients from "./components/Clients";
 import React, { useEffect, useRef, useState, lazy, Suspense } from "react";
 import useLocoScroll from "./components/useLocoScroll";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import OtherServices from "./components/OtherServices"
 
 function App() {
   const ref = useRef(null);
@@ -50,28 +51,16 @@ function App() {
 
   return (
     <Router>
-      {preloader ? (
-        <div className="Pre-Loader">
-          <h2>Flash Innovations</h2>
-        </div>
-      ) : (
-        <div
-          // className="main-container"
-          // id="main-container"
-          // data-scroll-container
-          ref={ref}
-        >
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
             <Route path="/software" element={<Software />} />
-            <Route path="/services" element={<Services />} />
+            <Route path="/hardwares" element={<Services />} />
+            <Route path="/services" element={<OtherServices />} />
             <Route path="/clients" element={<Clients />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>
-        </div>
-      )}
     </Router>
   );
 }

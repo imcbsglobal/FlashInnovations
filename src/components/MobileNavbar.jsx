@@ -12,10 +12,10 @@ const MobileNavbar = ({setMenuOpen}) => {
     className=''>
       <nav>
         <div className='absolute top-5 right-10 cursor-pointer'>
-            <IoCloseCircleSharp className=' cursor-pointer text-3xl text-[#070022]' onClick={() => setMenuOpen(false)}/>
+            <IoCloseCircleSharp className=' cursor-pointer text-3xl text-[#2075bb]' onClick={() => setMenuOpen(false)}/>
         </div>
         <div className=' flex justify-center items-center gap-10'>
-            <ul className='flex flex-col justify-center items-center gap-7 text-xl text-[#171717]  NavbarFont p-8'>
+            <ul className='flex flex-col justify-center items-center gap-7 text-xl text-[#2075bb] font-bold  MobileNavbarFont p-8'>
                 <motion.li
                 initial={{ x:-100,opacity:0 }}
                 animate={{x:0,opacity:1,transition:{duration:1,ease:'backInOut'}}}
@@ -31,10 +31,14 @@ const MobileNavbar = ({setMenuOpen}) => {
                 <motion.li
                 initial={{ x:-100,opacity:0 }}
                 animate={{x:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:.6}}}
-                ><Link to='/services' onClick={()=>setMenuOpen(false)}>Services</Link></motion.li>
+                ><Link to='/hardwares' onClick={()=>setMenuOpen(false)}>Hardwares</Link></motion.li>
                 <motion.li
                 initial={{ x:-100,opacity:0 }}
                 animate={{x:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:.8}}}
+                ><Link to='/services' onClick={()=>setMenuOpen(false)}>Services</Link></motion.li>
+                <motion.li
+                initial={{ x:-100,opacity:0 }}
+                animate={{x:0,opacity:1,transition:{duration:1,ease:'backInOut',delay:.9}}}
                 ><Link to='/clients' onClick={()=>setMenuOpen(false)}>Clients</Link></motion.li>
                 <motion.li
                 initial={{ x:-100,opacity:0 }}

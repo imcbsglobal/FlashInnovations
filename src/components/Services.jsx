@@ -168,10 +168,10 @@ const Services = () => {
                 <div className=''>
                   <img src={printers} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
-                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Printers</div>
+                <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Thermal Printer</div>
               </div>
               <div className='ParagraphText text-[#2a2828] text-sm md:text-base font-bold'>
-              We offers versatile Printers that deliver high-quality prints for all your needs. From office documents to marketing materials, our printers ensure sharp, reliable, and efficient performance.
+              We offer versatile thermal printers that deliver high-quality prints for all your needs. From office documents to marketing materials, our thermal printers ensure sharp, reliable, and efficient performance.
               </div>
             </motion.div>
 
