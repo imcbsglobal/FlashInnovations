@@ -336,7 +336,7 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:flex justify-center items-center md:gap-10'>
+          <div className='grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 lg:flex justify-center items-center md:gap-10 mt-5 lg:mt-0'>
                 <motion.div
                 ref={ref10}
                 initial={{scale:0,opacity:0}}

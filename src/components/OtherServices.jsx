@@ -94,7 +94,7 @@ const OtherServices = () => {
                 ref={ref1}
                 initial={{ x:-100, opacity:0 }}
                 animate={inView1 ? { x:0,opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={digitalMarketing} className=' w-full h-full object-cover rounded-tr-[20%] rounded-bl-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -120,7 +120,7 @@ const OtherServices = () => {
                 ref={ref3}
                 initial={{ x:-100, opacity:0}}
                 animate={inView3 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={GraphicDesign} className=' w-full h-full object-cover rounded-tl-[20%] rounded-br-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -144,7 +144,7 @@ const OtherServices = () => {
                 ref={ref5}
                 initial={{ x:-100, opacity:0}}
                 animate={inView5 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={website} className=' w-full h-full object-cover rounded-tr-[20%] rounded-bl-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -168,7 +168,7 @@ const OtherServices = () => {
                 ref={ref7}
                 initial={{ x:-100, opacity:0}}
                 animate={inView7 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={mobileDev} className=' w-full h-full object-cover rounded-tl-[20%] rounded-br-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -193,7 +193,7 @@ const OtherServices = () => {
                 ref={ref9}
                 initial={{ x:-100, opacity:0}}
                 animate={inView9 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={Branding} className=' w-full h-full object-cover rounded-tr-[20%] rounded-bl-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -217,7 +217,7 @@ const OtherServices = () => {
                 ref={ref11}
                 initial={{ x:-100, opacity:0}}
                 animate={inView11 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={sms} className=' w-full h-full object-cover rounded-tl-[20%] rounded-br-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -242,7 +242,7 @@ const OtherServices = () => {
                 ref={ref13}
                 initial={{ x:-100, opacity:0}}
                 animate={inView13 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tr-[20%] rounded-bl-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={SEO} className=' w-full h-full object-cover rounded-tr-[20%] rounded-bl-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
@@ -268,7 +268,7 @@ const OtherServices = () => {
                 ref={ref15}
                 initial={{ x:-100, opacity:0}}
                 animate={inView15 ? { x:0, opacity:1,transition:{duration:.5,ease:'backInOut'}} : {}}
-                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px]'>
+                className=' w-full h-[300px] rounded-tl-[20%] rounded-br-[20%] lg:w-[50%] shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] dlg:h-[350px] mb-5'>
                   <img src={Ecommerce} className=' w-full h-full object-cover rounded-tl-[20%] rounded-br-[20%]' alt="" />
                 </motion.div>
                 {/* Right */}
