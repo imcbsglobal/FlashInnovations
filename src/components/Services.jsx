@@ -25,6 +25,7 @@ import efficientStorage from "../assets/efficient-storage.jpg"
 import reliableNetwork from "../assets/reliable-equipment.jpg"
 import customizable from "../assets/customizable.jpg"
 import integratedHardware from "../assets/Integrated-hardware.jpg"
+import thermalPrinter from "../assets/Thermal Printer.png"
 
 
 const Services = () => {
@@ -166,7 +167,7 @@ const Services = () => {
             className=' w-full h-[300px] rounded-bl-[20%] rounded-tl-[20%] BorderDesignBox2 flex flex-col gap-5 justify-center items-start px-5 py-2 overflow-hidden'>
             <div className=' flex justify-center gap-10 items-center'>
                 <div className=''>
-                  <img src={printers} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
+                  <img src={thermalPrinter} className='w-auto h-[100px] drop-shadow-[rgba(13,_38,_76,_0.19)_0px_9px_20px] dlg:h-[150px]' alt="" />
                 </div>
                 <div className=' text-xl font-bold text-[#2a2828] dlg:text-[28px]'>Thermal Printer</div>
               </div>
