@@ -1,8 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import techVideo from "../assets/tech-video3.mp4";
-import blueShade from "../assets/blue-shade.png";
-import homeBannerVideo from "../assets/home-banner.mp4";
-import banner from "../assets/banner-png.png";
 import task from "../assets/task.png"
 import shade from "../assets/shade.png"
 import vtsak from '../assets/vtask.png'
@@ -11,76 +7,31 @@ import clublogic from "../assets/clublogic.png"
 import magnet from "../assets/magnet.png"
 import auric from "../assets/auric.png"
 import starstay from "../assets/starstay.png"
-import pos from "../assets/pos.png"
-import computer from "../assets/computer.png"
-import barcodePrinter from "../assets/barcode-printer.png"
-import printers from "../assets/printer.png"
-import handBarcode from "../assets/hand-barcode-scanner.png"
-import tableBarcode from "../assets/table-barcode-scanner.png"
-import lables from "../assets/labels.png"
-import cashDrawer from "../assets/cash-drawer.png"
-import weighting from "../assets/weight-scale.png"
-import cctv from "../assets/cctv.png"
-import biometric from "../assets/biometric.png"
-import networking from "../assets/networkingpng.png"
 import LogoSlider from './LogoSlider';
-import Colleagues from "../assets/colleagues1.png"
 import { TiTick } from "react-icons/ti";
 import Footer from './Footer';
-import contactImage from "../assets/contact-image.png"
-import serviceImg from "../assets/colleagues2.png"
 import { motion } from "framer-motion"
-import inventory from "../assets/inventory-software.jpg"
-import customWeb from "../assets/custom-web-application.jpg"
-import mobile from "../assets/mobile-development.jpg"
-import graphicDesigning from "../assets/graphic-designing.jpg"
-import branding from "../assets/graphic-designing.jpg"
-import digitalMarketing from "../assets/digital-marketing.jpg"
-import ECommerce from "../assets/e-commerce.jpg"
-import sms from "../assets/sms.jpeg"
 import { useInView } from "react-intersection-observer";
-import banner3 from "../assets/banner3.png"
-import homeVideo from "../assets/home-video.mp4"
-import blackShade from "../assets/black-shade.png"
-import homeImage from "../assets/demo-img.png"
 import intro from "../assets/intro.mp4"
 import homeSection from "../assets/home-section.jpg"
-import businessSoftware from "../assets/business-software.jpg"
 import aboutCompany from "../assets/about-company.jpg"
 import companyServices from "../assets/company-services.jpg"
 import customerSupport from "../assets/customer-support1.jpg"
 import { Link } from "react-router-dom"
-import clientsBanner from "../assets/clients-banner.jpeg"
-import other1 from "../assets/other1.jpg"
-import other2 from "../assets/other2.jpg"
-import other3 from "../assets/other3.jpg"
-import other4 from "../assets/other4.jpg"
-import other5 from "../assets/other5.jpg"
-import other6 from "../assets/other6.jpg"
-import other7 from "../assets/other7.jpg"
-import other8 from "../assets/other8.jpg"
-import hard1 from "../assets/hard1.jpeg"
-import hard2 from "../assets/hard2.jpg"
-import hard3 from "../assets/hard3.jpeg"
-import hard4 from "../assets/hard4.jpg"
-import hard5 from "../assets/hard5.jpeg"
-import whiteShade from "../assets/white-shade.png"
 import hardware1 from "../assets/hard1.png"
 import hardware2 from "../assets/hard2.png"
 import hardware3 from "../assets/hard3.png"
 import hardware4 from "../assets/hard4.png"
 import otherservice1 from "../assets/otherservice1.png"
 import otherservice2 from "../assets/otherservice2.png"
-import otherservice3 from "../assets/otherservice3.png"
 import otherservice4 from "../assets/otherservice4.png"
 import otherservice5 from "../assets/otherservice5.png"
 import otherservice6 from "../assets/otherservice6.png"
 import otherservice7 from "../assets/otherservice7.png"
 import otherservice8 from "../assets/otherservice8.png"
-
-
-
-
+import otherservice9 from "../assets/otherservice9.png"
+import otherservice10 from "../assets/otherservice10.png"
+import otherservice11 from "../assets/otherservice11.png"
 
 const Home = () => {
 
@@ -507,7 +458,7 @@ const Home = () => {
                 <div className='flex justify-between items-center mb-2'>
                   <div className='text-[25px] mb-2 md:mb-5 font-bold relative z-20 leading-[30px] md:leading-normal'>Computer Hardware Sales & Services</div>
                   <div className='h-[80px]'>
-                    <img src={hardware1} className='w-full h-full object-contain' alt="" />
+                    <img src={otherservice11} className='w-full h-full object-contain' alt="" />
                   </div>
                 </div>
                   <div className=' text-sm lg:text-base lg:font-medium relative z-20'>
@@ -529,7 +480,7 @@ const Home = () => {
                   <div className='flex justify-between items-center mb-2'>
                     <div className='text-[25px] mb-5 font-bold relative z-20 leading-[30px] md:leading-normal'>CCTV & Security</div>
                     <div className='h-[80px]'>
-                      <img src={hardware2} className='w-full h-full object-contain' alt="" />
+                      <img src={otherservice10} className='w-full h-full object-contain' alt="" />
                     </div>
                   </div>
                     <div className='text-sm lg:text-base lg:font-medium relative z-20'>
@@ -551,7 +502,7 @@ const Home = () => {
                   <div className='flex justify-between items-center mb-2'>
                     <div className='text-[25px] mb-5 font-bold relative z-20 leading-[30px]'>Scanners & Printers</div>
                     <div className='h-[80px]'>
-                      <img src={hardware3} className='w-full h-full' alt="" />
+                      <img src={otherservice9} className='w-full h-full' alt="" />
                     </div>
                   </div>
                   <div className='text-sm lg:text-base lg:font-medium relative z-20'>
