@@ -32,6 +32,7 @@ import otherservice8 from "../assets/otherservice8.png"
 import otherservice9 from "../assets/otherservice9.png"
 import otherservice10 from "../assets/otherservice10.png"
 import otherservice11 from "../assets/otherservice11.png"
+import otherservice13 from "../assets/otherservice13.png"
 
 const Home = () => {
 
@@ -458,7 +459,7 @@ const Home = () => {
                 <div className='flex justify-between items-center mb-2'>
                   <div className='text-[25px] mb-2 md:mb-5 font-bold relative z-20 leading-[30px] md:leading-normal'>Computer Hardware Sales & Services</div>
                   <div className='h-[80px]'>
-                    <img src={otherservice11} className='w-full h-full object-contain' alt="" />
+                    <img src={otherservice13} className='w-full h-full object-contain' alt="" />
                   </div>
                 </div>
                   <div className=' text-sm lg:text-base lg:font-medium relative z-20'>
