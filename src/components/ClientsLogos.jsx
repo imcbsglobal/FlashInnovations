@@ -82,7 +82,7 @@ const ClientsLogos = () => {
     
     return (
       <div>
-        <div className='grid grid-cols-2 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-10 llg:grid-cols-6'>
+        <div className='grid grid-cols-2 place-items-center md:grid-cols-3 lg:grid-cols-4 gap-10 llg:grid-cols-4'>
           {logos.map((item, index) => {
             const { ref, inView } = useInView({
               triggerOnce: true,
@@ -95,7 +95,7 @@ const ClientsLogos = () => {
                 ref={ref}
                 initial={{ y: -100, opacity: 0 }}
                 animate={inView ? { y: 0, opacity: 1, transition: { duration: 0.5, ease: 'backInOut' } } : {}}
-                className='w-full h-[200px] llg:w-[200px] rounded-3xl GlassNavbar1 bg-[#fff]'
+                className='w-full h-[200px] llg:w-[300px] rounded-3xl GlassNavbar1 bg-[#fff]'
               >
                 <img src={item} className='w-full h-full object-contain rounded-3xl' alt={`logo-${index}`} />
               </motion.div>

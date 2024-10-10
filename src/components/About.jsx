@@ -6,12 +6,12 @@ import skill from "../assets/skill.png"
 import satisfaction from "../assets/satisfaction.png"
 import project from "../assets/project.png"
 import { TiTick } from "react-icons/ti";
-import team1 from "../assets/team1.jpg"
-import team2 from "../assets/team2.jpg"
-import team3 from "../assets/team3.jpg"
-import team4 from "../assets/team4.jpg"
-import team5 from "../assets/team5.jpg"
-import team6 from "../assets/team6.jpg"
+// import team1 from "../assets/team1.jpg"
+// import team2 from "../assets/team2.jpg"
+// import team3 from "../assets/team3.jpg"
+// import team4 from "../assets/team4.jpg"
+// import team5 from "../assets/team5.jpg"
+// import team6 from "../assets/team6.jpg"
 import Footer from './Footer';
 import serviceImg from "../assets/colleagues2.png"
 import company1 from "../assets/company1.jpg"
@@ -23,10 +23,7 @@ import { motion } from "framer-motion"
 import { useInView } from "react-intersection-observer";
 import aboutCompany from "../assets/about-company.jpg"
 import companyServices from "../assets/company-services.jpg"
-
-
-
-
+import { Link } from "react-router-dom"
 
 const About = () => {
 
@@ -50,22 +47,22 @@ const About = () => {
   const { ref: ref14, inView: inView14 } = useInView({ triggerOnce: true });
   const { ref: ref15, inView: inView15 } = useInView({ triggerOnce: true });
   const { ref: ref16, inView: inView16 } = useInView({ triggerOnce: true });
-  const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
-  const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
-  const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
-  const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
-  const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
-  const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
-  const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
-  const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
-  const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
-  const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
-  const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
-  const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
-  const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
-  const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
-  const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
-  const { ref: ref32, inView: inView32 } = useInView({ triggerOnce: true });
+  // const { ref: ref17, inView: inView17 } = useInView({ triggerOnce: true });
+  // const { ref: ref18, inView: inView18 } = useInView({ triggerOnce: true });
+  // const { ref: ref19, inView: inView19 } = useInView({ triggerOnce: true });
+  // const { ref: ref20, inView: inView20 } = useInView({ triggerOnce: true });
+  // const { ref: ref21, inView: inView21 } = useInView({ triggerOnce: true });
+  // const { ref: ref22, inView: inView22 } = useInView({ triggerOnce: true });
+  // const { ref: ref23, inView: inView23 } = useInView({ triggerOnce: true });
+  // const { ref: ref24, inView: inView24 } = useInView({ triggerOnce: true });
+  // const { ref: ref25, inView: inView25 } = useInView({ triggerOnce: true });
+  // const { ref: ref26, inView: inView26 } = useInView({ triggerOnce: true });
+  // const { ref: ref27, inView: inView27 } = useInView({ triggerOnce: true });
+  // const { ref: ref28, inView: inView28 } = useInView({ triggerOnce: true });
+  // const { ref: ref29, inView: inView29 } = useInView({ triggerOnce: true });
+  // const { ref: ref30, inView: inView30 } = useInView({ triggerOnce: true });
+  // const { ref: ref31, inView: inView31 } = useInView({ triggerOnce: true });
+  // const { ref: ref32, inView: inView32 } = useInView({ triggerOnce: true });
   
 
   return (
@@ -345,7 +342,9 @@ const About = () => {
           exceptional support for all your needs. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Totam nobis, repudiandae, eaque quia, corporis aliquam recusandae dolorem porro numquam ipsam voluptates! Consequuntur quam beatae perspiciatis alias possimus dolor, iste deleniti?</motion.div>
           <div className=' flex justify-center items-center gap-5'>
           <div>
-            <button className=' px-8 py-2 GradientButton'>Contact Us</button>
+            <Link to="/contact">
+              <button className=' px-8 py-2 GradientButton'>Contact Us</button>
+            </Link>
           </div>
           <div></div>
         </div>
@@ -353,7 +352,7 @@ const About = () => {
       </section>
 
 
-      <section className=' section'>
+      {/* <section className=' section'>
         <div className='lg:max-w-[1200px] lg:mx-auto mb-20'>
           <motion.div 
           ref={ref17}
@@ -365,7 +364,7 @@ const About = () => {
           initial={{x:-100,opacity:0}}
           animate={inView18 ? {x:0,opacity:1,transition:{duration:.7,ease:'backInOut',delay:1}} : {}}
           className='text-center ParagraphText text-sm text-[#2a2828] mb-10 md:w-[600px] md:mx-auto font-bold dlg:text-lg llg:w-[900px]'>At Flash Innovations, our team of skilled professionals drives our success. With expertise spanning development, design, and strategy, each member contributes to delivering exceptional results. Their dedication and collaboration ensure we consistently exceed client expectations and foster a dynamic, innovative environment.</motion.div>
-          {/* Team Members List */}
+          
           <div className=' grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 place-items-center gap-5 relative'>
 
             <motion.div
@@ -455,7 +454,7 @@ const About = () => {
 
           </div>
         </div>
-      </section>
+      </section> */}
 
       <section className='flex flex-col justify-center items-center bg-FooterBg bg-fixed bg-no-repeat bg-cover bg-center z-[997]'>
         <Footer/>
