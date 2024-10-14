@@ -9,7 +9,7 @@ import logo7 from "../assets/logos/logo7.png"
 import logo8 from "../assets/logos/logo8.jpg"
 import logo9 from "../assets/logos/logo9.jpeg"
 import logo10 from "../assets/logos/logo10.png"
-import logo11 from "../assets/logos/logo11.jpeg"
+import logo11 from "../assets/logos/logo11.png"
 import logo12 from "../assets/logos/logo12.png"
 import logo13 from "../assets/logos/logo13.png"
 import logo14 from "../assets/logos/logo14.png"
@@ -77,7 +77,7 @@ const ClientsLogos = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
 
     const logos = [
-        logo1,logo2,logo3,logo4,logo5,logo6,logo7,logo8,logo9,logo10,logo11,logo12,logo13,logo14,logo15,logo16,logo17,logo18,logo19,logo20,logo21,logo22,logo23,logo24,logo25,logo25,logo26,logo27,logo28,logo29,logo30,logo31,logo32,logo33,logo34,logo35,logo36,logo37,logo38,logo39,logo40,logo41,logo42,logo43,logo44,logo45,logo46,logo47,logo48,logo49,logo50,logo51,logo52,logo53,logo54,logo55,logo56,logo57,logo58,logo59,logo60,logo61,logo62,logo63,logo64,logo65,logo66,logo67
+        logo1,logo43,logo30,logo17,logo11,logo59,logo57,logo24,logo18,logo34,logo15,logo61,logo62,logo21,logo47,logo2,logo3,logo4,logo5,logo6,logo7,logo8,logo9,logo10,logo12,logo13,logo14,logo16,logo19,logo20,logo22,logo23,logo25,logo25,logo26,logo27,logo28,logo29,logo31,logo32,logo33,logo35,logo36,logo37,logo38,logo39,logo40,logo41,logo42,logo44,logo45,logo46,logo48,logo49,logo50,logo51,logo52,logo53,logo54,logo55,logo56,logo58,logo60,logo63,logo64,logo65,logo66,logo67
     ]
     
     return (
