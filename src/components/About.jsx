@@ -115,7 +115,7 @@ const About = () => {
               ref={ref2}
               initial={{y:-100,opacity:0}}
               animate={inView2 ? {y:0,opacity:1,transition:{duration:.5,ease:'backInOut',delay:1}} : {}}
-              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-5 bg-white'>
+              className=' flex flex-col justify-center items-center gap-3 rounded-sm GlassBox1 w-full h-[270px] text-center p-4 bg-white'>
                 <div className='w-[80%] h-[50%]'>
                   <img className=' w-full h-full object-contain' src={skill} alt="" />
                 </div>

@@ -33,6 +33,7 @@ import otherservice9 from "../assets/otherservice9.png"
 import otherservice10 from "../assets/otherservice10.png"
 import otherservice11 from "../assets/otherservice11.png"
 import otherservice13 from "../assets/otherservice13.png"
+import NetWorking from "../assets/networkingpng.png"
 
 const Home = () => {
 
@@ -525,7 +526,7 @@ const Home = () => {
                   <div className=' flex justify-between items-center mb-2'>
                     <div className='text-[25px] mb-5 font-bold relative z-20'>Networking</div>
                     <div className='h-[80px]'>
-                      <img src={hardware4} className='w-full h-full' alt="" />
+                      <img src={NetWorking} className='w-full h-full' alt="" />
                     </div>
                   </div>
                   <div className='text-sm lg:text-base lg:font-medium relative z-20'>

@@ -132,12 +132,12 @@ const Contact = () => {
                   </div>
                   <div>
                     <div className=' text-xl mb-2 llg:mb-5 text-white font-bold ContactHead'>Calicut</div>
-                    <div className='text-white ParagraphText text-sm mb-2 llg:mb-5'>
+                    <div className='text-white ParagraphText text-sm mb-5 llg:mb-2'>
                       Flash Innovations 1stFloor,
                       Smart Building Mannur Valavu,
                       Kadalundi,Kozhikode - 673328
                     </div>
-                    <div className=' text-[#fff] font-semibold ContactHead'>+91 9847718664, +91 9656104131,
+                    <div className=' text-[#fff] font-semibold ContactHead'>+91 9847718664,<br /> +91 9656104131,<br />
                     0495 2990804</div>
                   </div>
               </motion.div>

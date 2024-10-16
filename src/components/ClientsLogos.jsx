@@ -77,7 +77,7 @@ const ClientsLogos = () => {
   const { ref: ref1, inView: inView1 } = useInView({ triggerOnce: true });
 
     const logos = [
-        logo1,logo43,logo30,logo17,logo11,logo59,logo57,logo24,logo25,logo18,logo34,logo15,logo61,logo62,logo21,logo47,logo2,logo3,logo4,logo5,logo6,logo7,logo8,logo9,logo10,logo12,logo13,logo14,logo16,logo19,logo20,logo22,logo23,logo25,logo26,logo27,logo28,logo29,logo31,logo32,logo33,logo35,logo36,logo37,logo38,logo39,logo40,logo41,logo42,logo44,logo45,logo46,logo48,logo49,logo50,logo51,logo52,logo53,logo54,logo55,logo56,logo58,logo60,logo63,logo64,logo65,logo66,logo67
+        logo1,logo43,logo49,logo30,logo66,logo17,logo11,logo59,logo57,logo24,logo25,logo18,logo34,logo15,logo61,logo62,logo21,logo47,logo2,logo3,logo4,logo5,logo6,logo7,logo8,logo9,logo10,logo12,logo13,logo14,logo16,logo19,logo20,logo22,logo23,logo25,logo26,logo27,logo28,logo29,logo31,logo32,logo33,logo35,logo36,logo37,logo38,logo39,logo40,logo41,logo42,logo44,logo45,logo46,logo48,logo50,logo51,logo52,logo53,logo54,logo55,logo56,logo58,logo60,logo63,logo64,logo65,logo67
     ]
     
     return (
