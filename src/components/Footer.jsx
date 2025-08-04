@@ -21,13 +21,17 @@ const Footer = () => {
                         <img src={logo} className=' w-full h-full object-cover drop-shadow-2xl' alt="" />
                     </div>
                     <div className=' text-sm text-[#ffffff] '>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        103,First Floor POLYVISTA CLINIC, 9th Cross Road,4th Main, HBR Layout, !st Stage Hennur Bangalore-560043
                     </div>
                     <div className='text-white'>Customer Care Number</div>
                     <a href="tel:+91 8050695416">
                         <div className=' flex justify-center items-center gap-2'>
                             <div className='text-xl text-[#ffffffe9]'><IoCallSharp/></div>
                             <div className=' font-semibold text-white'>+91 8050695416</div>
+                        </div>
+                         <div className=' flex justify-center items-center gap-2'>
+                            <div className='text-xl text-[#ffffffe9]'><IoCallSharp/></div>
+                            <div className=' font-semibold text-white'>+91 9995175602</div>
                         </div>
                     </a>
                     <div className=' flex items-center justify-center gap-2'>
