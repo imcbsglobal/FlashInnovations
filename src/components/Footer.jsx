@@ -21,7 +21,7 @@ const Footer = () => {
                         <img src={logo} className=' w-full h-full object-cover drop-shadow-2xl' alt="" />
                     </div>
                     <div className=' text-sm text-[#ffffff] '>
-                        103,First Floor POLYVISTA CLINIC, 9th Cross Road,4th Main, HBR Layout, !st Stage Hennur Bangalore-560043
+                        103,First Floor Polyvista Clinic, 9th Cross Road,4th Main, HBR Layout, 1st Stage Hennur Bangalore-560043
                     </div>
                     <div className='text-white'>Customer Care Number</div>
                     <a href="tel:+91 8050695416">
